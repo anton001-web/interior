@@ -1,0 +1,53 @@
+@mixin fontz($ff, $fw, $fs, $fst) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  font-style: $fst;
+}
+
+@mixin btnz($color, $bgc, $hoverBg, $hoverColor, $hoverBorder, $border, $bgcActive) {
+  padding: 15px 20px;
+  cursor: pointer;
+  border: 1px solid $border;
+  color: $color;
+  transition: all .3s ease;
+  background-color: $bgc;
+  @include fontz('Montserrat', 400, 18px, normal);
+
+  &:hover {
+    font-weight: 500;
+    background-color: $hoverBg;
+    color: $hoverColor;
+    border: 1px solid $hoverBorder;
+  }
+
+  &:active {
+    font-weight: 700;
+    background-color: $bgcActive;
+  }
+}
+
+.btn-gr {
+  font-size: 15px !important;
+  @include btnz($mGreen, $btnBg, $btnBg, $mGreen, $mGreen, $mGreen, $btnAct);
+}
+
+.btn-whtB {
+  @include btnz(#000, #fff, $btnBg, #fff, $btnBg, #000, $mBlack);
+}
+
+.btn-wht {
+  @include btnz(#000, #fff, $btnBg, #fff, #fff, #fff, $mBlack);
+}
+
+.btn-dGr {
+  @include btnz($mGreen, $mBlack, $mBlack, $mGreen, $mGreen, $mGreen, #000);
+}
+
+.btn-blk {
+  @include btnz(#fff, $sBlack, $sBlack, $mGreen, $sBlack, $sBlack, #000);
+}
+
+%text-title {
+  @include fontz('Montserrat', 600, 20px, normal);
+}

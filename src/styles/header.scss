@@ -1,0 +1,143 @@
+.header {
+  background-color: $btnBg;
+}
+
+.header-body {
+  padding: $gutter;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  position: relative;
+  top: 34px;
+}
+
+.header-list__links {
+  display: flex;
+
+  .header-list__link {
+    transition: border-bottom .3s ease;
+    color: #fff;
+    text-decoration: none;
+    @include fontz('Montserrat', 300, 16px, normal);
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 0.3px solid #DF9D60;
+    }
+  }
+}
+
+.headerR-part {
+  display: flex;
+  align-items: center;
+
+  .header-list__block {
+    margin-left: 50px;
+  }
+}
+
+.headerL-part {
+  display: flex;
+}
+
+.header-address {
+  margin-right: 20px;
+  @include fontz('Montserrat', 400, 15px, normal);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {display: block}
+}
+
+.header-btn {
+  margin-right: 20px;
+  width: 180px;
+}
+
+.header-menu__open {
+  cursor: pointer;
+  position: relative;
+  width: 35px;
+
+  &:hover {
+    .header-menu__open-line {
+      background-color: transparent;
+    }
+
+    .header-menu__open-line:after {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .header-menu__open-line:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .header-menu__open-line,
+  .header-menu__open-line:after,
+  .header-menu__open-line:before {
+    transition: all .4s;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+
+.header-menu__open-line:after {
+  content: '';
+  top: -8px;
+}
+
+.header-menu__open-line:before {
+  content: '';
+  top: 8px;
+}
+
+
+.header-menu__open-line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-menu__block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  position: absolute;
+  padding: 40px;
+  background-color: $sBlack;
+  opacity: .5;
+  top: 70px;
+  right: 0;
+}
+
+.header-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-menu__list-item {
+  cursor: pointer;
+  color: #fff;
+  @include fontz('Montserrat', 300, 18px, normal);
+  transition: border-bottom-color .3s;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom-color: $mGreen;
+  }
+}
