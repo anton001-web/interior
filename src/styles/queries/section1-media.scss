@@ -1,0 +1,16 @@
+@media screen and (max-width: 996px) {
+  .section1-swiper__slide {
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper1-buttons__block {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

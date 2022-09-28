@@ -1,0 +1,77 @@
+.section1-body {
+  margin-top: 15px;
+}
+
+.section1-swiper {
+  position: relative;
+}
+
+.section1-swiper__slide {
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.swiper1-buttons__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  @include fontz('Montserrat', 400, 20px, normal);
+  color: $mBlack;
+}
+
+.swiper1-button-prev {
+  margin-right: 10px;
+
+  img {
+    max-width: 60px;
+  }
+}
+
+.swiper1-button-next {
+  margin-left: 10px;
+  img {
+    max-width: 60px;
+  }
+
+}
+
+.swiper1-bottom-border {
+  position: absolute;
+  z-index: 450;
+  width: 100%;
+  height: 2px;
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: grey; stroke-width: 4; stroke-dasharray: 5 20'/></svg>");
+  bottom: 100px;
+}
+
+.first-section__titles-group {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  position: absolute;
+  z-index: 450;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-section__title {
+  display: block;
+  margin-top: 15px;
+  @include fontz('Montserrat', 300, 30px, normal);
+  color: #000;
+}

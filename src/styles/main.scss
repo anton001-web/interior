@@ -1,8 +1,10 @@
 @import './fonts.scss';
 @import './vars.scss';
 @import './mixins&patterns.scss';
-@import './header.scss';
 @import '~scss-reset/reset.css';
+
+@import './header.scss';
+@import './section1.scss';
 
 .container {
   max-width: 1440px;
@@ -31,6 +33,7 @@
 
 html.scroll-active {
   body {
+
     position: fixed;
     height: 100%;
     overflow: hidden;
@@ -63,4 +66,13 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 767px) {
+  html.scroll-active {
+    body {
+      padding-right: 17px;
+    }
+  }
+}
+
 @import './queries/header-media.scss';
+@import './queries/section1-media.scss';

@@ -39,11 +39,13 @@ const Header = () => {
     const mVariants = {
         hidden: {
             opacity: 0,
+            visibility: 'hidden',
             transition: {
                 duration: .3
             }
         },
         animate: {
+            visibility: 'visible',
             opacity: 1,
             transition: {
                 duration: .3
@@ -56,7 +58,7 @@ const Header = () => {
             <div className="container">
                 <div className="header-body">
                     <div className='headerR-part'>
-                        <img src="./assets/images/logo.png" alt="" className='header-logo'/>
+                        <img src="./assets/images/header-logo.png" alt="" className='header-logo'/>
                         <div className="header-list__block">
                             <ul className='header-list__links'>
                                 <li className="header-list__item">< Link className="header-list__link" data-r><span

@@ -51,3 +51,7 @@
 %text-title {
   @include fontz('Montserrat', 600, 20px, normal);
 }
+
+%section-title {
+  @include fontz('Montserrat', 600, 30px, normal);
+}
