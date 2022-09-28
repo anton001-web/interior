@@ -29,4 +29,38 @@
   margin-bottom: 20px;
 }
 
+html.scroll-active {
+  body {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+html.scroll-active{
+  position: relative;
+  overflow: hidden;
+
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+html.scroll-active {
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 @import './queries/header-media.scss';

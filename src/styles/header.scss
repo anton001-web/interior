@@ -59,26 +59,27 @@
   width: 180px;
 }
 
+.header-menu__block.menu-open__active {
+  .header-menu__open-line {
+    background-color: transparent;
+  }
+
+  .header-menu__open-line:after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .header-menu__open-line:before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
 .header-menu__open {
   cursor: pointer;
   position: relative;
+  height: 35px;
   width: 35px;
-
-  &:hover {
-    .header-menu__open-line {
-      background-color: transparent;
-    }
-
-    .header-menu__open-line:after {
-      top: 0;
-      transform: rotate(45deg);
-    }
-
-    .header-menu__open-line:before {
-      top: 0;
-      transform: rotate(-45deg);
-    }
-  }
 
   .header-menu__open-line,
   .header-menu__open-line:after,
@@ -110,7 +111,6 @@
 }
 
 .header-menu__block {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,11 +119,11 @@
 .header-menu {
   position: absolute;
   padding: 40px;
-  background-color: $sBlack;
-  opacity: .5;
+  background: rgba(48, 48, 48, 0.9);
   top: 70px;
   right: 0;
 }
+
 
 .header-menu__list {
   display: flex;
@@ -131,6 +131,7 @@
 }
 
 .header-menu__list-item {
+  width: fit-content;
   cursor: pointer;
   color: #fff;
   @include fontz('Montserrat', 300, 18px, normal);
@@ -139,5 +140,62 @@
 
   &:hover {
     border-bottom-color: $mGreen;
+  }
+}
+
+.dropdown-wrap {
+  height: 100%;
+  min-width: 200px;
+
+}
+
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $footerLC;
+}
+
+.dropdown-title {
+  transition: border-bottom-color .3s;
+  cursor: pointer;
+  color: #fff;
+  @include fontz('Montserrat', 300, 18px, normal);
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom-color: $mGreen;
+  }
+}
+
+.dropdown__item-title__block {
+  color: #fff;
+  position: relative;
+  @include fontz('Montserrat', 400, 16px, normal);
+  transition: all .4s;
+  width: 150px;
+  height: 50px;
+  display: block;
+
+  &[data-ddTitle='Декорирование'] {
+    height: 30px;
+  }
+
+  .dropdown__item-title {
+    transition: all .4s;
+
+    &:hover {
+      color: $mGreen;
+      font-weight: 500;
+    }
+  }
+}
+
+.dropdown-link {
+  text-decoration: none;
+
+  &[data-lb] {
+    margin-bottom: 10px;
   }
 }
