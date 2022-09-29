@@ -45,8 +45,8 @@ const Header = () => {
             }
         },
         animate: {
-            visibility: 'visible',
             opacity: 1,
+            visibility: 'visible',
             transition: {
                 duration: .3
             }
@@ -83,7 +83,7 @@ const Header = () => {
                             <div className='header-menu__open' onClick={menuOpen}>
                                 <span className='header-menu__open-line'> </span>
                             </div>
-                            <motion.div variants={mVariants} animate={visible ? 'animate': 'hidden'} initial={'hidden'} className='header-menu'>
+                            <motion.div exit={'hidden'} variants={mVariants} animate={visible ? 'animate': 'hidden'} initial={'hidden'} className='header-menu'>
                                 <DropDownList listTitle='Услуги' listItems={headerDDList} className='tabletDD'/>
                                 <ul className='header-menu__list'>
                                     <div className='header-menu__list-items__block'>

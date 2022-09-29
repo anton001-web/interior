@@ -1,0 +1,81 @@
+.works-list__section {
+  margin-top: $section-m;
+}
+
+.works-list__body {
+
+}
+
+.works-list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.works-list__header-block {
+  padding: 70px $gutter;
+  background-color: $mBlack;
+}
+
+.works-list__sec-title {
+  color: #fff;
+}
+
+.works-ltoggle__list {
+  display: flex;
+}
+
+.works-ltoggle__list-item {
+  cursor: pointer;
+  @include fontz('Montserrat', 400, 20px, normal);
+  color: #fff;
+
+  &[data-type='apartments'], &[data-type='cottages'],&[data-type='commercial'] {
+    margin-right: 100px;
+  }
+}
+
+.works-list__array-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-list__array {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.works-list__array-item__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.works-list__footer-block {
+  padding: 70px $gutter;
+  background-color: $mBlack;
+}
+
+.works-list__header {
+  display: flex;
+  align-items: center;
+}
+
+.works-list__footer-Cblock {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.works-list__footer-text {
+  @include fontz('Montserrat', 300, 18px, normal);
+  color: #fff;
+}
+
+.works-list__footer-btn {
+  margin-left: 20px;
+  background-color: transparent;
+  width: 220px;
+}

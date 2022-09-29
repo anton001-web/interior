@@ -21,6 +21,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .tabletDD {
+    display: block;
+  }
+
+  .desktopDD {
+    display: none;
+  }
+
   .header-logo {
     max-width: 120%;
     margin-right: 00px;

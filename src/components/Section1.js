@@ -31,8 +31,8 @@ const Section1 = () => {
                         <img src="./assets/images/sec1Logo.png" alt=""/>
                         <span className='first-section__title'>Студия интерьера Яны Петерсон</span>
                     </div>
-                    {firstSwiperData.map(slide => (
-                        <SwiperSlide key={slide} className='section1-swiper__slide'>
+                    {firstSwiperData.map((slide, ind) => (
+                        <SwiperSlide key={ind} className='section1-swiper__slide'>
                             <img src={slide.img} alt=""/>
                         </SwiperSlide>
                     ))}

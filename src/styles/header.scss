@@ -132,6 +132,8 @@
 }
 
 .header-menu__list-item {
+  user-select: none;
+  -moz-user-select: none;
   width: fit-content;
   cursor: pointer;
   color: #fff;
@@ -199,4 +201,8 @@
   &[data-lb] {
     margin-bottom: 10px;
   }
+}
+
+.tabletDD {
+  display: none;
 }

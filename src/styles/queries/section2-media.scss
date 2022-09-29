@@ -1,0 +1,88 @@
+@media screen and (max-width: 1240px) {
+  .works-ltoggle__list-item {
+
+    &[data-type='apartments'], &[data-type='cottages'],&[data-type='commercial'] {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .works-ltoggle__list-item {
+    font-size: 16px;
+
+    &[data-type='apartments'], &[data-type='cottages'],&[data-type='commercial'] {
+      margin-right: 30px;
+    }
+  }
+
+  .works-list__sec-title {
+    font-size: 26px;
+  }
+}
+
+
+@media screen and (max-width: 996px) {
+  .works-list__array {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .works-list__footer-btn {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .works-list__array {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .works-list__header {
+    flex-direction: column;
+  }
+
+  .works-ltoggle__list {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .works-list__array {
+    grid-template-columns: 1fr;
+  }
+
+  .works-list__footer-Cblock {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .works-list__footer-btn {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .works-ltoggle__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .works-ltoggle__list-item[data-type='cottages'], .works-ltoggle__list-item[data-type='all'] {
+    width: 100px;
+    align-self: end;
+    justify-self: end;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .works-ltoggle__list {
+    grid-template-columns: 1fr;
+  }
+
+  .works-ltoggle__list-item {
+    margin-bottom: 10px;
+    align-self: start !important;
+    justify-self: start !important;
+  }
+}

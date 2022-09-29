@@ -5,6 +5,7 @@
 
 @import './header.scss';
 @import './section1.scss';
+@import './section2.scss';
 
 .container {
   max-width: 1440px;
@@ -29,6 +30,10 @@
 
 *[data-b] {
   margin-bottom: 20px;
+}
+
+.title {
+  @extend %section-title;
 }
 
 html.scroll-active {
@@ -72,7 +77,12 @@ body {
       padding-right: 17px;
     }
   }
+
+  .title {
+    font-size: 24px !important;
+  }
 }
 
 @import './queries/header-media.scss';
 @import './queries/section1-media.scss';
+@import './queries/section2-media.scss';
