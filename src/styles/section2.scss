@@ -48,6 +48,10 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.works-list__array-item {
+  position: relative;
+}
+
 .works-list__array-item__img {
   width: 100%;
   object-fit: cover;
@@ -78,4 +82,18 @@
   margin-left: 20px;
   background-color: transparent;
   width: 220px;
+}
+
+.works-list__hoverItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fontz('Montserrat', 600, 20px, normal);
+  color: #fff;
 }

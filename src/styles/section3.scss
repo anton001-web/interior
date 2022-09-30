@@ -1,0 +1,51 @@
+.advantages-section {
+  background-image: url('../assets/images/advantagesBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+}
+
+.advantages-body {
+  padding: 60px $gutter;
+  display: grid;
+  grid-template-rows: 1fr 1.3fr;
+}
+
+.advantages-title {
+  @extend %section-title;
+}
+
+.advantages-list__block {
+  //margin-top: 70px;
+}
+
+.advantages-list-img__block {
+
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gutter;
+}
+
+.advantages-list__item {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+
+.advantages-list__text-group {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-list__text {
+  @include fontz('Montserrat', 400, 15px, normal);
+}
+
+.advantages-list__title {
+  @include fontz('Montserrat', 600, 20px, normal);
+  margin-bottom: 20px;
+}

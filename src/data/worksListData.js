@@ -9,53 +9,55 @@ export const worksList = [
     {
         type: 'apartments',
         images: [
-            {img: './assets/images/worksList1.png'},
-            {img: './assets/images/worksList2.png'},
-            {img: './assets/images/worksList3.png'},
-            {img: './assets/images/worksList4.png'},
-            {img: './assets/images/worksList5.png'},
-            {img: './assets/images/worksList6.png'},
-            {img: './assets/images/worksList7.png'},
-
+            {
+                img: './assets/images/worksList1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {img: './assets/images/worksList2.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList3.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList4.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList5.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList6.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList7.png', title: 'ЖК Триумф Парк'},
         ]
     },
     {
         type: 'cottages',
         images: [
-            {img: './assets/images/worksList1.png'},
-            {img: './assets/images/worksList2.png'},
-            {img: './assets/images/worksList3.png'},
+            {img: './assets/images/worksList1.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList2.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList3.png', title: 'ЖК Триумф Парк'},
 
         ]
     },
     {
         type: 'commercial',
         images: [
-            {img: './assets/images/worksList1.png'},
-            {img: './assets/images/worksList2.png'},
-            {img: './assets/images/worksList3.png'},
-            {img: './assets/images/worksList4.png'},
-            {img: './assets/images/worksList5.png'},
-            {img: './assets/images/worksList6.png'},
-            {img: './assets/images/worksList7.png'},
+            {img: './assets/images/worksList1.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList2.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList3.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList4.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList5.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList6.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList7.png', title: 'ЖК Триумф Парк'},
 
         ]
     },
     {
         type: 'all',
         images: [
-            {img: './assets/images/worksList1.png'},
-            {img: './assets/images/worksList2.png'},
-            {img: './assets/images/worksList3.png'},
-            {img: './assets/images/worksList4.png'},
-            {img: './assets/images/worksList5.png'},
-            {img: './assets/images/worksList6.png'},
-            {img: './assets/images/worksList7.png'},
-            {img: './assets/images/worksList8.png'},
-            {img: './assets/images/worksList9.png'},
-            {img: './assets/images/worksList10.png'},
-            {img: './assets/images/worksList11.png'},
-            {img: './assets/images/worksList12.png'},
+            {img: './assets/images/worksList1.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList2.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList3.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList4.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList5.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList6.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList7.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList8.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList9.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList10.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList11.png', title: 'ЖК Триумф Парк'},
+            {img: './assets/images/worksList12.png', title: 'ЖК Триумф Парк'},
         ]
     }
 ]

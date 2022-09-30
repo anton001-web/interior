@@ -1,0 +1,28 @@
+@media screen and (max-width: 1080px) {
+  .advantages-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .advantages-list__block {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .advantages-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages-list__text-group {
+    margin-left: 20px;
+  }
+}

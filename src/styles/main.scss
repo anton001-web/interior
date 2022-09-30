@@ -6,6 +6,7 @@
 @import './header.scss';
 @import './section1.scss';
 @import './section2.scss';
+@import './section3.scss';
 
 .container {
   max-width: 1440px;
@@ -77,7 +78,9 @@ body {
       padding-right: 17px;
     }
   }
+}
 
+@media screen and (max-width: 767px) {
   .title {
     font-size: 24px !important;
   }
@@ -86,3 +89,4 @@ body {
 @import './queries/header-media.scss';
 @import './queries/section1-media.scss';
 @import './queries/section2-media.scss';
+@import './queries/section3-media.scss';

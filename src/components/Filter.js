@@ -4,8 +4,18 @@ import {AnimatePresence, AnimatePresenceProps, motion} from "framer-motion";
 
 const Filter = ({cards}) => {
 
-    console.log(cards[0])
-
+    const hoverVariants = {
+        hidden: {
+            opacity: 0
+        },
+        animate: {
+            backgroundColor: 'rgba(0, 0, 0, .5)',
+            opacity: 1,
+            transition: {
+                duration: .5
+            }
+        }
+    }
 
     //something wrong with anim...
     return (
@@ -13,6 +23,8 @@ const Filter = ({cards}) => {
             <div className="works-list__array">
                 <AnimatePresence
                     exitBeforeEnter={true}
+                    initial={'hidden'}
+                    whileHover={'animate'}
                 >
                     {
                         cards[0].images.map((item, ind) => (
@@ -23,9 +35,17 @@ const Filter = ({cards}) => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.5 }}
                                 key={ind}
-                                className='works-list__array-item'
                             >
-                                <img src={item.img} alt="img" className='works-list__array-item__img'/>
+                                <motion.div
+                                    initial={'hidden'}
+                                    whileHover={'animate'}
+                                    className='works-list__array-item'
+                                >
+                                    <img src={item.img} alt="img" className='works-list__array-item__img'/>
+                                    <motion.div variants={hoverVariants} className='works-list__hoverItem'>
+                                        {item.title}
+                                    </motion.div>
+                                </motion.div>
                             </motion.div>
                         ))
                     }
