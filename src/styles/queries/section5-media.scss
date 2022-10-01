@@ -1,0 +1,39 @@
+@media screen and (max-width: 996px) {
+  .workway-sectionBg {
+    img {
+      height: 11.1%;
+    }
+
+    img.hiddenImg {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .workway-sectionBg {
+    display: none;
+  }
+
+  .workway-section__body {
+    grid-template-columns: 1fr;
+  }
+
+  .workway-content-upperBlock {
+    background-color: $mBlack;
+  }
+
+  .workway-content-upperBlock__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workway-stage__title {
+    font-size: 18px;
+  }
+
+  .workway-stage__text {
+    font-size: 16px;
+  }
+}
+

@@ -6,6 +6,9 @@ const Section4 = () => {
         <section className='services-section'>
             <div className="container">
                 <div className="services-body">
+                    <div className='services-bg'>
+
+                    </div>
                     <div className='services-block'>
                         <h1 className='services-title title'>Что мы предлогаем?</h1>
                         <div className='services-list'>
@@ -26,9 +29,6 @@ const Section4 = () => {
                                 ))
                             }
                         </div>
-                    </div>
-                    <div className='services-bg'>
-
                     </div>
                 </div>
             </div>
