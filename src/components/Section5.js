@@ -13,6 +13,8 @@ const Section5 = () => {
     });
 
     return (
+
+        // terrible layout btw))
         <section className='workway-section' ref={secRef}>
             {/*<div className="container">*/}
                 <div className="workway-section__body">
@@ -20,7 +22,7 @@ const Section5 = () => {
 
                         {
                             workStagesImgs.map((item, ind) => (
-                                <img src={item.img} alt="img" className={classNames(item.className)}/>
+                                <img key={ind} src={item.img} alt="img" className={classNames(item.className)}/>
                             ))
                         }
                     </div>

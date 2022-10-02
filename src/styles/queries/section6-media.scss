@@ -1,0 +1,18 @@
+@media screen and (max-width: 520px) {
+  .autobio-section__body {
+    grid-template-columns: 1fr;
+  }
+
+  .autobio-section__img-block {
+    grid-row: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .autobio-section__img-block {
+    img {
+      height: 300px;
+    }
+  }
+
+}

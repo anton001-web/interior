@@ -9,9 +9,10 @@
 @import './section3.scss';
 @import './section4.scss';
 @import './section5.scss';
+@import './section6.scss';
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -94,3 +95,4 @@ body {
 @import './queries/section3-media.scss';
 @import './queries/section4-media.scss';
 @import './queries/section5-media.scss';
+@import './queries/section6-media.scss';

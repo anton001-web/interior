@@ -1,0 +1,52 @@
+.autobio-section {
+
+}
+
+.autobio-section__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.autobio-section__body {
+
+}
+
+.autobio-section__block {
+  padding: 60px $gutter;
+  background-image: url("../assets/images/autoBioLeft.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.autobio-section__img-block {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+  }
+}
+
+.autobio-title {
+  margin-bottom: 20px;
+  @include fontz('Montserrat', 600, 20px, normal);
+  color: #fff;
+}
+
+.autobio-subTitle {
+  margin-bottom: 20px;
+  @include fontz('Montserrat', 300, 15px, normal);
+  max-width: 260px;
+  color: #fff;
+}
+
+.autobio-text {
+  margin-bottom: 20px;
+  @include fontz('Montserrat', 400, 18px, normal);
+  max-width: 300px;
+  color: #fff;
+}
+
+.autobio-btn {
+  width: 200px;
+}
