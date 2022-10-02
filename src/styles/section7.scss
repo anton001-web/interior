@@ -1,0 +1,98 @@
+.review-section {
+  background-image: url("../assets/images/reviewSecBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+}
+
+.review-section__body {
+  padding: 60px $gutter;
+  width: 100%;
+  height: 100%;
+}
+
+.review-section__title {
+  @extend %section-title;
+  color: #fff;
+}
+
+.review-list__block {
+  margin-top: 70px;
+}
+
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $gutter;
+}
+
+.review-list__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-list__item-text {
+  @include fontz('Montserrat', 400, 15px, normal);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.review-list__item-auth {
+  color: #fff;
+  @include fontz('Montserrat', 300, 15px, normal);
+}
+
+.review-swiper {
+  display: none;
+}
+
+.review-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto !important;
+}
+
+.custom-swiper1-fraction {
+  display: none;
+  align-items: center;
+  justify-content: end;
+  z-index: 100;
+  padding: 10px;
+  margin-top: 20px;
+
+  .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: $swiperPG-bg;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: $mGreen;
+  }
+}
+
+.review-section__btn {
+  margin-top: 40px;
+  width: 260px;
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.review-list__block {
+
+}

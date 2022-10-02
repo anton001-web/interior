@@ -7,6 +7,11 @@ const Section5 = () => {
     const childRef = React.createRef()
     const imgRef = React.createRef()
 
+    useEffect(() => {
+        secRef.current.style.height = childRef.current.clientHeight + 'px'
+        imgRef.current.style.height = childRef.current.clientHeight + 'px'
+    }, [])
+
     window.addEventListener('resize',function(){
         secRef.current.style.height = childRef.current.clientHeight + 'px'
         imgRef.current.style.height = childRef.current.clientHeight + 'px'

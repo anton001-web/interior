@@ -1,0 +1,46 @@
+@media screen and (max-width: 767px) {
+  .review-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review-list__item[data-num='4'] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .review-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .review-swiper {
+    display: block;
+  }
+
+  .review-list {
+    display: none;
+  }
+
+  .review-list__item[data-num='4'] {
+    display: block;
+  }
+
+  .review-list__item {
+    padding: 1px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .custom-swiper1-fraction {
+    display: flex;
+  }
+
+  .review-section__btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
