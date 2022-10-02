@@ -39,14 +39,14 @@ const Header = () => {
     const mVariants = {
         hidden: {
             opacity: 0,
-            visibility: 'hidden',
+            zIndex: -1,
             transition: {
                 duration: .3
             }
         },
         animate: {
             opacity: 1,
-            visibility: 'visible',
+            zIndex: 2,
             transition: {
                 duration: .3
             }

@@ -7,15 +7,11 @@ const Section5 = () => {
     const childRef = React.createRef()
     const imgRef = React.createRef()
 
-    useEffect(() => {
-        secRef.current.style.height = childRef.current.clientHeight + 'px'
-        imgRef.current.style.height = childRef.current.clientHeight + 'px'
-    }, [])
 
-    window.addEventListener('resize',function(){
-        secRef.current.style.height = childRef.current.clientHeight + 'px'
-        imgRef.current.style.height = childRef.current.clientHeight + 'px'
-    });
+    window.addEventListener('load', function() {
+        secRef.current.style.height = childRef.current.offsetHeight + 10 + 'px'
+        imgRef.current.style.height = childRef.current.offsetHeight + 10 +'px'
+    })
 
     return (
 
@@ -33,12 +29,12 @@ const Section5 = () => {
                     </div>
                     <div className='workway-mContent__body'>
                     </div>
-                    <div className='workway-content-upperBlock'>
-                        <div className="container">
-                            <div className='workway-content-upperBlock__body' ref={childRef}>
+                    <div className='workway-content-upperBlock' ref={childRef}>
+                        <div className="container" >
+                            <div className='workway-content-upperBlock__body' >
                                 <div></div>
                                 <div className='workway-content'>
-                                    <h1 className='workway-title title'>
+                                    <h1 className='workway-title title-white'>
                                         Как мы работаем
                                     </h1>
                                     <div className='workway-stages-block'>

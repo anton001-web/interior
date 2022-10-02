@@ -17,7 +17,7 @@ const Section2 = () => {
                 <div className='works-list__header-block'>
                     <div className="container">
                         <div className="works-list__header">
-                            <h1 className="works-list__sec-title title">
+                            <h1 className="title-white">
                                 Портфолио лучших работ
                             </h1>
                             <ul className='works-ltoggle__list'>

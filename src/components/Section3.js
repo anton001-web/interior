@@ -6,7 +6,7 @@ const Section3 = () => {
         <section className='advantages-section'>
             <div className="container">
                 <div className="advantages-body">
-                    <h1 className='advantages-title title'>Наши преимущества</h1>
+                    <h1 className='title-black'>Наши преимущества</h1>
                     <div className="advantages-list__block">
                         <div className="advantages-list">
                             {

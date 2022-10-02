@@ -11,6 +11,7 @@
 @import './section5.scss';
 @import './section6.scss';
 @import './section7.scss';
+@import './section8.scss';
 
 .container {
   max-width: 1200px;
@@ -37,13 +38,18 @@
   margin-bottom: 20px;
 }
 
-.title {
+.title-black {
   @extend %section-title;
+  color: #000;
+}
+
+.title-white {
+  @extend %section-title;
+  color: #fff;
 }
 
 html.scroll-active {
   body {
-
     position: fixed;
     height: 100%;
     overflow: hidden;
@@ -85,7 +91,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .title {
+  .title-black {
+    font-size: 24px !important;
+  }
+
+  .title-white {
     font-size: 24px !important;
   }
 }
@@ -98,3 +108,4 @@ body {
 @import './queries/section5-media.scss';
 @import './queries/section6-media.scss';
 @import './queries/section7-media.scss';
+@import './queries/section8-media.scss';

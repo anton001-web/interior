@@ -10,7 +10,7 @@ const Section4 = () => {
 
                     </div>
                     <div className='services-block'>
-                        <h1 className='services-title title'>Что мы предлогаем?</h1>
+                        <h1 className='title-black'>Что мы предлогаем?</h1>
                         <div className='services-list'>
                             {
                                 services.map((item, ind) => (

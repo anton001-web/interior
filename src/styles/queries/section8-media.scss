@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px) {
+  .inst-link__hidden {
+    display: block;
+  }
+
+  .inst-link__block {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .instsWorks-list {
+    gap: 3px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instsWorks-follow-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+.instsWorks-section__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px $gutter;
+}
+
+.instsWorks-block {
+  margin-top: 70px;
+}
+
+.instsWorks-title {
+  text-align: center;
+}
+
+.instsWorks-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gutter;
+}
+
+.instsWorks-list__item {
+  position: relative;
+}
+
+.instsWorks-list__item-info-block {
+  background-color: rgba(0, 0, 0, .7);
+  padding: $gutter;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+
+.instsWorks-list__item-info__group {
+  margin-right: 20px;
+  @include fontz('Montserrat', 400, 15px, normal);
+  color: #fff;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.instsWorks-btns__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gutter;
+  margin-top: 70px;
+}
+
+.instsWorks-btn {
+  font-size: 14px;
+  width: 220px;
+}
+
+.inst-link__block {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include fontz('Montserrat', 400, 20px, normal);
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.inst-link__hidden {
+  margin-top: 30px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  @include fontz('Montserrat', 400, 20px, normal);
+
+  img {
+    margin-right: 15px;
+  }
+  display: none;
+}

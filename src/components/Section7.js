@@ -8,7 +8,7 @@ const Section7 = () => {
         <section className='review-section'>
             <div className="container">
                 <div className="review-section__body">
-                    <h1 className='review-section__title'>Отзывы</h1>
+                    <h1 className='title-white'>Отзывы</h1>
                     <div className='review-list__block'>
                         <div className="review-list">
                             {
