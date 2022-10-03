@@ -1,0 +1,36 @@
+.custom-input__group {
+  position: relative;
+  //width: 100%;
+  margin-bottom: 40px;
+}
+
+.custom-input {
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+  @include fontz('Montserrat', 400, 15px, normal);
+  outline: none;
+}
+
+.custom-input__label {
+  cursor: pointer;
+  transition: all .4s;
+  position: absolute;
+  left: 5px;
+  @include fontz('Montserrat', 400, 15px, normal);
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.custom-input:focus+label,
+.custom-input:not(:placeholder-shown)+label {
+  top: -5px;
+}
+
+input::placeholder {
+  color: transparent;
+}

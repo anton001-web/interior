@@ -12,9 +12,12 @@
 @import './section6.scss';
 @import './section7.scss';
 @import './section8.scss';
+@import './section9.scss';
+
+@import './customInput.scss';
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -100,6 +103,27 @@ body {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .container {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .container {
+    max-width: 2500px;
+    margin: 0 auto;
+  }
+}
+
 @import './queries/header-media.scss';
 @import './queries/section1-media.scss';
 @import './queries/section2-media.scss';
@@ -109,3 +133,4 @@ body {
 @import './queries/section6-media.scss';
 @import './queries/section7-media.scss';
 @import './queries/section8-media.scss';
+@import './queries/section9-media.scss';

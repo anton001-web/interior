@@ -1,0 +1,38 @@
+.form-section {
+  background-image: url('../assets/images/formBG.png');
+  background-size: cover;
+
+}
+
+.form-section__body {
+  min-height: 600px;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-block {
+  width: 100%;
+  max-width: 700px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px $gutter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.main-form {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.main-form__submit-btn {
+  width: 220px;
+}
