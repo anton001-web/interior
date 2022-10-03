@@ -55,3 +55,9 @@
 %section-title {
   @include fontz('Montserrat', 600, 30px, normal);
 }
+
+%footer-text {
+  @include fontz('Montserrat', 400, 13px, normal);
+  color: $footerLC;
+  text-decoration: none;
+}

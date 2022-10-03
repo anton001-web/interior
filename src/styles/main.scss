@@ -4,6 +4,7 @@
 @import '~scss-reset/reset.css';
 
 @import './header.scss';
+@import './footer.scss';
 @import './section1.scss';
 @import './section2.scss';
 @import './section3.scss';
@@ -134,3 +135,4 @@ body {
 @import './queries/section7-media.scss';
 @import './queries/section8-media.scss';
 @import './queries/section9-media.scss';
+@import './queries/footer-media.scss';

@@ -5,6 +5,7 @@ import {motion} from "framer-motion";
 import {useDispatch, useSelector} from "react-redux";
 import {dropdownToggle, toggleBurger} from "../store/actions";
 import {DROPDOWN_CLOSE} from "../store/types";
+import {hfLinks} from "../data/generalData";
 
 const headerDDList = [
     'Дизайн интерьера',
@@ -61,14 +62,15 @@ const Header = () => {
                         <img src="./assets/images/header-logo.png" alt="" className='header-logo'/>
                         <div className="header-list__block">
                             <ul className='header-list__links'>
-                                <li className="header-list__item">< Link className="header-list__link" data-r><span
-                                    className='s'> о нас </span></Link></li>
-                                <li className="header-list__item"><Link className="header-list__link"
-                                                                        data-r>услуги</Link></li>
-                                <li className="header-list__item"><Link className="header-list__link"
-                                                                        data-r>портфолио</Link></li>
-                                <li className="header-list__item"><Link className="header-list__link"> цены < /Link>
-                                </li>
+                                {
+                                    hfLinks.map((item, ind) => (
+                                        <li key={ind} className="header-list__item">
+                                            <Link className="header-list__link" data-r>
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                    ))
+                                }
                             </ul>
                         </div>
                     </div>
