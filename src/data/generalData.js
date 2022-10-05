@@ -1,15 +1,19 @@
 export const hfLinks = [
     {
         title: 'О нас',
+        to: '/about-us'
     },
     {
         title: 'Услуги',
+        to: '/services'
     },
     {
         title: 'Портфолио',
+        to: '/portfolio'
     },
     {
         title: 'Цены',
+        to: '/prices'
     },
     {
         title: 'Блог',
@@ -30,6 +34,27 @@ export const footerNewLinks = [
     {
         title: 'Мебель',
     }
+]
+
+export const servicesMainList = [
+    {
+        title: 'Дизайн интерьера'
+    },
+    {
+        title: 'Отделочные работы'
+    },
+    {
+        title: 'Декорирование интерьера'
+    },
+    {
+        title: 'Авторский надзор'
+    },
+    {
+        title: 'Согласование перепланировки'
+    },
+    {
+        title: 'Архитектурное проектирование'
+    },
 ]
 
 export const footerNewLinksSecond = [

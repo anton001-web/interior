@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+  .custom-lr__sec-bg {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .custom-lr__sec-bg {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .custom-lr__sec-wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .custom-lr__sec-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .custom-lr__sec-bg {
+    height: 250px;
+  }
+}

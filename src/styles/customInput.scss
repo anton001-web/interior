@@ -4,6 +4,19 @@
   margin-bottom: 40px;
 }
 
+.custom-textarea {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 15px 5px 0px 5px;
+  @include fontz('Montserrat', 400, 15px, normal);
+  outline: none;
+}
+
 .custom-input {
   cursor: pointer;
   width: 100%;
@@ -26,11 +39,20 @@
   transform: translate(0%, -50%);
 }
 
+.custom-textarea:focus+label,
+.custom-textarea:not(:placeholder-shown)+label {
+  top: -10px;
+}
+
 .custom-input:focus+label,
 .custom-input:not(:placeholder-shown)+label {
   top: -5px;
 }
 
-input::placeholder {
+.custom-textarea::placeholder {
+  color: transparent;
+}
+
+.custom-input::placeholder {
   color: transparent;
 }

@@ -16,6 +16,8 @@
 @import './section9.scss';
 
 @import './customInput.scss';
+@import './customLR.scss';
+@import './services.scss';
 
 .container {
   max-width: 1440px;
@@ -89,7 +91,7 @@ body {
 @media screen and (min-width: 767px) {
   html.scroll-active {
     body {
-      padding-right: 17px;
+      width: calc(100% - 17px);
     }
   }
 }
@@ -136,3 +138,6 @@ body {
 @import './queries/section8-media.scss';
 @import './queries/section9-media.scss';
 @import './queries/footer-media.scss';
+
+@import './queries/customLR-media.scss';
+@import './queries/services-media.scss';

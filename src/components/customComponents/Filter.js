@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {worksList} from "../data/worksListData";
+import {worksList} from "../../data/worksListData";
 import {AnimatePresence, AnimatePresenceProps, motion} from "framer-motion";
 
 const Filter = ({cards}) => {

@@ -35,3 +35,7 @@ export const services = [
         img: './assets/images/services7.png'
     }
 ]
+
+export const servicesLRtexts = {
+    interiorText: 'CUSTOM MADE — уникальный дизайн интерьера и индивидуальный подход. Коллектив нашей студии состоит из профессионалов, которые рады помочь выразить неповторимый дух и образ свойственный только Вам.',
+}

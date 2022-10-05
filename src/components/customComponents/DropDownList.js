@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import {dropdownToggle} from "../store/actions";
+import {dropdownToggle} from "../../store/actions";
 import {useDispatch, useSelector} from "react-redux";
-import {DROPDOWN_TOGGLE} from "../store/types";
+import {DROPDOWN_TOGGLE} from "../../store/types";
 import classNames from "classnames";
 
 const DropDownList = ({listItems, listTitle, className}) => {

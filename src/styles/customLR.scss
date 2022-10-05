@@ -1,0 +1,46 @@
+.custom-lr__section {
+  position: relative;
+}
+
+.custom-lr__sec-wrap {
+  display: grid;
+}
+
+.custom-lr__sec-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 30%;
+}
+
+.tabletTrue {
+  left: 60% !important;
+}
+
+.custom-lr__sec-info__block {
+  padding: 90px $gutter;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-lr__sec-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-lr__sec-title {
+  @include fontz('Montserrat', 600, 20px, normal);
+  margin-bottom: 20px;
+}
+
+.custom-lr__sec-text {
+  @include fontz('Montserrat', 400, 16px, normal);
+}
+
+.custom-lr__sec-btn {
+  margin-top: 20px;
+  width: 180px;
+}
+

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { Link } from "react-router-dom";
-import DropDownList from "./DropDownList";
+import DropDownList from "./customComponents/DropDownList";
 import {motion} from "framer-motion";
 import {useDispatch, useSelector} from "react-redux";
 import {dropdownToggle, toggleBurger} from "../store/actions";
@@ -65,7 +65,7 @@ const Header = () => {
                                 {
                                     hfLinks.map((item, ind) => (
                                         <li key={ind} className="header-list__item">
-                                            <Link className="header-list__link" data-r>
+                                            <Link to={item.to} className="header-list__link" data-r>
                                                 {item.title}
                                             </Link>
                                         </li>

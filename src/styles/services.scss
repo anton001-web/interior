@@ -1,0 +1,114 @@
+.services-page__services-list__block {
+  position: relative;
+  min-height: 400px;
+}
+
+.services-page__serv-list__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: $gutter;
+}
+
+.services-page__serv-list__bg {
+  background-image: url("../assets/images/servPageMain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 30%;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../assets/images/tabletServiceMainImg.png");
+  }
+}
+
+.services-page__serv-list {
+  padding: 100px $gutter;
+}
+
+.services-page__main-title {
+  @include fontz('Montserrat', 600, 20px, normal);
+  margin-bottom: 20px;
+}
+
+.services-page__main-text {
+  @include fontz('Montserrat', 400, 20px, normal);
+  margin-bottom: 20px;
+}
+
+.main-services-page__list {
+  margin-top: 50px;
+}
+
+.main-services-page__list-item {
+  @include fontz('Montserrat', 400, 18px, normal);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $mGreen;
+    margin-right: 10px;
+  }
+}
+
+.services-page__second-main__title {
+  @include fontz('Montserrat', 600, 20px, normal);
+  display: none;
+  color: #fff;
+}
+
+.services-page__form-block {
+  position: relative;
+
+}
+
+.services-page__form-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: $gutter;
+  min-height: 700px;
+}
+
+.services-page__form-title {
+  @include fontz('Montserrat', 600, 30px, normal);
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.services-page__form-bg {
+  position: absolute;
+  left: 0;
+  background-image: url("../assets/images/sectionPageFormBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40%;
+}
+
+.services-page__form-content {
+  padding: $gutter;
+  grid-column: 2;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-page__form-text {
+  color: #000;
+  @include fontz('Montserrat', 500, 18px, normal);
+}
+
+.services-page__form {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.services-p__form-btn {
+  width: 270px;
+}

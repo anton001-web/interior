@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {worksList, worksListItems} from "../data/worksListData";
 import {motion} from "framer-motion";
-import Filter from "./Filter";
+import Filter from "./customComponents/Filter";
 
 const Section2 = () => {
     const [cards, setCards] = useState(worksList.filter(item => item.type === 'apartments'))
