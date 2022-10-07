@@ -21,6 +21,38 @@ export const hfLinks = [
     }
 ]
 
+export const headerDDList = [
+    {
+        title: 'Дизайн интерьера',
+        to: '/services/interior-design'
+    },
+    {
+        title: 'Отделочные работы',
+        to: '/services/des-works'
+    },
+    {
+        title: 'Авторская мебель',
+        to: '/services/furniture'
+    },
+    {
+        title: 'Авторский надзор',
+        to: '/services/auth-svision'
+    },
+    {
+        title: 'Декорирование',
+        to: '/services/decoration'
+    },
+    {
+        title: 'Согласование перепланировки',
+        to: '/services/redevelopment'
+    },
+    {
+        title: 'Архитектурное проектирование',
+        // to: '/services/architecture-designing'
+    }
+]
+
+
 export const footerNewLinks = [
     {
         title: 'Дизайн интерьера',

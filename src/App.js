@@ -14,6 +14,7 @@ import Section9 from "./components/Section9";
 import Footer from "./components/Footer";
 import {Routes, Route} from "react-router-dom";
 import ServicesPage from "./components/pages/ServicesPage";
+import ServicePage from "./components/pages/ServicePage";
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' exact element={<SummaryProject />}/>
                     <Route path='/services' exact element={<ServicesPage />}/>
+                    <Route path='/services/:serviceCategory' exact element={<ServicePage />}/>
                 </Routes>
             </Main>
             <Footer />

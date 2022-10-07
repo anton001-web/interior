@@ -1,4 +1,33 @@
 @media screen and (max-width: 767px) {
+  .custom-content__lr-section__wrap {
+    grid-template-columns: 100% !important;
+
+    .custom-content__lr-section-info__block {
+      grid-column: 1 !important;
+    }
+
+    .custom-content__lr-section__bg {
+      height: 350px;
+      grid-row: 2;
+    }
+  }
+
+  .custom-lr__sec-wrap__active-antSt {
+    grid-template-columns: 1fr !important;
+
+    .custom-lr__sec-bg {
+      left: 0 !important;
+      position: relative;
+      background-size: cover;
+      height: 300px;
+      width: 100%;
+    }
+
+    .custom-lr__sec-info__block {
+      grid-row: 2;
+    }
+  }
+
   .custom-lr__sec-bg {
     width: 40%;
   }
@@ -11,6 +40,8 @@
 }
 
 @media screen and (max-width: 580px) {
+
+
   .custom-lr__sec-wrap {
     grid-template-columns: 1fr !important;
   }

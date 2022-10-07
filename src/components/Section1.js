@@ -17,7 +17,7 @@ const Section1 = () => {
                         el: '.custom-swiper1-faction',
                         type: 'custom',
                         renderCustom: function (swiper, current, total) {
-                            return current + '/' + (total - 1);
+                            return current + '/' + (total);
                         }
                     }}
                     loop

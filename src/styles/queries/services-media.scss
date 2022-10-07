@@ -2,6 +2,22 @@
   .services-page__serv-list__bg {
     width: 45%;
   }
+
+  .spage-authC__subInfo-block {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .spage-authC__subInfo-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gutter;
+  }
+
+  .spage-authC__subInfo-list {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -12,6 +28,8 @@
 }
 
 @media screen and (max-width: 767px) {
+
+
   .services-page__serv-list__wrap {
     grid-template-columns: 1fr;
   }
@@ -52,9 +70,21 @@
     width: 220px;
     font-size: 14px;
   }
+
+  .custom-lr__sec-btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
 }
 
 @media screen and (max-width: 480px) {
+  .spage-authC__subInfo-list {
+    grid-template-columns: 1fr;
+  }
+
   .services-page__serv-list__bg {
     height: 350px;
   }

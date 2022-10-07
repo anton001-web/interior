@@ -6,17 +6,15 @@ import {useDispatch, useSelector} from "react-redux";
 import {dropdownToggle, toggleBurger} from "../store/actions";
 import {DROPDOWN_CLOSE} from "../store/types";
 import {hfLinks} from "../data/generalData";
+import {headerDDList} from "../data/generalData";
+import useMatchMedia from "use-match-media";
 
-const headerDDList = [
-    'Дизайн интерьера',
-    'Отделочные работы',
-    'Авторский надзор',
-    'Декорирование',
-    'Согласование перепланировки',
-    'Архитектурное проектирование',
+const queries = [
+    '(max-width: 767px)'
 ]
 
 const Header = () => {
+    const [tablet] = [useMatchMedia(queries) || false]
     const headerMenuOpen = React.createRef()
     const dispatch = useDispatch()
 
@@ -30,9 +28,9 @@ const Header = () => {
         return burger
     })
 
-    if(visible) {
+    if(visible && tablet) {
         document.documentElement.classList.add('scroll-active')
-    } else {
+    } else if(!visible) {
         document.documentElement.classList.remove('scroll-active')
         dispatch(dropdownToggle(DROPDOWN_CLOSE))
     }

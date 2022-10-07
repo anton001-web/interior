@@ -1,6 +1,6 @@
 import React from 'react'
 import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
-import {servicesLRtexts} from "../../data/servicesData";
+import {services, servicesLRtexts} from "../../data/servicesData";
 import {servicesMainList} from "../../data/generalData";
 import CustomInput from "../customComponents/CustomInput";
 
@@ -30,42 +30,17 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </div>
-            <CustomLeftRightSection
-                title='Дизайн интерьера'
-                text={servicesLRtexts.interiorText}
-                sideImg='./assets/images/services1.png'
-                isImgLeft={true}
-            />
-            <CustomLeftRightSection
-                title='Дизайн интерьера'
-                text={servicesLRtexts.interiorText}
-                sideImg='./assets/images/services2.png'
-                isImgLeft={false}
-            />
-            <CustomLeftRightSection
-                title='Дизайн интерьера'
-                text={servicesLRtexts.interiorText}
-                sideImg='./assets/images/services3.png'
-                isImgLeft={true}
-            />
-            <CustomLeftRightSection
-                title='Дизайн интерьера'
-                text={servicesLRtexts.interiorText}
-                sideImg='./assets/images/services4.png'
-                isImgLeft={false}
-            />
-            <CustomLeftRightSection
-                title='Дизайн интерьера'
-                text={servicesLRtexts.interiorText}
-                sideImg='./assets/images/services5.png'
-                isImgLeft={true}
-            />
-            <CustomLeftRightSection
-                title='Дизайн интерьера'
-                text={servicesLRtexts.interiorText}
-                sideImg='./assets/images/services6.png'
-                isImgLeft={false}
-            />
+            {
+                services.map((item, ind) => (
+                    <CustomLeftRightSection
+                        key={ind}
+                        title={item.title}
+                        text={item.text}
+                        sideImg={item.img}
+                        isImgLeft={(ind + 1) % 2 === 0 ? false : true}
+                    />
+                ))
+            }
             <div className="services-page__form-block">
                 <div className="container">
                     <div className="services-page__form-wrap">

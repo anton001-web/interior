@@ -1,0 +1,119 @@
+.des-works__page-priceList-table {
+  margin-top: 40px;
+  width: 100%;
+
+}
+
+.dsWp-prList__table-list__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  gap: $gutter;
+}
+
+.dsWp-prList__table-header {
+  margin-bottom: 20px;
+  gap: $gutter;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.dsWp-prList__table-title {
+  max-width: 335px;
+  @include fontz('Montserrat', 600, 18px, normal);
+  color: #fff;
+
+}
+
+.dsWp-prList__table__subHdrIn {
+  @include fontz('Montserrat', 400, 18px, normal);
+  color: #fff;
+}
+
+.dsWp-prList__table-td {
+  margin-right: 100px !important;
+}
+
+.dsWp-prList__table-list {
+  margin-top: 40px;
+}
+
+.dsWp-prList__table-list__item {
+  margin-bottom: 20px;
+}
+
+.dsWp-prList__table-list__item-text {
+  width: 100%;
+  @include fontz('Montserrat', 300, 15px, normal);
+  color: #fff;
+}
+
+.pricePolicy-swiper__controls-block {
+  display: flex;
+  align-items: center;
+}
+
+.custom-pricePolicy-swiper-fraction {
+  margin: 0 10px;
+  @include fontz('Montserrat', 400, 15px, normal);
+  color: #fff;
+}
+
+.pricePolicy-swiper__pag-count {
+  font-size: 20px;
+}
+
+.pricePolicy-swiper-button-prev, .pricePolicy-swiper-button-next {
+  font-size: 30px;
+  color: #fff;
+}
+
+.pricePolicy-swiper-button-prev.swiper-button-disabled, .pricePolicy-swiper-button-next.swiper-button-disabled {
+  color: #636e72
+}
+
+.des-works__mobile-privePolicy {
+  background-color: $mBlack;
+}
+
+.des-works__mobile-privePolicy__block {
+  padding: $gutter;
+}
+
+.des-works__mobile-privePolicy__accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.des-works__mobile-privePolicy__accordion-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.des-works__mobile-privePolicy__accordion {
+  margin-top: 40px;
+
+  .dsWp-prList__table-list__item, .dsWp-prList__table-header {
+    grid-template-columns: 4fr 1fr 1.7fr;
+  }
+}
+
+.des-works__mobile-privePolicy__accordion-item__header-title {
+  @include fontz('Montserrat', 600, 18px, normal);
+  color: $mGreen;
+}
+
+.desWorks-pp__accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s cubic-bezier(0,1,0,1);
+}
+
+.desWorks-pp__accordion-content.active {
+  height: auto;
+  max-height: 9999px;
+  transition: all .4s cubic-bezier(1,0,1,0);
+}

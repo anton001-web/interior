@@ -5,7 +5,7 @@
 
 .services-page__serv-list__wrap {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: $gutter;
 }
 
@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   height: 100%;
   width: 30%;
+  grid-column: 2;
 
   @media screen and (max-width: 767px) {
     background-image: url("../assets/images/tabletServiceMainImg.png");
@@ -81,7 +82,7 @@
 
 .services-page__form-bg {
   position: absolute;
-  left: 0;
+  right: 0;
   background-image: url("../assets/images/sectionPageFormBg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,7 +92,7 @@
 
 .services-page__form-content {
   padding: $gutter;
-  grid-column: 2;
+  grid-column: 1;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -112,3 +113,71 @@
 .services-p__form-btn {
   width: 270px;
 }
+
+.service-page__benefits-list__section {
+  min-height: 400px;
+  //background-image: url("../assets/images/servicesBenefitsBG.png");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-page__benefits-list__block {
+  padding: 50px 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-page__benefits-list-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.6);
+  z-index: -1;
+}
+
+.benefits-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.spage-authC__subInfo {
+  background-image: url('../assets/images/authPage-subInfoBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spage-authC__subInfo-block {
+  display: flex;
+  align-items: center;
+  padding: 80px $gutter;
+}
+
+.spage-authC__subInfo-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.spage-authC__subInfo-list__item {
+  list-style: disc;
+  @include fontz('Montserrat', 400, 20px, normal);
+  color: #fff;
+  margin-left: 20px;
+}
+
+

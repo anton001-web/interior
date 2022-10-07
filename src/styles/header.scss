@@ -117,8 +117,10 @@
   align-items: center;
 }
 
+.header-menu__block.menu-open__active {
+}
+
 .header-menu {
-  //transition: all 0.4s;
   z-index: 9999;
   position: absolute;
   padding: 40px;

@@ -53,8 +53,8 @@ const DropDownList = ({listItems, listTitle, className}) => {
                 >
                     {
                         listItems.map((item, ind) => (
-                            <Link className='dropdown-link' data-lb key={ind}>
-                                <div className='dropdown__item-title__block' data-ddtitle={item}><span className='dropdown__item-title'>{item}</span></div>
+                            <Link to={item.to} className='dropdown-link' data-lb key={ind}>
+                                <div className='dropdown__item-title__block' data-ddtitle={item}><span className='dropdown__item-title'>{item.title}</span></div>
                             </Link>
                         ))
                     }

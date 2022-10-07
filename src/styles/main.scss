@@ -15,8 +15,11 @@
 @import './section8.scss';
 @import './section9.scss';
 
+@import './pagesStyles/desWorks.scss';
+
 @import './customInput.scss';
 @import './customLR.scss';
+@import './customAdvList.scss';
 @import './services.scss';
 
 .container {
@@ -141,3 +144,6 @@ body {
 
 @import './queries/customLR-media.scss';
 @import './queries/services-media.scss';
+@import './queries/customAdvList-media.scss';
+
+@import './queries/pagesMediaQ/desWorks-media.scss';
