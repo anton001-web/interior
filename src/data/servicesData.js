@@ -53,9 +53,42 @@ export const currentServicesList = [
         LRsectionData: {
             title: 'Прайс-лист на отделочные работы',
             img: './assets/images/LRSectionDSWORKSBg.png',
-        }
+        },
+        benefitsList: [
+            {
+                title: 'Опыт работы более 10 лет',
+                img: './assets/images/advantages5.png',
+                text: 'Осуществляем задачи любой сложности - высокий профессионализм специалистов выполнить любые идеи дизайнеров с премиальным качеством работ.'
+            },
+            {
+                title: 'Страхование и гарантии',
+                img: './assets/images/advantages6.png',
+                text: 'Добровольное страхование объекта на весь период отделочных работ. Бесплатно исправляем все выявленные недочёты в течение двух лет после окончания ремонта.'
+            },
+            {
+                title: 'Комплексный подход',
+                img: './assets/images/advantages1.png',
+                text: 'Отвечаем за объект в целом. Гарантируем качество работ и обязательность смежников. Организация всех подрядчиков по единому графику сокращает сроки реализации объекта.'
+            },
+            {
+                title: 'Принцип одного окна',
+                img: './assets/images/messageIcoBNFT.png',
+                text: 'Работа в команде дизайнера и производителя работ позволяет оперативно решать все вопросы без Вашего прямого участия и вовлечения в проект, экономит Ваше время и нервы.'
+            },
+            {
+                title: 'Гарантированные сроки',
+                img: './assets/images/advantages2.png',
+                text: 'Выполняя абсолютно все работы, самостоятельно контролируя поставки материалов, гарантируем минимальные сроки производства работ.'
+            },
+            {
+                title: 'Удобная оплата',
+                img: './assets/images/advantages3.png',
+                text: 'Равномерное распределение оплаты работ на весь период строительства. Прозрачнось отчетности с ежемесячными фотоотчетами и актами выполенных работ.'
+            }
+        ],
     },
     {
+        formBg: './assets/images/auth-svision-formBg.png',
         title: 'Авторский надзор',
         img: './assets/images/services3.png',
         type: 'auth-svision',
@@ -93,9 +126,9 @@ export const currentServicesList = [
                 text: 'Вы можете быть уверены, что не придется внезапно увеличивать расходы на Ваш проект'
             }
         ],
-
     },
     {
+        formBg: './assets/images/decoration-formBg.png',
         title: 'Декорирование интерьера',
         img: './assets/images/services4.png',
         type: 'decoration',
@@ -162,6 +195,7 @@ export const currentServicesList = [
         ]
     },
     {
+        formBg: './assets/images/redevelopment-formBg.png',
         title: 'Согласование перепланировки',
         img: './assets/images/services5.png',
         type: 'redevelopment',

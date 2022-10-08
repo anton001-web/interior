@@ -1,4 +1,9 @@
 @media screen and (max-width: 767px) {
+  .custom-content__lr-section__bg-bottom-active {
+    grid-row: 2 !important;
+    grid-column: 1 !important;
+  }
+
   .custom-content__lr-section__wrap {
     grid-template-columns: 100% !important;
 

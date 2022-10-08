@@ -1,0 +1,17 @@
+.services-form__block {
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services-form {
+  margin-top: 40px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.services-form__btn {
+  width: 280px;
+}

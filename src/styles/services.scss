@@ -116,7 +116,6 @@
 
 .service-page__benefits-list__section {
   min-height: 400px;
-  //background-image: url("../assets/images/servicesBenefitsBG.png");
   background-size: cover;
   position: relative;
   display: flex;
@@ -124,7 +123,7 @@
   align-items: center;
 }
 
-.service-page__benefits-list__block {
+.benefits-list__block {
   padding: 50px 0;
   height: 100%;
   display: flex;
@@ -132,7 +131,7 @@
   align-items: center;
 }
 
-.services-page__benefits-list-overlay {
+.benefits-list-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -180,4 +179,23 @@
   margin-left: 20px;
 }
 
+.DWorksPage-bnft__list-sec {
+  min-height: 400px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.DWorksPage-bnft__list-sec__bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  opacity: 0.2;
+}

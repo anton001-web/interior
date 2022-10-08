@@ -3,11 +3,8 @@ import {useParams} from "react-router-dom";
 import {currentServicesList, servicesPricePolicyData} from "../../data/servicesData";
 import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import CustomAdvantagesList from "../customComponents/CustomAdvantagesList";
-import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
-import useMatchMedia from "use-match-media";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination} from "swiper";
 import PricePolicyDWorksPage from "../pagesComponents/PricePolicyDWorksPage";
+import ServicesForm from "../pagesComponents/ServicesForm";
 
 const ServicePage = () => {
     const params = useParams()
@@ -29,15 +26,12 @@ const ServicePage = () => {
                 params.serviceCategory === 'redevelopment' ||
                 params.serviceCategory === 'decoration' ||
                 params.serviceCategory === 'auth-svision' ? (
-                    <div className='service-page__benefits-list__section'>
-                        <img className='benefits-bg' src="./assets/images/servicesBenefitsBG.png" alt=""/>
-                        <div className='services-page__benefits-list-overlay'>
-
+                    <>
+                        <div className='service-page__benefits-list__section'>
+                            <CustomAdvantagesList list={currentServices[0].benefitsList} img='./assets/images/servicesBenefitsBG.png' bgColor='rgba(255, 255, 255, 0.7);'/>
                         </div>
-                        <div className='service-page__benefits-list__block'>
-                            <CustomAdvantagesList list={currentServices[0].benefitsList}/>
-                        </div>
-                    </div>
+                        <ServicesForm formBg={currentServices[0].formBg}/>
+                    </>
                 ) : params.serviceCategory === 'furniture' ? (
                     <div className='spage-authC__subInfo'>
                         <div className="container">
@@ -57,7 +51,12 @@ const ServicePage = () => {
             }
             {
                 params.serviceCategory === 'des-works' ? (
-                    <PricePolicyDWorksPage currentServices={currentServices}/>
+                    <>
+                        <PricePolicyDWorksPage currentServices={currentServices}/>
+                        <div className='DWorksPage-bnft__list-sec'>
+                            <CustomAdvantagesList list={currentServices[0].benefitsList} img='./assets/images/DWorksPage-bnftBg.png' bgColor='linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);'/>
+                        </div>
+                    </>
                 ) : null
             }
         </div>
