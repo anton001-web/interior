@@ -65,7 +65,7 @@ const Footer = () => {
                         <ul className='footer-socM-list'>
                             {
                                 footerSocMList.map((item, ind) => (
-                                    <div className='socm-list__item' data-start={item.start} data-end={item.end}>
+                                    <div key={ind} className='socm-list__item' data-start={item.start} data-end={item.end}>
                                         <img src={item.img} alt="img"/>
                                         <span>{item.title}</span>
                                     </div>

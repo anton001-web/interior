@@ -1,16 +1,24 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import {dropdownToggle} from "../../store/actions";
+import {burgerClose, dropdownToggle} from "../../store/actions";
 import {useDispatch, useSelector} from "react-redux";
 import {DROPDOWN_TOGGLE} from "../../store/types";
 import classNames from "classnames";
+import useMatchMedia from "use-match-media";
+import {closeBurgerMenu} from "../../otherFuncs/nullingStyles";
+import {logPlugin} from "@babel/preset-env/lib/debug";
 
 const DropDownList = ({listItems, listTitle, className}) => {
+    const [minHeightList] = [useMatchMedia('(max-height: 560px)') || false]
     const dispatch = useDispatch()
 
     const openHandle = () => {
         dispatch(dropdownToggle(DROPDOWN_TOGGLE))
+    }
+
+    const closeBurgerMenu = () => {
+        dispatch(burgerClose())
     }
 
     const {visible} = useSelector(store => {
@@ -30,6 +38,7 @@ const DropDownList = ({listItems, listTitle, className}) => {
 
         },
         animate: {
+            overflow: 'scroll',
             visibility: 'visible',
             height: 'auto',
             opacity: 1,
@@ -53,8 +62,8 @@ const DropDownList = ({listItems, listTitle, className}) => {
                 >
                     {
                         listItems.map((item, ind) => (
-                            <Link to={item.to} className='dropdown-link' data-lb key={ind}>
-                                <div className='dropdown__item-title__block' data-ddtitle={item}><span className='dropdown__item-title'>{item.title}</span></div>
+                            <Link to={item.to} className='dropdown-link' data-lb key={ind} onClick={closeBurgerMenu}>
+                                <div className='dropdown__item-title__block' data-ddtitle={item.title}><span className='dropdown__item-title'>{item.title}</span></div>
                             </Link>
                         ))
                     }

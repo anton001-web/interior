@@ -10,6 +10,8 @@ const ServicePage = () => {
     const params = useParams()
     const currentServices = currentServicesList.filter(item => item.type === params.serviceCategory)
 
+    console.log(navigator.userAgent)
+
     return (
         <div className='service-page'>
             <CustomLeftRightSection
@@ -40,7 +42,7 @@ const ServicePage = () => {
                                 <ul className='spage-authC__subInfo-list'>
                                     {
                                         currentServices[0].secSubInfo.list.map((item, ind) => (
-                                            <li className='spage-authC__subInfo-list__item'>{item}</li>
+                                            <li key={ind} className='spage-authC__subInfo-list__item'>{item}</li>
                                         ))
                                     }
                                 </ul>

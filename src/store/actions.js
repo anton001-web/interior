@@ -1,4 +1,4 @@
-import {BURGER_TOGGLE, DROPDOWN_TOGGLE} from "./types";
+import {BURGER_CLOSE, BURGER_TOGGLE, DROPDOWN_TOGGLE} from "./types";
 
 export const toggleBurger = () => {
     return {
@@ -9,5 +9,11 @@ export const toggleBurger = () => {
 export const dropdownToggle = (secType) => {
     return {
         type: secType,
+    }
+}
+
+export const burgerClose = () => {
+    return {
+        type: BURGER_CLOSE
     }
 }
