@@ -23,8 +23,8 @@ const LeftRightSectionCustomStyles = React.forwardRef((props, ref) => {
     return (
         <div className={`custom-content__lr-section ${className}`} ref={ref}>
             {/*<div className="container">*/}
-                <div className='custom-content__lr-section__wrap' style={{gridTemplateColumns: isImgLeft ? '47% 53%' : '47% 53%'}}>
-                    <div className={`custom-content__lr-section__bg ${!tabletImgTop ? 'custom-content__lr-section__bg-bottom-active' : null}`} style={bgStyles}>
+                <div className='custom-content__lr-section__wrap' style={{gridTemplateColumns: isImgLeft ? '50% 50%' : '50% 50%'}}>
+                    <div className={`custom-content__lr-section__bg ${!tabletImgTop ? 'custom-content__lr-section__bg-bottom-active' : 'custom-content__lr-section__bg-bottom-active'}`} style={bgStyles}>
 
                     </div>
                     <div className='custom-content__lr-section-info__block' style={{gridColumn: isImgLeft ? '2' : '1', backgroundColor: bgColor}}>

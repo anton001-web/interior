@@ -1,0 +1,32 @@
+@media screen and (max-width: 996px) {
+  .authSVP-priceBlock {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .authSVP-priceBlock__list-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .authSVP-priceBlock__btn {
+    width: 250px;
+    font-size: 14px;
+  }
+
+  .authSVP-priceBlock__wrap {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .authSVP-priceBlock__list-item__price {
+    font-size: 16px;
+  }
+
+
+  .authSVP-priceBlock__list-item__text {
+    font-size: 14px;
+  }
+}

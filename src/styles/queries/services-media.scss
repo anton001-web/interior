@@ -1,4 +1,12 @@
 @media screen and (max-width: 996px) {
+  .redevelopmentP-advList__block {
+    padding: 60px 0px;
+  }
+
+  .decorationPage-pBlock {
+    padding: 60px 0px;
+  }
+
   .services-page__serv-list__bg {
     width: 45%;
   }
@@ -28,7 +36,29 @@
 }
 
 @media screen and (max-width: 767px) {
+  .decorationPage-pBlock__dec-S__sq {
+    font-size: 16px;
+  }
 
+  .decorationPage-pBlock__subTitle {
+    font-size: 16px;
+  }
+
+  .decorationPage-pBlock__dec-S__text {
+    font-size: 14px;
+  }
+
+  .redevelopmentP-advList__item {
+    font-size: 16px;
+  }
+
+  .decorationPage-pBlock {
+    align-items: center;
+  }
+
+  .redevelopmentP-advList__block {
+    align-items: center;
+  }
 
   .services-page__serv-list__wrap {
     grid-template-columns: 1fr;
@@ -74,6 +104,10 @@
   .custom-lr__sec-btn {
     font-size: 14px;
   }
+
+  .benefits-list__block {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -87,5 +121,10 @@
 
   .services-page__serv-list__bg {
     height: 350px;
+  }
+
+  .decorationPage-pBlock__btn {
+    padding: 15px 0;
+    width: 270px;
   }
 }

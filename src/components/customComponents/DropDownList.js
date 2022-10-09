@@ -38,7 +38,6 @@ const DropDownList = ({listItems, listTitle, className}) => {
 
         },
         animate: {
-            overflow: 'scroll',
             visibility: 'visible',
             height: 'auto',
             opacity: 1,

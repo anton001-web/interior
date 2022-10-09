@@ -124,6 +124,7 @@
 }
 
 .benefits-list__block {
+  width: 80%;
   padding: 50px 0;
   height: 100%;
   display: flex;
@@ -198,4 +199,66 @@
   width: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
   opacity: 0.2;
+}
+
+.redevelopmentP-advList__block {
+  padding: 40px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.redevelopmentP-advList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.redevelopmentP-advList__item {
+  max-width: 600px;
+  list-style: disc;
+  margin-left: 16px;
+  @include fontz('Montserrat', 400, 18px, normal);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.decorationPage-pBlock {
+  padding: 40px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.decorationPage-pBlock__dec-S {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.decorationPage-pBlock__dec-S__sq {
+  @include fontz('Montserrat', 600, 20px, normal);
+  color: #fff;
+}
+
+.decorationPage-pBlock__dec-S__text {
+  @include fontz('Montserrat', 400, 20px, normal);
+  color: #fff;
+  max-width: 300px;
+}
+
+.decorationPage-pBlock__subTitle {
+  @include fontz('Montserrat', 700, 20px, normal);
+  color: $mGreen;
+  display: block;
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.decorationPage-pBlock__btn {
+  margin-top: 20px;
+  width: 300px;
 }

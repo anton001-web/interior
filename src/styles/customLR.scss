@@ -13,6 +13,11 @@
   width: 45%;
 }
 
+.custom-lr__sec-bg.isHalf {
+  width: 50%;
+  left: 50% !important;
+}
+
 .tabletTrue {
   left: 60% !important;
 }
@@ -97,8 +102,8 @@
 }
 
 .custom-container {
-  //max-width: 500px;
-  //margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .custom-content__lr-section-info__content {

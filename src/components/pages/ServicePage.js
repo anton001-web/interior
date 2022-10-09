@@ -5,6 +5,9 @@ import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import CustomAdvantagesList from "../customComponents/CustomAdvantagesList";
 import PricePolicyDWorksPage from "../pagesComponents/PricePolicyDWorksPage";
 import ServicesForm from "../pagesComponents/ServicesForm";
+import ReDevAdv from "../../assets/images/ReDevAdv";
+import AuthSVpPriceBlock from "../pagesComponents/AuthSVpPriceBlock";
+import DecorPPriceBlock from "../pagesComponents/DecorPPriceBlock";
 
 const ServicePage = () => {
     const params = useParams()
@@ -23,6 +26,7 @@ const ServicePage = () => {
                 btnText={currentServices[0].title.split(' ').pop()}
                 btnType='btn-whtB'
                 isTitleClone={true}
+                isHalf={true}
             />
             {
                 params.serviceCategory === 'redevelopment' ||
@@ -32,6 +36,11 @@ const ServicePage = () => {
                         <div className='service-page__benefits-list__section'>
                             <CustomAdvantagesList list={currentServices[0].benefitsList} img='./assets/images/servicesBenefitsBG.png' bgColor='rgba(255, 255, 255, 0.7);'/>
                         </div>
+                        {
+                            params.serviceCategory === 'redevelopment' ? (<ReDevAdv list={currentServices[0].redevAdvList}/>) :
+                            params.serviceCategory === 'decoration' ? <DecorPPriceBlock decorS={currentServices[0].decorSq} /> :
+                            params.serviceCategory === 'auth-svision' ? <AuthSVpPriceBlock priceBlockList={currentServices[0].priceBlockList} /> : null
+                        }
                         <ServicesForm formBg={currentServices[0].formBg}/>
                     </>
                 ) : params.serviceCategory === 'furniture' ? (
