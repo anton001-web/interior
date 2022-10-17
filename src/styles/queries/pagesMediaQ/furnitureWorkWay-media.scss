@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px) {
+  .furniture-page__workway-item__title {
+    font-size: 18px;
+  }
+
+  .furniture-page__workway-item__text {
+    font-size: 16px;
+  }
+
+  .furniture-custom-workway-lr {
+    .custom-content__lr-section__wrap {
+      grid-template-columns: 30% 70% !important;
+    }
+
+    .custom-content__lr-section__wrap .custom-content__lr-section__bg {
+      height: 100%;
+      grid-row: 1;
+    }
+
+    .custom-content__lr-section__wrap .custom-content__lr-section-info__block {
+      grid-column: 2 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .furniture-custom-workway-lr {
+    .custom-content__lr-section__wrap {
+      grid-template-columns: 100% !important;
+    }
+
+    .custom-content__lr-section__wrap .custom-content__lr-section__bg {
+      display: none;
+    }
+
+    .custom-content__lr-section__wrap .custom-content__lr-section-info__block {
+      grid-column: 1 !important;
+    }
+  }
+}
+

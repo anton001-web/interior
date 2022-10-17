@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftRightSectionCustomStyles from "../../components/customComponents/LeftRightSectionCustomStyles";
+import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
 
 const ReDevAdv = ({list}) => {
     return (

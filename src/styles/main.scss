@@ -15,10 +15,6 @@
 @import './section8.scss';
 @import './section9.scss';
 
-@import './pagesStyles/desWorks.scss';
-@import './pagesStyles/servicesForm.scss';
-@import './pagesStyles/authSVPpriceBlock.scss';
-
 @import './customInput.scss';
 @import './customLR.scss';
 @import './customAdvList.scss';
@@ -147,7 +143,4 @@ body {
 @import './queries/customLR-media.scss';
 @import './queries/services-media.scss';
 @import './queries/customAdvList-media.scss';
-
-@import './queries/pagesMediaQ/desWorks-media.scss';
-@import './queries/pagesMediaQ/servicesForm-media.scss';
-@import './queries/pagesMediaQ/authSVPpriceBlock-media.scss';
+@import './cPagesSTgroup.scss';

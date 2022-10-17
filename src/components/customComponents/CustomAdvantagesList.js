@@ -13,6 +13,7 @@ const CustomAdvantagesList = ({list, img, bgColor}) => {
                         {
                             list.map((item, ind) => (
                                 <CustomAdvantagesListItem
+                                    key={ind}
                                     text={item.text}
                                     ico={item.img}
                                     list={item.clarifyinglist}

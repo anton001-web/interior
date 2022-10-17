@@ -5,9 +5,12 @@ import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import CustomAdvantagesList from "../customComponents/CustomAdvantagesList";
 import PricePolicyDWorksPage from "../pagesComponents/PricePolicyDWorksPage";
 import ServicesForm from "../pagesComponents/ServicesForm";
-import ReDevAdv from "../../assets/images/ReDevAdv";
+import ReDevAdv from "../pagesComponents/ReDevAdv";
 import AuthSVpPriceBlock from "../pagesComponents/AuthSVpPriceBlock";
 import DecorPPriceBlock from "../pagesComponents/DecorPPriceBlock";
+import FurnitureAdv from "../pagesComponents/FurnitureAdv";
+import FurnitureWorkWay from "../pagesComponents/FurnitureWorkWay";
+import DesWorksInsurance from "../pagesComponents/DesWorksInsurance";
 
 const ServicePage = () => {
     const params = useParams()
@@ -44,20 +47,10 @@ const ServicePage = () => {
                         <ServicesForm formBg={currentServices[0].formBg}/>
                     </>
                 ) : params.serviceCategory === 'furniture' ? (
-                    <div className='spage-authC__subInfo'>
-                        <div className="container">
-                            <div className="spage-authC__subInfo-block">
-                                <h1 className='spage-authC__subInfo-title title-white'>{currentServices[0].secSubInfo.title}</h1>
-                                <ul className='spage-authC__subInfo-list'>
-                                    {
-                                        currentServices[0].secSubInfo.list.map((item, ind) => (
-                                            <li key={ind} className='spage-authC__subInfo-list__item'>{item}</li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <>
+                        <FurnitureAdv category={currentServices} />
+                        <FurnitureWorkWay secData={currentServices[0].workwayData}/>
+                    </>
                 ) : null
             }
             {
@@ -67,6 +60,7 @@ const ServicePage = () => {
                         <div className='DWorksPage-bnft__list-sec'>
                             <CustomAdvantagesList list={currentServices[0].benefitsList} img='./assets/images/DWorksPage-bnftBg.png' bgColor='linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);'/>
                         </div>
+                        <DesWorksInsurance insuranceData={currentServices[0].insuranceData}/>
                     </>
                 ) : null
             }

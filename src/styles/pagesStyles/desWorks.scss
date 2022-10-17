@@ -115,5 +115,25 @@
 .desWorks-pp__accordion-content.active {
   height: auto;
   max-height: 9999px;
-  transition: all .4s cubic-bezier(1,0,1,0);
+  transition: all .4s cubic-bezier(1, 0, 1, 0);
+}
+
+.dswp-insurance__list-block {
+  margin-top: 70px;
+}
+
+.dswp-insurance__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dswp-insurance__list-item__title {
+  @include fontz('Montserrat', 600, 20px, normal);
+  margin-bottom: 15px;
+}
+
+.dswp-insurance__list-item__text {
+  margin-bottom: 5px;
+  max-width: 700px;
+  @include fontz('Montserrat', 400, 18px, normal);
 }

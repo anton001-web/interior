@@ -11,7 +11,9 @@ const LeftRightSectionCustomStyles = React.forwardRef((props, ref) => {
         titleColor,
         className,
         titleHide,
-        tabletImgTop
+        tabletImgTop,
+        isntHalf,
+        minHeight = 450
     } = props
 
     const bgStyles = {
@@ -20,10 +22,15 @@ const LeftRightSectionCustomStyles = React.forwardRef((props, ref) => {
         backgroundImage: `url(${img})`,
     }
 
+    const wrapSt = {
+        minHeight: minHeight + 'px',
+        gridTemplateColumns: isImgLeft ? `${isntHalf ? '45% 55%' : '50% 50%'}` : `${isntHalf ? '55% 45%' : '50% 50%'}`
+    }
+
     return (
-        <div className={`custom-content__lr-section ${className}`} ref={ref}>
+        <div className={`custom-content__lr-section ${className}`} ref={ref} style={{minHeight: minHeight + 'px'}}>
             {/*<div className="container">*/}
-                <div className='custom-content__lr-section__wrap' style={{gridTemplateColumns: isImgLeft ? '50% 50%' : '50% 50%'}}>
+                <div className='custom-content__lr-section__wrap' style={wrapSt}>
                     <div className={`custom-content__lr-section__bg ${!tabletImgTop ? 'custom-content__lr-section__bg-bottom-active' : 'custom-content__lr-section__bg-bottom-active'}`} style={bgStyles}>
 
                     </div>
