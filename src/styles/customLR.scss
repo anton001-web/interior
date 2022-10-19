@@ -104,6 +104,12 @@
 .custom-container {
   max-width: 800px;
   margin: 0 auto;
+
+  &.customC-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .custom-content__lr-section-info__content {

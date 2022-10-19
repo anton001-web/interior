@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import {useParams} from "react-router-dom";
-import {currentServicesList, servicesPricePolicyData} from "../../data/servicesData";
+import {completedProejcts, currentServicesList, servicesPricePolicyData} from "../../data/servicesData";
 import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import CustomAdvantagesList from "../customComponents/CustomAdvantagesList";
 import PricePolicyDWorksPage from "../pagesComponents/PricePolicyDWorksPage";
@@ -11,6 +11,8 @@ import DecorPPriceBlock from "../pagesComponents/DecorPPriceBlock";
 import FurnitureAdv from "../pagesComponents/FurnitureAdv";
 import FurnitureWorkWay from "../pagesComponents/FurnitureWorkWay";
 import DesWorksInsurance from "../pagesComponents/DesWorksInsurance";
+import FrntPForm from "../pagesComponents/FrntPForm";
+import DswpCmptProjects from "../pagesComponents/DswpCmptProjects";
 
 const ServicePage = () => {
     const params = useParams()
@@ -44,12 +46,13 @@ const ServicePage = () => {
                             params.serviceCategory === 'decoration' ? <DecorPPriceBlock decorS={currentServices[0].decorSq} /> :
                             params.serviceCategory === 'auth-svision' ? <AuthSVpPriceBlock priceBlockList={currentServices[0].priceBlockList} /> : null
                         }
-                        <ServicesForm formBg={currentServices[0].formBg}/>
+                        <ServicesForm formBg={currentServices[0].formBg} inputsList={currentServices[0].formInputs}/>
                     </>
                 ) : params.serviceCategory === 'furniture' ? (
                     <>
                         <FurnitureAdv category={currentServices} />
                         <FurnitureWorkWay secData={currentServices[0].workwayData}/>
+                        <FrntPForm formData={currentServices[0].formData}/>
                     </>
                 ) : null
             }
@@ -61,6 +64,7 @@ const ServicePage = () => {
                             <CustomAdvantagesList list={currentServices[0].benefitsList} img='./assets/images/DWorksPage-bnftBg.png' bgColor='linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);'/>
                         </div>
                         <DesWorksInsurance insuranceData={currentServices[0].insuranceData}/>
+                        <DswpCmptProjects data={completedProejcts}/>
                     </>
                 ) : null
             }

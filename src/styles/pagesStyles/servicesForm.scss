@@ -1,17 +1,19 @@
-.services-form__block {
-  min-height: 450px;
+.custom-services-form__block {
+  padding: $gutter;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fff;
 }
 
-.services-form {
+.custom-services-form {
   margin-top: 40px;
   max-width: 350px;
   width: 100%;
 }
 
-.services-form__btn {
+.custom-services-form__btn {
   width: 280px;
 }

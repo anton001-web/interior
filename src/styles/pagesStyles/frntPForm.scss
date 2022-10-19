@@ -1,0 +1,46 @@
+.frntP-form__section {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frntP-form__body {
+  min-height: 600px;
+  padding: 60px $gutter;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gutter;
+}
+
+.frntP-form__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frntP-form__info-title {
+  max-width: 465px;
+}
+
+.frntP-form__info-text {
+  color: #fff;
+  max-width: 505px;
+  @include fontz('Montserrat', 300, 15px, normal);
+  margin-bottom: 15px;
+}
+
+.frntP-form__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frntP-form__info-text__group {
+  margin-top: 40px;
+}
+
+.frntP-form {
+  width: 100%;
+  max-width: 550px;
+}

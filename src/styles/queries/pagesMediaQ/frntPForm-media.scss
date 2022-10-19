@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px) {
+  .frntP-form__body {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .frntP-form__info {
+    padding: $gutter;
+    background-color: red;
+    min-height: 500px;
+
+    .frntP-form__info-text {
+      font-size: 14px;
+    }
+  }
+}

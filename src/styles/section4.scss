@@ -35,6 +35,10 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  &[data-last='7'] {
+    margin-bottom: 0;
+  }
 }
 
 .services-list__item-title {

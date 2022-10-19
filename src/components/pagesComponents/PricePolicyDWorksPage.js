@@ -24,11 +24,11 @@ const PricePolicyDWorksPage = ({currentServices}) => {
                         titleColor='white'
                         bgColor='#171717'
                         className={currentServices[0].type}
+                        minHeight='100vh'
                     >
                         <div className='des-works__page-priceList__block'>
                             <div className="des-works__page-priceList-table">
                                 <Swiper
-
                                     className='pricePolicy-swiper'
                                     slidesPerView={1}
                                     modules={[Navigation, Pagination]}

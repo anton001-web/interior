@@ -137,6 +137,16 @@ export const currentServicesList = [
         ],
     },
     {
+        formInputs: [
+            {
+                inputId: 'authSV-custom-name-input',
+                placeholder: 'Как к вам обращаться '
+            },
+            {
+                inputId: 'authSV-custom-phone-input',
+                placeholder: 'Номер телефона'
+            }
+        ],
         formBg: './assets/images/auth-sVision-formBg.png',
         title: 'Авторский надзор',
         img: './assets/images/services3.png',
@@ -199,6 +209,16 @@ export const currentServicesList = [
         ],
     },
     {
+        formInputs: [
+            {
+                inputId: 'decor-custom-name-input',
+                placeholder: 'Как к вам обращаться '
+            },
+            {
+                inputId: 'decor-custom-phone-input',
+                placeholder: 'Номер телефона'
+            }
+        ],
         formBg: './assets/images/decoration-formBg.png',
         title: 'Декорирование интерьера',
         img: './assets/images/services4.png',
@@ -267,6 +287,16 @@ export const currentServicesList = [
         ]
     },
     {
+        formInputs: [
+            {
+                inputId: 'redev-custom-name-input',
+                placeholder: 'Как к вам обращаться '
+            },
+            {
+                inputId: 'redev-custom-phone-input',
+                placeholder: 'Номер телефона'
+            }
+        ],
         formBg: './assets/images/redevelopment-formBg.png',
         title: 'Согласование перепланировки',
         img: './assets/images/services5.png',
@@ -303,6 +333,26 @@ export const currentServicesList = [
         ]
     },
     {
+        formData: {
+            formTitle: 'Авторская мебель от студии интерьера CUSTOM MADE',
+            formTexts: [
+                'Дизайн авторской мебели разрабатывается    в соответствии с Вашими пожеланиями.',
+                'При этом учитываются размеры помещения, общий стиль интерьера, оформление уже имеющейся в помещении мебели.',
+                'Мебель авторской работы удачно впишется в уже существующий интерьер, или создаст неповторимые акценты.',
+            ],
+            formBg: './assets/images/frntFormBg.png',
+            formBgTablet: './assets/images/frntFormBgTablet.png',
+            formInputs: [
+                {
+                    inputId: 'frnt-custom-name-input',
+                    placeholder: 'Как к вам обращаться '
+                },
+                {
+                    inputId: 'frnt-custom-phone-input',
+                    placeholder: 'Номер телефона'
+                }
+            ],
+        },
         title: 'Авторская мебель',
         img: './assets/images/services7.png',
         pageHeroFirstText: 'Несомненным преимуществом мебели авторской работы является ее уникальность. ',
@@ -762,3 +812,84 @@ export const servicesPricePolicyData = [
         ]
     },
 ]
+
+export const allCompletedProjectsMob = [
+    {img: './assets/images/cmpPrjs1.png'},
+    {img: './assets/images/cmpPrjs2.png'},
+    {img: './assets/images/cmpPrjs3.png'},
+    {img: './assets/images/cmpPrjs4.png'},
+    {img: './assets/images/cmpPrjs5.png'},
+    {img: './assets/images/cmpPrjs6.png'},
+    {img: './assets/images/cmpPrjs1.png'},
+    {img: './assets/images/cmpPrjs2.png'},
+    {img: './assets/images/cmpPrjs3.png'},
+    {img: './assets/images/cmpPrjs4.png'},
+    {img: './assets/images/cmpPrjs5.png'},
+    {img: './assets/images/cmpPrjs6.png'},
+    {img: './assets/images/cmpPrjs1.png'},
+    {img: './assets/images/cmpPrjs2.png'},
+    {img: './assets/images/cmpPrjs3.png'},
+    {img: './assets/images/cmpPrjs4.png'},
+    {img: './assets/images/cmpPrjs5.png'},
+    {img: './assets/images/cmpPrjs6.png'}
+]
+
+export const completedProejcts = {
+    title: 'Реализованные проекты',
+    list: [
+        {
+            imgList: [
+                {img: './assets/images/cmpPrjs1.png'},
+                {img: './assets/images/cmpPrjs2.png'},
+                {img: './assets/images/cmpPrjs3.png'},
+                {img: './assets/images/cmpPrjs4.png'},
+                {img: './assets/images/cmpPrjs5.png'},
+                {img: './assets/images/cmpPrjs6.png'}
+            ],
+        },
+        {
+            imgList: [
+                {img: './assets/images/cmpPrjs1.png'},
+                {img: './assets/images/cmpPrjs2.png'},
+                {img: './assets/images/cmpPrjs3.png'},
+                {img: './assets/images/cmpPrjs4.png'},
+                {img: './assets/images/cmpPrjs5.png'},
+                {img: './assets/images/cmpPrjs6.png'}
+
+            ],
+        },
+        {
+            imgList: [
+                {img: './assets/images/cmpPrjs1.png'},
+                {img: './assets/images/cmpPrjs2.png'},
+                {img: './assets/images/cmpPrjs3.png'},
+                {img: './assets/images/cmpPrjs4.png'},
+                {img: './assets/images/cmpPrjs5.png'},
+                {img: './assets/images/cmpPrjs6.png'}
+
+            ],
+        },
+        {
+            imgList: [
+                {img: './assets/images/cmpPrjs1.png'},
+                {img: './assets/images/cmpPrjs2.png'},
+                {img: './assets/images/cmpPrjs3.png'},
+                {img: './assets/images/cmpPrjs4.png'},
+                {img: './assets/images/cmpPrjs5.png'},
+                {img: './assets/images/cmpPrjs6.png'}
+
+            ],
+        },
+        {
+            imgList: [
+                {img: './assets/images/cmpPrjs1.png'},
+                {img: './assets/images/cmpPrjs2.png'},
+                {img: './assets/images/cmpPrjs3.png'},
+                {img: './assets/images/cmpPrjs4.png'},
+                {img: './assets/images/cmpPrjs5.png'},
+                {img: './assets/images/cmpPrjs6.png'}
+
+            ],
+        },
+    ]
+}

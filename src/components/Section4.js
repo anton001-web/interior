@@ -14,7 +14,7 @@ const Section4 = () => {
                         <div className='services-list'>
                             {
                                 services.map((item, ind) => (
-                                    <div key={ind} className='services-list__item'>
+                                    <div key={ind} className='services-list__item' data-last={ind + 1}>
                                         <div className='mobile-gutter'>
                                             <div className='services-list__item-text__group'>
                                                 <h3 className='services-list__item-title'>{item.title}</h3>
