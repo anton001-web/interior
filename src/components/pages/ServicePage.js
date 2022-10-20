@@ -13,12 +13,12 @@ import FurnitureWorkWay from "../pagesComponents/FurnitureWorkWay";
 import DesWorksInsurance from "../pagesComponents/DesWorksInsurance";
 import FrntPForm from "../pagesComponents/FrntPForm";
 import DswpCmptProjects from "../pagesComponents/DswpCmptProjects";
+import DswpAgrmnt from "../pagesComponents/DswpAgrmnt";
+import DswpForm from "../pagesComponents/DswpForm";
 
 const ServicePage = () => {
     const params = useParams()
     const currentServices = currentServicesList.filter(item => item.type === params.serviceCategory)
-
-    console.log(navigator.userAgent)
 
     return (
         <div className='service-page'>
@@ -65,6 +65,8 @@ const ServicePage = () => {
                         </div>
                         <DesWorksInsurance insuranceData={currentServices[0].insuranceData}/>
                         <DswpCmptProjects data={completedProejcts}/>
+                        <DswpAgrmnt />
+                        <DswpForm formData={currentServices[0].formData}/>
                     </>
                 ) : null
             }

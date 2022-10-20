@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
 }
 
 .custom-services-form {
@@ -16,4 +15,15 @@
 
 .custom-services-form__btn {
   width: 280px;
+}
+
+.custom-services-form__overlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 70%;
+  background: #fff;
 }

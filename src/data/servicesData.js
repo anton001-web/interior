@@ -45,6 +45,20 @@ export const currentServicesList = [
         pageHeroSecondText: 'Подготовим проектную документацию, согласуем перепланировку и переоборудование квартир и нежилых помещений.',
     },
     {
+        formData: {
+            formTitle: 'Интересуют другие виды работ?',
+            formInputs: [
+                {
+                    inputId: 'redev-custom-name-input',
+                    placeholder: 'Как к вам обращаться '
+                },
+                {
+                    inputId: 'redev-custom-phone-input',
+                    placeholder: 'Номер телефона'
+                }
+            ],
+            formBg: './assets/images/dswpFormbg.png',
+        },
         title: 'Отделочные работы',
         img: './assets/images/services2.png',
         type: 'des-works',

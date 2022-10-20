@@ -2,11 +2,14 @@ import React from 'react'
 import CustomInput from "./CustomInput";
 import classNames from "classnames";
 
-const CustomForm = ({inputsList, className = 'undefined'}) => {
+const CustomForm = ({bgOpacity, formTitle = 'Нужна консультация?', inputsList, className = 'undefined'}) => {
     return (
-        <div className={classNames(`custom-services-form__block ${className}`)} >
+        <div className={classNames(`custom-services-form__block ${className}`)} style={{backgroundColor: !bgOpacity ? '#fff' : null}}>
+            {bgOpacity && (
+                <div className='custom-services-form__overlay'></div>
+            )}
             <div className='custom-services-form__wrap'>
-                <h1 className='custom-services-form__block-title title-black'>Нужна консультация?</h1>
+                <h1 className='custom-services-form__block-title title-black'>{formTitle}</h1>
                 <form className='custom-services-form'>
                     {
                         inputsList.map((input, ind) => (

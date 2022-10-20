@@ -1,4 +1,19 @@
+@media screen and (max-width: 996px) {
+  .dswp-loadAgr__btn-block {
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .dswp-agreement__text {
+    font-size: 16px;
+  }
+
+  .dswp-loadAgr__btn {
+    font-size: 14px;
+    width: 180px;
+  }
+
   .dswp-insurance__list-item__title {
     font-size: 18px;
   }
@@ -9,12 +24,46 @@
 }
 
 @media screen and (max-width: 480px) {
+  .dswp-form {
+    .custom-services-form__btn {
+      width: 230px;
+      font-size: 14px;
+    }
+  }
+
+  .dswp-agreement__text {
+    color: #fff;
+  }
+
+  .dswp-agreement__overlay {
+    background-color: $mBlack;
+  }
+
+  .dswp-agreement-info__block {
+    flex-direction: column;
+  }
+
   .dsWp-prList__table__subHdrIn {
     font-size: 14px;
   }
 
   .dsWp-prList__table-list__item-text {
     font-size: 13px;
+  }
+
+  .dswp-agreement__title {
+    img {
+      margin-left: 5px;
+    }
+  }
+
+  .dswp-agreement__title {
+    color: #fff;
+  }
+
+  .dswp-loadAgr__btn {
+    font-size: 16px;
+    width: 220px;
   }
 }
 
