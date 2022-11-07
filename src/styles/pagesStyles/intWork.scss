@@ -1,0 +1,198 @@
+.int-work__pl-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: $gutter;
+}
+
+.int-work__pl-header__text-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.int-work__pl-block {
+  padding: 60px 0;
+}
+
+.int-work__pl-title {
+  @include fontz('Montserrat', 600, 20px, normal);
+  padding-bottom: 5px;
+  border-bottom: 1px solid $mGreen;
+}
+
+.int-work__pl-price__clone {
+  margin-top: 30px;
+  margin-left: 12px;
+  @include fontz('Montserrat', 600, 20px, normal);
+  display: none;
+}
+
+.int-work__pl-price {
+  @include fontz('Montserrat', 600, 20px, normal);
+}
+
+.int-work__pl-subTitle {
+  @include fontz('Montserrat', 700, 14px, normal);
+  color: $mGreen;
+  margin-top: 5px;
+}
+
+.int-work__pl-list__block {
+  margin-top: 50px;
+}
+
+.int-work__pl-list__item {
+  display: flex;
+  align-items: start;
+  list-style: none;
+  margin-bottom: 5px;
+  @include fontz('Montserrat', 400, 18px, normal);
+
+  &::before {
+    padding: 2px;
+    margin: 10px;
+    display: block;
+    content: '';
+    border-radius: 50%;
+    background-color: #000;
+  }
+}
+
+.int-work__pl-footer {
+  gap: $gutter;
+  margin-top: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.int-work__pl-btn {
+  width: 200px;
+}
+
+.int-work__pl-downloadBtn {
+  @include fontz('Montserrat', 300, 18px, normal);
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  padding-bottom: 5px;
+}
+
+.int-work__lr-section {
+  .custom-content__lr-section-info__block {
+    padding: 0;
+    background: #F7F4F2;
+  }
+
+  .custom-content__lr-section-info__content {
+    padding: 50px 20px;
+  }
+}
+
+//compound section styles
+
+.intW-page__compound-body {
+
+}
+
+.intW-page__compound-lists__group {
+  gap: $gutter;
+}
+
+.intW-page__compound-listC__wrap {
+  height: 100%;
+}
+
+.intW-page__compound-docm__list-block {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding: $gutter;
+}
+
+.intW-page__compound-equipment__list-block {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: $gutter;
+}
+
+.intW-page__compound-form__block {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.intW-page__compound-lists__group {
+  margin-top: 50px;
+}
+
+.intW-page__compound-list__title {
+  @include fontz('Montserrat', 600, 18px, normal);
+}
+
+.intW-page__compound-title {
+  margin: 60px $gutter;
+}
+
+.intW-page__compound-list {
+  margin-top: 20px;
+}
+
+.intW-page__compound-list__item {
+  @include fontz('Montserrat', 400, 15px, normal);
+  margin-bottom: 10px;
+  max-width: 520px;
+  display: flex;
+  width: 100%;
+}
+
+.intW-page__compound-list__item-numb {
+  display: block;
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+.intW-page__compound-form__block {
+
+}
+
+.intW-page__compound-form__block {
+  margin-top: 40px;
+}
+
+.intW-page__compound-form__wrap {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+.intW-page__compound-form {
+  min-height: 390px;
+
+  .custom-services-form__wrap {
+    z-index: 100;
+  }
+
+  .custom-services-form__block {
+    padding: 0;
+  }
+
+  input {
+    border-bottom-color: #fff;
+  }
+}
+
+.intW-page__compound-form__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intW-page__compound-form__overlay {
+  z-index: 1;
+  position: absolute;
+  height: 105%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+}

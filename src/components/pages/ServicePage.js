@@ -1,6 +1,11 @@
 import React, {useEffect} from 'react'
 import {useParams} from "react-router-dom";
-import {completedProejcts, currentServicesList, servicesPricePolicyData} from "../../data/servicesData";
+import {
+    completedProejcts,
+    currentServicesList,
+    interiorDPrices,
+    servicesPricePolicyData
+} from "../../data/servicesData";
 import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import CustomAdvantagesList from "../customComponents/CustomAdvantagesList";
 import PricePolicyDWorksPage from "../pagesComponents/PricePolicyDWorksPage";
@@ -15,6 +20,7 @@ import FrntPForm from "../pagesComponents/FrntPForm";
 import DswpCmptProjects from "../pagesComponents/DswpCmptProjects";
 import DswpAgrmnt from "../pagesComponents/DswpAgrmnt";
 import DswpForm from "../pagesComponents/DswpForm";
+import IntWorkPage from "../pagesComponents/IntWorkPage";
 
 const ServicePage = () => {
     const params = useParams()
@@ -68,6 +74,8 @@ const ServicePage = () => {
                         <DswpAgrmnt />
                         <DswpForm formData={currentServices[0].formData}/>
                     </>
+                ) : params.serviceCategory === 'interior-design' ? (
+                    <IntWorkPage priceList={interiorDPrices} generalData={currentServices[0]}/>
                 ) : null
             }
         </div>

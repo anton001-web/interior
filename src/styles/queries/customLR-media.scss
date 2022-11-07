@@ -4,10 +4,6 @@
     grid-column: 1 !important;
   }
 
-  .custom-content__lr-section__bg-bottom-active {
-    grid-row: 1 !important;
-  }
-
   .custom-content__lr-section__wrap {
     grid-template-columns: 100% !important;
 
@@ -49,8 +45,6 @@
 }
 
 @media screen and (max-width: 580px) {
-
-
   .custom-lr__sec-wrap {
     grid-template-columns: 1fr !important;
   }
