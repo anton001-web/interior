@@ -31,15 +31,19 @@
     }
   }
 
-  .dswp-agreement__text {
+  .agreement__title {
     color: #fff;
   }
 
-  .dswp-agreement__overlay {
+  .agreement__text {
+    color: #fff;
+  }
+
+  .agreement__overlay {
     background-color: $mBlack;
   }
 
-  .dswp-agreement-info__block {
+  .agreement-info__block {
     flex-direction: column;
   }
 

@@ -2,7 +2,6 @@ export const worksListItems = [
     {title: 'Квартиры', type: 'apartments'},
     {title: 'Коттеджи', type: 'cottages'},
     {title: 'Коммерческая', type: 'commercial'},
-    {title: 'Все', type: 'all'},
 ]
 
 export const worksList = [
@@ -37,8 +36,6 @@ export const worksList = [
             {img: './assets/images/worksList2.png', title: 'ЖК Триумф Парк'},
             {img: './assets/images/worksList3.png', title: 'ЖК Триумф Парк'},
             {img: './assets/images/worksList4.png', title: 'ЖК Триумф Парк'},
-            {img: './assets/images/worksList5.png', title: 'ЖК Триумф Парк'},
-            {img: './assets/images/worksList6.png', title: 'ЖК Триумф Парк'},
             {img: './assets/images/worksList7.png', title: 'ЖК Триумф Парк'},
 
         ]

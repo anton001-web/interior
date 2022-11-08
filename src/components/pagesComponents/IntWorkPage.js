@@ -2,6 +2,8 @@ import React from 'react'
 import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
 import IntWorkPListItem from "./IntWorkPListItem";
 import CustomForm from "../customComponents/CustomForm";
+import Section2 from "../Section2";
+import Agreement from "./Agreement";
 
 const IntWorkPage = ({priceList, generalData}) => {
     const {
@@ -60,6 +62,8 @@ const IntWorkPage = ({priceList, generalData}) => {
                     </div>
                 </div>
             </div>
+            <Section2 />
+            <Agreement alwaysBlack={true} className='intW-page__agreement-section'/>
         </section>
     )
 }

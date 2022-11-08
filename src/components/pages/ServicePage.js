@@ -18,7 +18,7 @@ import FurnitureWorkWay from "../pagesComponents/FurnitureWorkWay";
 import DesWorksInsurance from "../pagesComponents/DesWorksInsurance";
 import FrntPForm from "../pagesComponents/FrntPForm";
 import DswpCmptProjects from "../pagesComponents/DswpCmptProjects";
-import DswpAgrmnt from "../pagesComponents/DswpAgrmnt";
+import Agreement from "../pagesComponents/Agreement";
 import DswpForm from "../pagesComponents/DswpForm";
 import IntWorkPage from "../pagesComponents/IntWorkPage";
 
@@ -71,7 +71,7 @@ const ServicePage = () => {
                         </div>
                         <DesWorksInsurance insuranceData={currentServices[0].insuranceData}/>
                         <DswpCmptProjects data={completedProejcts}/>
-                        <DswpAgrmnt />
+                        <Agreement />
                         <DswpForm formData={currentServices[0].formData}/>
                     </>
                 ) : params.serviceCategory === 'interior-design' ? (

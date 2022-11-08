@@ -138,7 +138,7 @@
   @include fontz('Montserrat', 400, 18px, normal);
 }
 
-.dswp-agreement__body {
+.agreement__body {
   padding: $gutter;
   min-height: 300px;
   display: flex;
@@ -146,11 +146,11 @@
   justify-content: center;
 }
 
-.dswp-agreement__section {
+.agreement__section {
   position: relative;
 }
 
-.dswp-agreement__title {
+.agreement__title {
   width: fit-content;
 
   img {
@@ -158,12 +158,12 @@
   }
 }
 
-.dswp-agreement__text {
+.agreement__text {
   max-width: 520px;
   @include fontz('Montserrat', 400, 18px, normal);
 }
 
-.dswp-agreement__overlay {
+.agreement__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -173,7 +173,7 @@
   z-index: -1;
 }
 
-.dswp-agreement__bg {
+.agreement__bg {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -188,16 +188,16 @@
   }
 }
 
-.dswp-loadAgr__btn-block {
-  //align-self: end;
+.loadAgr__btn-block {
+
 }
 
-.dswp-loadAgr__btn {
+.loadAgr__btn {
   width: 100%;
   max-width: 225px;
 }
 
-.dswp-agreement__wrap {
+.agreement__wrap {
   gap: $gutter;
   display: flex;
   flex-direction: column;
@@ -205,7 +205,7 @@
   max-width: 1100px;
 }
 
-.dswp-agreement-info__block {
+.agreement-info__block {
   gap: 20px;
   display: flex;
   align-items: center;

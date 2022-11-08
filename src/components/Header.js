@@ -57,7 +57,7 @@ const Header = () => {
             <div className="container">
                 <div className="header-body">
                     <div className='headerR-part'>
-                        <img src="./assets/images/header-logo.png" alt="" className='header-logo'/>
+                        <Link to='/'><img src="./assets/images/header-logo.png" alt="" className='header-logo'/></Link>
                         <div className="header-list__block">
                             <ul className='header-list__links'>
                                 {
