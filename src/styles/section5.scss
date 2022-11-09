@@ -31,6 +31,9 @@
 }
 
 .workway-content-upperBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $mBlack;
   width: 100%;
   .container {
@@ -63,59 +66,4 @@
   align-self: end;
   @extend %section-title;
   color: #fff;
-}
-
-.workway-stages__item {
-  display: flex;
-
-}
-
-.workway-stage__title {
-  margin-bottom: 10px;
-  color: #fff;
-  @extend %text-title;
-}
-
-.workway-stage__text {
-  @include fontz('Montserrat', 300, 18px, normal);
-  color: #fff;
-  max-width: 700px;
-}
-
-.workway-st-num {
-  z-index: 1000;
-  @include fontz('Montserrat', 600, 15px, normal);
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
-  background-color: $mBlack;
-}
-
-.workway-stage-left__opt {
-  margin-right: 15px;
-  position: relative;
-  bottom:10px;
-}
-
-.workway-stage-text__group {
-  padding-bottom: 30px;
-}
-
-.workway-stage-line {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  height: 100%;
-  background-color: #fff;
-  width: 1px;
-}
-
-.workway-stages__item[data-num='7'] {
-  .workway-stage-line {
-    display: none;
-  }
 }

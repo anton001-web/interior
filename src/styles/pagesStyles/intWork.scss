@@ -201,3 +201,66 @@
     color: #fff;
   }
 }
+
+//workway-stages styles
+
+.IntW-workway__stages-body {
+  display: grid;
+  grid-template-columns: 1.1fr 1.9fr;
+  height: 100%;
+}
+
+.IntW-workway__section-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 25%;
+  }
+
+
+}
+
+.IntW-workway__content-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.IntW-workway__content-upperBlock {
+  padding: 60px $gutter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.IntW-workway_stages {
+  .custom-workway-stage__title {
+    color: $mBlack;
+  }
+
+  .custom-workway-stage__text {
+    color: $mBlack;
+  }
+
+  .custom-workway-st-num {
+    color: $mBlack;
+    background-color: #fff;
+    border: 1px solid $mBlack;
+  }
+
+  .custom-workway-stage-line {
+    background-color: $mBlack;
+  }
+}
+
+.IntW-workway__title {
+  align-self: end;
+}
+
+.IntW-workway__btn {
+  width: 220px;
+}

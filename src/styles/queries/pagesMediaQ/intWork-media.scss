@@ -5,6 +5,10 @@
 }
 
 @media screen and (min-width: 767px) {
+  .IntW-workway__section-bg__item[data-comp-hide=true] {
+    display: none;
+  }
+
   .intW-page__compound-lists__group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,6 +115,18 @@
 
 
 @media screen and (max-width: 480px) {
+  .IntW-workway__stages-body {
+    grid-template-columns: 1fr;
+  }
+
+  .IntW-workway__content-body {
+    align-items: center;
+  }
+
+  .IntW-workway__section-bg {
+    display: none;
+  }
+
   .int-work__lr-section {
     .custom-content__lr-section__bg-bottom-active {
       height: 350px;

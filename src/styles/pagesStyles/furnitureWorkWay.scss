@@ -1,60 +1,41 @@
-.furniture-page__workway-title {
-  @extend %section-title;
-  max-width: 395px;
-}
+.furniture-workway {
+  .custom-workway-stage__title {
+    color: $mBlack;
+  }
 
-.furniture-page__workway-list__block {
-  margin-top: 70px;
-}
+  .custom-workway-stage__text {
+    color: $mBlack;
+  }
+  
+  .custom-workway-st-num {
+    background-color: #fff;
+    color: $mBlack;
+    border: 1px solid $mBlack;
+  }
 
-.furniture-page__workway-list__item {
-  display: flex;
-  margin-top: 50px;
-
-  &[data-num='5'] {
-    .furniture-page__workway-item__bottom-line {
-      display: none;
-    }
+  .custom-workway-stage-line {
+    background: $mBlack;
   }
 }
 
-.furniture-page__workway-item__left-opt {
-  position: relative;
-  margin-right: 15px;
-  bottom: 10px;
+.furniture-page__workway-btn {
+  width: 220px;
 }
 
-.furniture-page__workway-item__left-opt__st-num {
-  @include fontz('Montserrat', 600, 15px, normal);
-  z-index: 1000;
-  width: 40px;
-  height: 40px;
+.furniture-page__workway-sec__body {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+}
+
+.furniture-page__bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+.furniture-page__workway-upperBlock {
+  padding: 60px $gutter;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
-  background-color: #fff;
-}
-
-.furniture-page__workway-item__bottom-line {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  height: 100%;
-  background-color: #000;
-  width: 1px;
-  top: 5px;
-}
-
-.furniture-page__workway-item__title {
-  @include fontz('Montserrat', 600, 20px, normal);
-}
-
-.furniture-page__workway-item__text {
-  @include fontz('Montserrat', 400, 18px, normal);
-}
-
-.furniture-page__workway-btn {
-  margin-top: 40px;
-  width: 200px;
 }

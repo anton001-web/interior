@@ -21,6 +21,7 @@ import DswpCmptProjects from "../pagesComponents/DswpCmptProjects";
 import Agreement from "../pagesComponents/Agreement";
 import DswpForm from "../pagesComponents/DswpForm";
 import IntWorkPage from "../pagesComponents/IntWorkPage";
+import IntWworkStages from "../pagesComponents/IntWworkStages";
 
 const ServicePage = () => {
     const params = useParams()

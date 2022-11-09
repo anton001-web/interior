@@ -1,0 +1,58 @@
+.custom-workway-stages-block {
+  margin-top: 50px;
+}
+
+
+.custom-workway-stages__item {
+  display: flex;
+}
+
+.custom-workway-stage__title {
+  margin-bottom: 10px;
+  color: #fff;
+  @extend %text-title;
+}
+
+.custom-workway-stage__text {
+  @include fontz('Montserrat', 300, 18px, normal);
+  color: #fff;
+  max-width: 700px;
+}
+
+.custom-workway-st-num {
+  z-index: 1000;
+  @include fontz('Montserrat', 600, 15px, normal);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: $mBlack;
+}
+
+.custom-workway-stage-left__opt {
+  margin-right: 15px;
+  position: relative;
+  bottom:10px;
+}
+
+.custom-workway-stage-text__group {
+  padding-bottom: 30px;
+}
+
+.custom-workway-stage-line {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100%;
+  background-color: #fff;
+  width: 1px;
+}
+
+.custom-workway-stages__item[data-hide-line=true] {
+  .custom-workway-stage-line {
+    display: none;
+  }
+}
