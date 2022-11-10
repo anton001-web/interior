@@ -4,8 +4,9 @@ import IntWorkPListItem from "./IntWorkPListItem";
 import CustomForm from "../customComponents/CustomForm";
 import Section2 from "../Section2";
 import Agreement from "./Agreement";
-import CustomWorkway from "../customComponents/CustomWorkway";
 import IntWworkStages from "./IntWworkStages";
+import IntWorkPrcpsSec from "./IntWorkPrcpsSec";
+import IntWorkFormSec from "./IntWorkFormSec";
 
 const IntWorkPage = ({priceList, generalData}) => {
     const {
@@ -67,6 +68,8 @@ const IntWorkPage = ({priceList, generalData}) => {
             <Section2 />
             <Agreement alwaysBlack={true} className='intW-page__agreement-section'/>
             <IntWworkStages stagesData={generalData.stagesData} />
+            <IntWorkPrcpsSec sectionData={generalData.principlesData}/>
+            <IntWorkFormSec sectionData={generalData.MainformSecData} />
         </section>
     )
 }

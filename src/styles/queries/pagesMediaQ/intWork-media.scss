@@ -1,3 +1,23 @@
+@media screen and (min-width: 1600px) {
+  .IntW-workway__section-bg {
+    img {
+      height: 440px;
+    }
+  }
+
+  .intW-form__bg {
+    img {
+      height: 700px;
+    }
+  }
+
+  .int-work__principles-block__bg {
+    img {
+      height: 700px;
+    }
+  }
+}
+
 @media screen and (min-width: 996px) {
   .intW-page__compound-body {
     padding: 60px;
@@ -30,8 +50,28 @@
 }
 
 @media screen and (max-width: 767px) {
+  .intW-form-sec__body {
+    grid-template-columns: 1fr;
+
+    .intW-form__content__wrap {
+      grid-row: 1;
+    }
+  }
+
   .intW-page__compound-form__block {
     margin-bottom: 0;
+  }
+
+  .int-work__principles-container {
+    max-width: 100%;
+  }
+
+  .int-work__principles-block__body {
+    grid-template-columns: 1fr;
+
+    .int-work__principles-block__bg {
+      grid-row: 1;
+    }
   }
 
   .int-work__lr-section {
