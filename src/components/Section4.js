@@ -1,5 +1,5 @@
 import React from 'react'
-import {services} from "../data/servicesData";
+import {servicesData} from "../data/servicesData";
 
 const Section4 = () => {
     return (
@@ -13,7 +13,7 @@ const Section4 = () => {
                         <h1 className='title-black'>Что мы предлогаем?</h1>
                         <div className='services-list'>
                             {
-                                services.map((item, ind) => (
+                                servicesData.services.map((item, ind) => (
                                     <div key={ind} className='services-list__item' data-last={ind + 1}>
                                         <div className='mobile-gutter'>
                                             <div className='services-list__item-text__group'>

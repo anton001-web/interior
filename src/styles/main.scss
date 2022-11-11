@@ -56,6 +56,10 @@
   color: #fff;
 }
 
+textarea {
+  resize: none;
+}
+
 html.scroll-active {
   body {
     position: fixed;
