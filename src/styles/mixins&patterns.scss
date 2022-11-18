@@ -61,3 +61,12 @@
   color: $footerLC;
   text-decoration: none;
 }
+
+%sideGreenBox {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #BBCC68;
+  margin-right: 10px;
+}

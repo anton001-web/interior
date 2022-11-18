@@ -1,17 +1,10 @@
 @media screen and (max-width: 767px) {
   .custom-adv-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .custom-adv__list-item{
     display: flex;
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .custom-adv-list {
-    grid-template-columns: 1fr;
-  }
-
 }

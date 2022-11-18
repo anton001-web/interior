@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import CustomForm from "../customComponents/CustomForm";
 import useMatchMedia from "use-match-media";
+import InnerFormModal from "../customComponents/InnerFormModal";
 
 const FrntPForm = ({formData}) => {
     const [tablet] = [useMatchMedia('(max-width: 767px)') || false]
+    const [innerModalVisible, setInnerModalVisible] = useState(false)
 
     const {
         formTitle,
@@ -12,6 +14,14 @@ const FrntPForm = ({formData}) => {
         formBg,
         formBgTablet
     } = formData
+
+    const toggleVisibility = (e) => {
+        e.preventDefault()
+        console.log('date gathering')
+        setTimeout(() => {
+            setInnerModalVisible(!innerModalVisible)
+        }, 1300)
+    }
 
     return (
         <section className='frntP-form__section' style={{backgroundImage: `url(${!tablet ? formBg : 'none'})`}}>
@@ -30,7 +40,15 @@ const FrntPForm = ({formData}) => {
                         </div>
                     </div>
                     <div className='frntP-form__wrap'>
-                        <CustomForm inputsList={formInputs} className='frntP-form' />
+                        {
+                            innerModalVisible ? (
+                                <InnerFormModal
+                                    toggleState={setInnerModalVisible}
+                                />
+                            ) : (
+                                <CustomForm inputsList={formInputs} className='frntP-form' btnHandler={toggleVisibility}/>
+                            )
+                        }
                     </div>
                 </div>
             </div>

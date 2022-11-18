@@ -36,7 +36,7 @@ const ServicesPage = () => {
                     <CustomLeftRightSection
                         key={ind}
                         title={item.title}
-                        text={item.text}
+                        texts={item.texts}
                         sideImg={item.img}
                         isImgLeft={(ind + 1) % 2 === 0 ? false : true}
                     />

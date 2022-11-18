@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
 import IntWorkPListItem from "./IntWorkPListItem";
 import CustomForm from "../customComponents/CustomForm";
@@ -7,8 +7,19 @@ import Agreement from "./Agreement";
 import IntWworkStages from "./IntWworkStages";
 import IntWorkPrcpsSec from "./IntWorkPrcpsSec";
 import IntWorkFormSec from "./IntWorkFormSec";
+import InnerFormModal from "../customComponents/InnerFormModal";
 
 const IntWorkPage = ({priceList, generalData}) => {
+    const [innerModalVisible, setInnerModalVisible] = useState(false)
+
+    const innerModalChange = (e) => {
+        e.preventDefault()
+        console.log('date gathering')
+        setTimeout(() => {
+            setInnerModalVisible(!innerModalVisible)
+        }, 1500)
+    }
+
     const {
         iProjectCompound
     } = generalData
@@ -58,7 +69,19 @@ const IntWorkPage = ({priceList, generalData}) => {
                                 <div className='intW-page__compound-form__wrap'>
                                     <img className='intW-page__compound-form__bg' src="./assets/images/intW-pageForm-bg.png" alt="form-background"/>
                                     <div className='intW-page__compound-form__overlay'></div>
-                                    <CustomForm btnText='Заказать звонок' className='intW-page__compound-form' inputsList={iProjectCompound.inputsList} textColor='white'/>
+                                    {
+                                        innerModalVisible ? (
+                                            <InnerFormModal toggleState={setInnerModalVisible} containsOtherBG={true}/>
+                                        ) : (
+                                            <CustomForm
+                                                btnHandler={innerModalChange}
+                                                btnText='Заказать звонок'
+                                                className='intW-page__compound-form'
+                                                inputsList={iProjectCompound.inputsList}
+                                                textColor='white'
+                                            />
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>

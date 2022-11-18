@@ -1,13 +1,14 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from "react-router-dom";
 import DropDownList from "./customComponents/DropDownList";
 import {motion} from "framer-motion";
 import {useDispatch, useSelector} from "react-redux";
-import {dropdownToggle, toggleBurger} from "../store/actions";
+import {dropdownToggle, modalToggle, toggleBurger} from "../store/actions";
 import {DROPDOWN_CLOSE} from "../store/types";
 import {hfLinks} from "../data/generalData";
 import {headerDDList} from "../data/generalData";
 import useMatchMedia from "use-match-media";
+import {headerPrjOrderModalW} from "../data/modalsData";
 
 const queries = [
     '(max-width: 767px)'
@@ -37,6 +38,7 @@ const Header = () => {
 
     const mVariants = {
         hidden: {
+            display: 'none',
             opacity: 0,
             zIndex: -1,
             transition: {
@@ -44,12 +46,17 @@ const Header = () => {
             }
         },
         animate: {
+            display: 'block',
             opacity: 1,
-            zIndex: 2,
+            zIndex: 99999,
             transition: {
                 duration: .3
             }
         }
+    }
+
+    const modalOpen = () => {
+        dispatch(modalToggle(headerPrjOrderModalW.modalType))
     }
 
     return (
@@ -77,8 +84,9 @@ const Header = () => {
                             <span> Санкт - Петербург</span>
                             <span> ул.Уральская 13 </span>
                         </p>
-                        <button className="header-btn btn-gr">
-                            <p> Заказать звонок </p></button>
+                        <button className="header-btn btn-gr" onClick={modalOpen}>
+                            <p> Заказать звонок </p>
+                        </button>
                         <div className="header-menu__block" ref={headerMenuOpen}>
                             <div className='header-menu__open' onClick={menuOpen}>
                                 <span className='header-menu__open-line'> </span>

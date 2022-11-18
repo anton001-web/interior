@@ -18,11 +18,17 @@
 }
 
 .custom-adv__list-item__content {
-  display: flex;
+  display: inline-block;
   width: 90%;
 
   .custom-adv__list-item__img-block {
-    margin-right: 15px;
+    margin-bottom: 15px;
+    align-self: start;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 

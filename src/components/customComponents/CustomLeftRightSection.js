@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from "classnames";
 import useMatchMedia from "use-match-media";
+import CustomInput from "./CustomInput";
 
 const queries = [
     '(max-width: 767px)'
@@ -13,11 +14,13 @@ const CustomLeftRightSection = (props) => {
         isImgLeft,
         sideImg,
         title,
-        text,
+        texts = [],
         btnText = 'Подробнее',
         btnType = 'btn-whtB',
+        btnHandler,
         isTitleClone = false,
-        isHalf
+        isHalf,
+        advList
     } = props
 
     const bgStyles = {
@@ -40,8 +43,24 @@ const CustomLeftRightSection = (props) => {
                     <div className="custom-lr__sec-info__block" style={{gridColumn: isImgLeft ? '2' : '1'}}>
                         <div className='custom-lr__sec-info'>
                             <h2 className='custom-lr__sec-title' style={{display: tablet && isTitleClone ? 'none' : 'block'}}>{title}</h2>
-                            <p className='custom-lr__sec-text'>{text}</p>
-                            <button className={classNames(`custom-lr__sec-btn ${btnType}`)}>{btnText}</button>
+                            {
+                                texts.map((text, ind) => (
+                                    <p key={ind} className='custom-lr__sec-text'>{text}</p>
+                                ))
+                            }
+                            {
+                                advList ? (
+                                    <ul className='custom-lr__sec-list'>
+                                        {
+                                            advList.map((lItem, ind) => (
+                                                <li className='custom-lr__sec-list__item'>{lItem}</li>
+                                            ))
+                                        }
+                                    </ul>
+                                ) : (
+                                    <button className={classNames(`custom-lr__sec-btn ${btnType}`)} onClick={btnHandler}>{btnText}</button>
+                                )
+                            }
                         </div>
                     </div>
                 </div>

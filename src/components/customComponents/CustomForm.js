@@ -2,7 +2,7 @@ import React from 'react'
 import CustomInput from "./CustomInput";
 import classNames from "classnames";
 
-const CustomForm = ({bgOpacity, btnText = 'Заказать консультацию', formTitle = 'Нужна консультация?', inputsList, className = 'undefined', textColor = 'black'}) => {
+const CustomForm = ({bgOpacity, btnHandler, btnText = 'Заказать консультацию', formTitle = 'Нужна консультация?', inputsList, className = 'undefined', textColor = 'black'}) => {
     return (
         <div className={classNames(`custom-services-form__block ${className}`)} style={{backgroundColor: !bgOpacity ? '#fff' : null}}>
             {bgOpacity && (
@@ -13,10 +13,10 @@ const CustomForm = ({bgOpacity, btnText = 'Заказать консультац
                 <form className='custom-services-form'>
                     {
                         inputsList.map((input, ind) => (
-                            <CustomInput inputId={input.inputId} placeholder={input.placeholder} />
+                            <CustomInput inputId={input.inputId} key={ind} placeholder={input.placeholder} />
                         ))
                     }
-                    <button className={`custom-services-form__btn ${textColor === 'black' ? 'btn-blk' : 'btn-wht'}`} onClick={(e) => {e.preventDefault()}}>{btnText}</button>
+                    <button className={`custom-services-form__btn ${textColor === 'black' ? 'btn-blk' : 'btn-wht'}`} onClick={btnHandler}>{btnText}</button>
                 </form>
             </div>
         </div>

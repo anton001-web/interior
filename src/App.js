@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 import {Routes, Route} from "react-router-dom";
 import ServicesPage from "./components/pages/ServicesPage";
 import ServicePage from "./components/pages/ServicePage";
+import AboutUsPage from "./components/pages/AboutUsPage";
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' exact element={<SummaryProject />}/>
                     <Route path='/services' exact element={<ServicesPage />}/>
+                    <Route path='/about-us' exact element={<AboutUsPage />}/>
                     <Route path='/services/:serviceCategory' exact element={<ServicePage />}/>
                 </Routes>
             </Main>

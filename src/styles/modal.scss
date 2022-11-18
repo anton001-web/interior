@@ -1,0 +1,123 @@
+.default-modal {}
+
+.default-modal.open .default-modal__overlay,
+.default-modal.open .default-modal__window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.default-modal.hide .default-modal__overlay,
+.default-modal.hide .default-modal__window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.default-modal.open .default-modal__window {
+  transform: translateY(50px);
+}
+
+.default-modal.open .default-modal__overlay {
+  background: rgba(0, 0, 0, .5);
+}
+
+.default-modal.hide .default-modal__window {
+  transform: translateY(-200px);
+}
+
+.default-modal.hide .default-modal__overlay {
+  background: rgba(0, 0, 0, 0);
+}
+
+.default-modal__window, .default-modal__overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+////////////////
+
+
+.default-modal__overlay {
+  transition: background .2s ease-in;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $gutter;
+}
+
+.default-modal__window {
+  transform: translateY(-700px);
+  transition: transform .2s ease-in;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 40px;
+  background-color: #fff;
+}
+
+.default-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.default-modal__close-btn {
+  img {
+    width: 80%;
+  }
+}
+
+.default-modal__form {
+  margin-top: 40px;
+}
+
+
+.default-modal__btn {
+  width: 300px;
+}
+
+.default-modal__text {
+  @include fontz('Montserrat', 400, 18px, normal);
+}
+
+
+
+//// custom inner form modal styles
+
+.custom-innerForm__modal {
+  width: 100%;
+  background-color: #fff;
+  padding: 50px $gutter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-innerForm__modal-body {
+
+}
+
+.custom-innerForm__modal-text {
+  margin-top: 30px;
+  @include fontz('Montserrat', 400, 18px, normal);
+}
+
+.custom-innerForm__modal-btn {
+  margin-top: 30px;
+  width: 220px;
+}
+
+.custom-innerForm__modal.custom-innerForm__modal-with__oth-bg {
+  background: inherit;
+  position: relative;
+  z-index: 10;
+
+  .custom-innerForm__modal-text {
+    color: #fff;
+  }
+}

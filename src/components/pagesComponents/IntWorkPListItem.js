@@ -1,6 +1,14 @@
 import React from 'react'
+import {modalToggle} from "../../store/actions";
+import {useDispatch} from "react-redux";
 
 const IntWorkPListItem = ({plItem}) => {
+    const dispatch = useDispatch()
+
+    const modalOpen = () => {
+        dispatch(modalToggle({servicesType: plItem.modalContent, modalType: 'intPServices-custom_modal'}))
+    }
+
     return (
         <div className='int-work__pl-wrap'>
             <div className='int-work__pl-block'>
@@ -24,7 +32,7 @@ const IntWorkPListItem = ({plItem}) => {
                 </div>
                 <p className='int-work__pl-price__clone'>{plItem.price} p / кв.м.</p>
                 <div className='int-work__pl-footer'>
-                    <button className='int-work__pl-btn btn-whtB'>Заказать</button>
+                    <button className='int-work__pl-btn btn-whtB' onClick={modalOpen}>Заказать</button>
                     <a href="#" className='int-work__pl-downloadBtn'>Скачать комплектацию</a>
                 </div>
             </div>

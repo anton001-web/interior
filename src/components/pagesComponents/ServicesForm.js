@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
 import CustomInput from "../customComponents/CustomInput";
 import CustomForm from "../customComponents/CustomForm";
+import InnerFormModal from "../customComponents/InnerFormModal";
 
 const ServicesForm = ({formBg, inputsList}) => {
+    const [innerFormVisible, setInnerFormVisible] = useState(false)
+
+    const toggleVisibility = (e) => {
+        e.preventDefault()
+        setTimeout(() => {
+            setInnerFormVisible(!innerFormVisible)
+        }, 1300)
+    }
+
     return (
         <section className='services-page__form-sec'>
             <LeftRightSectionCustomStyles
@@ -16,7 +26,16 @@ const ServicesForm = ({formBg, inputsList}) => {
                 bgColor='white'
                 titleHide={true}
             >
-                <CustomForm inputsList={inputsList}/>
+                {
+                    innerFormVisible ? (
+                        <InnerFormModal
+                            toggleState={setInnerFormVisible}
+                            isFullWidth={true}
+                        />
+                    ) : (
+                        <CustomForm inputsList={inputsList} btnHandler={toggleVisibility}/>
+                    )
+                }
             </LeftRightSectionCustomStyles>
         </section>
     )

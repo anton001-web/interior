@@ -12,7 +12,8 @@ module.exports = {
     mode: 'development',
     context: path.resolve(__dirname, 'src'),
     entry: {
-        main: './index.js'
+        main: './index.js',
+        // modal: './plugins/modal.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

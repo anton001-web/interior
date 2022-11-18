@@ -22,10 +22,17 @@ import Agreement from "../pagesComponents/Agreement";
 import DswpForm from "../pagesComponents/DswpForm";
 import IntWorkPage from "../pagesComponents/IntWorkPage";
 import IntWworkStages from "../pagesComponents/IntWworkStages";
+import {useDispatch} from "react-redux";
+import {modalToggle} from "../../store/actions";
 
 const ServicePage = () => {
+    const dispatch = useDispatch()
     const params = useParams()
     const currentServices = currentServicesList.filter(item => item.type === params.serviceCategory)
+
+    const openModal = () => {
+        dispatch(modalToggle({servicesType: currentServices[0].firstSecModalData, modalType: 'servicesPMain-custom_modal'}))
+    }
 
     return (
         <div className='service-page'>
@@ -33,10 +40,10 @@ const ServicePage = () => {
                 isImgLeft={false}
                 sideImg={currentServices[0].img}
                 title={currentServices[0].title}
-                text={currentServices[0].pageHeroFirstText}
-                secondText={currentServices[0].pageHeroSecondText}
+                texts={currentServices[0].texts}
                 btnText={currentServices[0].title.split(' ').pop()}
                 btnType='btn-whtB'
+                btnHandler={openModal}
                 isTitleClone={true}
                 isHalf={true}
             />

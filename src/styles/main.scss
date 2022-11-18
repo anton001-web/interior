@@ -20,6 +20,7 @@
 @import './customAdvList.scss';
 @import './customWorkway.scss';
 @import './services.scss';
+@import './modal.scss';
 
 .container {
   max-width: 1440px;
@@ -31,9 +32,23 @@
   flex-direction: column;
   height: 100%;
 }
+
 .content {
+  z-index: 5;
   flex: 1 0 auto;
+  background: #fff;
 }
+
+#root.modal-open {
+  .content {
+    z-index: -1;
+  }
+
+  .header {
+    z-index: -1;
+  }
+}
+
 .footer {
   flex: 0 0 auto;
 }
@@ -150,4 +165,5 @@ body {
 @import './queries/customWorkway-media.scss';
 @import './queries/services-media.scss';
 @import './queries/customAdvList-media.scss';
+@import './queries/modal-media.scss';
 @import './cPagesSTgroup.scss';

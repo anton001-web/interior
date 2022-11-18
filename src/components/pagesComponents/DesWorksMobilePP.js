@@ -21,7 +21,7 @@ const DesWorksMobilePP = ({title}) => {
                     <div className='des-works__mobile-privePolicy__accordion'>
                         {
                             servicesPricePolicyData.map((item, ind) => (
-                                <div className='des-works__mobile-privePolicy__accordion-item'>
+                                <div className='des-works__mobile-privePolicy__accordion-item' key={ind}>
                                     <div className='des-works__mobile-privePolicy__accordion-item__header' onClick={() => AccordionToggle(ind)}>
                                         <h3 className='des-works__mobile-privePolicy__accordion-item__header-title'>{item.pricePolicyItemTitle}</h3>
                                         {

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {instsWorks} from "../data/instsWorks";
 import {motion} from "framer-motion";
+import InnerFormModal from "./customComponents/InnerFormModal";
 
 const Section8 = () => {
+
     const hoverVariants = {
         rest: {
             opacity: 0,

@@ -2,32 +2,44 @@ export const servicesData = {
     services: [
         {
             title: 'Дизайн интерьера',
-            text: 'Проектируем эксклюзивный дизайн интерьера с учетом ваших пожеланий и наших задач.',
+            texts: [
+                'Проектируем эксклюзивный дизайн интерьера с учетом ваших пожеланий и наших задач.'
+            ],
             img: './assets/images/services1.png',
         },
         {
             title: 'Отделочные работы',
-            text: 'Осуществляем все отделочные работы «Под ключ» — от идеи до воплощения.',
+            texts: [
+                'ПОсуществляем все отделочные работы «Под ключ» — от идеи до воплощения.'
+            ],
             img: './assets/images/services2.png',
         },
         {
             title: 'Авторский надзор',
-            text: 'Контролируем реализацию своих проектов от создания до воплощения в жизнь.',
+            texts: [
+                'Контролируем реализацию своих проектов от создания до воплощения в жизнь.'
+            ],
             img: './assets/images/services3.png',
         },
         {
             title: 'Декорирование интерьера',
-            text: 'Создаем единое гармоничное пространство с органично расставленными акцентами.',
+            texts: [
+                'Создаем единое гармоничное пространство с органично расставленными акцентами.'
+            ],
             img: './assets/images/services4.png',
         },
         {
             title: 'Согласование перепланировки',
-            text: 'Берем на себя все вопросы по  взаимодействию с госорганами и получению разрешения.',
+            texts: [
+                'Берем на себя все вопросы по  взаимодействию с госорганами и получению разрешения.'
+            ],
             img: './assets/images/services5.png',
         },
         {
             title: 'Архитектурное проектирование',
-            text: 'Спроектируем Ваш дом лично для Вас с учетом эргономики и  красоты, используя дизайнерское видение пространства.',
+            texts: [
+                'Спроектируем Ваш дом лично для Вас с учетом эргономики и  красоты, используя дизайнерское видение пространства.'
+            ],
             img: './assets/images/services6.png',
         },
     ],
@@ -145,11 +157,39 @@ export const currentServicesList = [
                 }
             ]
         },
+        firstSecModalData: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            modalInputs: [
+                {
+                    inputId: 'intDes-main__modal-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'intDes-main__modal-input__phone',
+                    placeholder: 'Номер телефона'
+                },
+                {
+                    inputId: 'intDes-main__modal-input__message',
+                    placeholder: 'Номер телефона',
+                    messageField: true
+                }
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalType: 'intDes-main__modal',
+            title: 'Заказать дизайн',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         title: 'Дизайн интерьера',
         img: './assets/images/services1.png',
         type: 'interior-design',
-        pageHeroFirstText: 'Избавим Вас от необходимости разбираться в огромном количестве документов и лишней волокиты.',
-        pageHeroSecondText: 'Подготовим проектную документацию, согласуем перепланировку и переоборудование квартир и нежилых помещений.',
+        texts: [
+            'Избавим Вас от необходимости разбираться в огромном количестве документов и лишней волокиты.',
+            'Подготовим проектную документацию, согласуем перепланировку и переоборудование квартир и нежилых помещений.',
+        ],
         iProjectCompound: {
             inputsList: [
                 {
@@ -218,11 +258,39 @@ export const currentServicesList = [
             ],
             formBg: './assets/images/dswpFormbg.png',
         },
+        firstSecModalData: {
+            texts: [
+                'Напишите, какие отделочные работы необходимо произвести. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            modalInputs: [
+                {
+                    inputId: 'desWorks-main__modal-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'desWorks-main__modal-input__phone',
+                    placeholder: 'Номер телефона'
+                },
+                {
+                    inputId: 'desWorks-main__modal-input__message',
+                    placeholder: 'Номер телефона',
+                    messageField: true
+                }
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalType: 'desWorks-main__modal',
+            title: 'Узнайте стоимость работы',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         title: 'Отделочные работы',
         img: './assets/images/services2.png',
         type: 'des-works',
-        pageHeroFirstText: 'Мы предлагаем широкий спектр строительных, ремонтных и отделочных работ. ',
-        pageHeroSecondText: 'Наши цены на отделочные работы демократичны и доступны. Вы можете убедиться в этом, просмотрев представленный ниже прайс-лист.',
+        texts: [
+            'Мы предлагаем широкий спектр строительных, ремонтных и отделочных работ. ',
+            'Наши цены на отделочные работы демократичны и доступны. Вы можете убедиться в этом, просмотрев представленный ниже прайс-лист.',
+        ],
         LRsectionData: {
             title: 'Прайс-лист на отделочные работы',
             img: './assets/images/LRSectionDSWORKSBg.png',
@@ -320,12 +388,40 @@ export const currentServicesList = [
                 placeholder: 'Номер телефона'
             }
         ],
+        firstSecModalData: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'auth-svision__main-modal-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'auth-svision__main-modal-input__phone',
+                    placeholder: 'Номер телефона'
+                },
+                {
+                    inputId: 'auth-svision__main-modal-input__message',
+                    placeholder: 'Номер телефона',
+                    messageField: true
+                }
+            ],
+            modalType: 'auth-svision__main-modal',
+            title: 'Заказать авторский надзор',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         formBg: './assets/images/auth-sVision-formBg.png',
         title: 'Авторский надзор',
         img: './assets/images/services3.png',
         type: 'auth-svision',
-        pageHeroFirstText: 'Благодаря авторскому надзору мы обеспечиваем реализацию Вашего проекта   в том виде, в котором он был спроектирован.',
-        pageHeroSecondText: 'Осуществляем надзор на протяжении всего срока проведения отделочных работ. От начала и до завершения.',
+        texts: [
+            'Благодаря авторскому надзору мы обеспечиваем реализацию Вашего проекта   в том виде, в котором он был спроектирован.',
+            'Осуществляем надзор на протяжении всего срока проведения отделочных работ. От начала и до завершения.',
+        ],
         priceBlockList: [
             {
                 price: '15 000 р / мес.',
@@ -392,12 +488,40 @@ export const currentServicesList = [
                 placeholder: 'Номер телефона'
             }
         ],
+        firstSecModalData: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            modalInputs: [
+                {
+                    inputId: 'decoration-page__main-modal-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'decoration-page__main-modal-input__phone',
+                    placeholder: 'Номер телефона'
+                },
+                {
+                    inputId: 'decoration-page__main-modal-input__message',
+                    placeholder: 'Номер телефона',
+                    messageField: true
+                }
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalType: 'decoration-page__main-modal',
+            title: 'Заказать декорирование',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         formBg: './assets/images/decoration-formBg.png',
         title: 'Декорирование интерьера',
         img: './assets/images/services4.png',
         type: 'decoration',
-        pageHeroFirstText: 'Грамотное декорирование помещения позволяет создать единое гармоничное пространство, в котором все декоративные элементы четко подобраны друг к другу, а акценты расставлены в нужных местах.',
-        pageHeroSecondText: 'Именно на стадии декорирования интерьер становится целостным произведением дизайнерского искусства.',
+        texts: [
+            'Грамотное декорирование помещения позволяет создать единое гармоничное пространство, в котором все декоративные элементы четко подобраны друг к другу, а акценты расставлены в нужных местах.',
+            'Именно на стадии декорирования интерьер становится целостным произведением дизайнерского искусства.',
+        ],
         decorSq: 500,
         benefitsList: [
             {
@@ -470,12 +594,40 @@ export const currentServicesList = [
                 placeholder: 'Номер телефона'
             }
         ],
+        firstSecModalData: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'redevelopment-page__main-modal-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'redevelopment-page__main-modal-input__phone',
+                    placeholder: 'Номер телефона'
+                },
+                {
+                    inputId: 'redevelopment-page__main-modal-input__message',
+                    placeholder: 'Номер телефона',
+                    messageField: true
+                }
+            ],
+            modalType: 'redevelopment-page__main-modal',
+            title: 'Заказать перепланировку',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         formBg: './assets/images/redevelopment-formBg.png',
         title: 'Согласование перепланировки',
         img: './assets/images/services5.png',
         type: 'redevelopment',
-        pageHeroFirstText: 'Избавим Вас от необходимости разбираться в огромном количестве документов и лишней волокиты.',
-        pageHeroSecondText: 'Подготовим проектную документацию, согласуем перепланировку и переоборудование квартир и нежилых помещений.',
+        texts: [
+            'Избавим Вас от необходимости разбираться в огромном количестве документов и лишней волокиты.',
+            'Подготовим проектную документацию, согласуем перепланировку и переоборудование квартир и нежилых помещений.',
+        ],
         benefitsList: [
             {
                 title: 'Выгодная инвестиция',
@@ -526,10 +678,38 @@ export const currentServicesList = [
                 }
             ],
         },
+        firstSecModalData: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'furniture-page__main-modal-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'furniture-page__main-modal-input__phone',
+                    placeholder: 'Номер телефона'
+                },
+                {
+                    inputId: 'furniture-page__main-modal-input__message',
+                    placeholder: 'Номер телефона',
+                    messageField: true
+                }
+            ],
+            modalType: 'furniture-page__main-modal',
+            title: 'Заказать авторскую мебель',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         title: 'Авторская мебель',
         img: './assets/images/services7.png',
-        pageHeroFirstText: 'Несомненным преимуществом мебели авторской работы является ее уникальность. ',
-        pageHeroSecondText: 'Возможность изготовления нестандартных дверей, лестниц,  мебели снимает все ограничения при формировании интерьера.',
+        texts: [
+            'Несомненным преимуществом мебели авторской работы является ее уникальность. ',
+            'Возможность изготовления нестандартных дверей, лестниц,  мебели снимает все ограничения при формировании интерьера.',
+        ],
         type: 'furniture',
         workwayData: {
             bgImg: './assets/images/furnitureWWbg.png',
@@ -1069,6 +1249,27 @@ export const completedProejcts = {
 
 export const interiorDPrices = [
     {
+        modalContent: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'custom-modal__plSolluPr-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'custom-modal__plSolluPr-input__phone',
+                    placeholder: 'Номер телефона'
+                }
+            ],
+            modalType: 'custom-modal',
+            title: 'Заказать планировочное решение',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         bgImg: './assets/images/intPpriceBG1.png',
         title: 'Планировочное решение',
         subTitle: 'Основная концепция',
@@ -1081,6 +1282,27 @@ export const interiorDPrices = [
         ]
     },
     {
+        modalContent: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'custom-modal__techPr-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'custom-modal__techPr-input__phone',
+                    placeholder: 'Номер телефона'
+                }
+            ],
+            modalType: 'custom-modal',
+            title: 'Заказать технический проект',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         bgImg: './assets/images/intPpriceBG2.png',
         title: 'Технический проект',
         subTitle: 'Концепция, техническая основа',
@@ -1092,6 +1314,27 @@ export const interiorDPrices = [
         ]
     },
     {
+        modalContent: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'custom-modal__fullPr-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'custom-modal__fullPr-input__phone',
+                    placeholder: 'Номер телефона'
+                }
+            ],
+            modalType: 'custom-modal',
+            title: 'Заказать полный проект',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         bgImg: './assets/images/intPpriceBG3.png',
         title: 'Полный проект',
         subTitle: 'Проект с 3D визуализациями',
@@ -1105,6 +1348,27 @@ export const interiorDPrices = [
         ]
     },
     {
+        modalContent: {
+            texts: [
+                'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+            ],
+            dataType: 'orderProject',
+            containsForm: true,
+            modalInputs: [
+                {
+                    inputId: 'custom-modal__undKePr-input__name',
+                    placeholder: 'Как к вам обращаться?'
+                },
+                {
+                    inputId: 'custom-modal__undKePr-input__phone',
+                    placeholder: 'Номер телефона'
+                }
+            ],
+            modalType: 'custom-modal',
+            title: 'Заказать aпроект «Под ключ»',
+            btnText: 'Отправить сообщение',
+            btnType: 'sendData'
+        },
         bgImg: './assets/images/intPpriceBG4.png',
         title: 'Проект «Под ключ»',
         subTitle: 'Включает абсолютно все',

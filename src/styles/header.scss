@@ -1,6 +1,6 @@
 .header {
+  z-index: 6;
   background-color: $btnBg;
-  margin-bottom: 20px;
 }
 
 .header-body {
@@ -58,6 +58,7 @@
 .header-btn {
   margin-right: 20px;
   width: 180px;
+  height: 55px;
 }
 
 .header-menu__block.menu-open__active {

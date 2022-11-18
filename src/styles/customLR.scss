@@ -47,6 +47,7 @@
 }
 
 .custom-lr__sec-text {
+  margin-bottom: 15px;
   @include fontz('Montserrat', 400, 16px, normal);
 
   span {
@@ -72,6 +73,17 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+
+.custom-lr__sec-list__item {
+  margin-bottom: 15px;
+  @include fontz('Montserrat', 400, 18px, normal);
+  display: flex;
+  align-items: center;
+
+  &::before {
+    @extend %sideGreenBox;
+  }
 }
 
 // SAME CUSTOM SECTION WITH CUSTOM CONTENT
