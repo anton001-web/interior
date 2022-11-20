@@ -15,10 +15,13 @@
 @import './section8.scss';
 @import './section9.scss';
 
+@import './about-us.scss';
+
 @import './customInput.scss';
 @import './customLR.scss';
 @import './customAdvList.scss';
 @import './customWorkway.scss';
+@import './customSwiper.scss';
 @import './services.scss';
 @import './modal.scss';
 
@@ -160,10 +163,13 @@ body {
 @import './queries/section9-media.scss';
 @import './queries/footer-media.scss';
 
+@import './queries/about-us-media.scss';
+
 
 @import './queries/customLR-media.scss';
 @import './queries/customWorkway-media.scss';
 @import './queries/services-media.scss';
 @import './queries/customAdvList-media.scss';
+@import './queries/customSwiper-media.scss';
 @import './queries/modal-media.scss';
 @import './cPagesSTgroup.scss';

@@ -13,7 +13,6 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         main: './index.js',
-        // modal: './plugins/modal.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

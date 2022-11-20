@@ -1,0 +1,82 @@
+.custom-swiper {
+  margin-top: 70px;
+}
+
+.custom-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-swiperSlide-img__wrap {
+  .custom-swiperSlide__img {
+    width: 100%;
+  }
+}
+
+.custom-swiper__text-group {
+  min-height: 150px;
+}
+
+.custom-swiper__title {
+  @include fontz('Montserrat', 600, 18px, normal);
+  color: #fff;
+}
+
+.custom-swiper__subTitle {
+  margin-top: 15px;
+  color: #fff;
+  @include fontz('Montserrat', 400, 15px, normal);
+}
+
+.custom-swiper__navPag-block {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.custom-swiper__navPag {
+  display: flex;
+  align-items: center;
+}
+
+.custom-swiper-faction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  color: #fff;
+  @include fontz('Montserrat', 400, 15px, normal);
+
+  .swiper-pagination-bullet-active {
+    background-color: $mGreen !important;
+  }
+
+  .swiper-pagination-bullet {
+    display: block;
+    padding: 6px;
+    margin: 3px;
+    background-color: $mBlack;
+  }
+}
+
+.custom-swiper-pagination-curCount {
+  @include fontz('Montserrat', 400, 20px, normal);
+}
+
+.custom-swiper-button-prev {
+  margin-right: 10px;
+}
+
+.custom-swiper-button-next {
+  margin-left: 10px;
+}
+
+.custom-swiper-button-prev, .custom-swiper-button-next {
+  font-size: 30px;
+  color: #fff;
+}
+
+.custom-swiper-button-prev.swiper-button-disabled, .custom-swiper-button-next.swiper-button-disabled {
+  color: #636e72
+}

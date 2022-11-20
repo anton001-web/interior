@@ -9,8 +9,6 @@ import DesWorksMobilePP from "./DesWorksMobilePP";
 const PricePolicyDWorksPage = ({currentServices}) => {
     const [mob] = [useMatchMedia('(max-width: 480px)') || false]
 
-    console.log(mob)
-
     return (
         <>
             {

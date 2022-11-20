@@ -1,0 +1,27 @@
+@media screen and (max-width: 996px) {
+  .custom-swiper__text-group {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-swiper-control {
+    display: none;
+  }
+
+  .custom-swiper__text-group {
+    min-height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .custom-swiperSlide-img__wrap {
+    .custom-swiperSlide__img {
+      height: 350px;
+    }
+  }
+
+  .custom-swiper-faction {
+    justify-content: end;
+
+  }
+}

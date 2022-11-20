@@ -1,0 +1,61 @@
+.aboutUs-page__benefits-list__section {
+  min-height: 400px;
+  background-size: cover;
+  position: relative;
+}
+
+.aboutUs-page__benefits-sec__body {
+  padding: 60px $gutter;
+}
+
+.aboutUs-page__benefits-title {
+  width: 100%;
+  max-width: 80%;
+}
+
+.aboutUs-page__benefits-list {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+//about page swipers section styles
+
+.abtP-swiper__sec {
+  position: relative;
+  height: 100%;
+}
+
+.abtP-swiper__sec-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.abtP-swiper__sec-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.abtP-swiper__sec-body {
+  padding: 60px $gutter;
+}
+
+.abtP-swSec-articleSwiper-wrap {
+  margin-top: 50px;
+}
