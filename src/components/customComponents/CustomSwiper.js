@@ -1,8 +1,6 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination} from "swiper";
-import useMatchMedia from "use-match-media";
-// import {CustomSwiperSlide} from "./CustomSwiperSlide";
 
 const CustomSwiper = (props) => {
     const {
@@ -38,7 +36,14 @@ const CustomSwiper = (props) => {
                 },
                 767: {
                     freeMode: false,
-                    slidesPerView: 4
+                    slidesPerView: 4,
+                    pagination: {
+                        el: '.custom-swiper-faction',
+                        type: 'custom',
+                        renderCustom: function (swiper, current, total) {
+                            return `<span class='custom-swiper-pagination-curCount'>${current}</span>` + '/' + (total);
+                        }
+                    },
                 }
             }}
         >

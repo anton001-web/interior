@@ -3,6 +3,7 @@ import GenInfoSec from "../AboutPage/GenInfoSec";
 import CustomAdvantagesList from "../customComponents/CustomAdvantagesList";
 import {aboutUsAdvLData} from "../../data/aboutCompData";
 import AbtPSwipersSec from "../pagesComponents/AbtPSwipersSec";
+import OurTeamSec from "../pagesComponents/OurTeamSec";
 
 const AboutUsPage = () => {
     return (
@@ -19,6 +20,7 @@ const AboutUsPage = () => {
                 </div>
             </div>
             <AbtPSwipersSec />
+            <OurTeamSec />
         </>
     )
 }

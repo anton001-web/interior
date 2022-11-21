@@ -25,7 +25,7 @@
 
 .abtP-swiper__sec {
   position: relative;
-  height: 100%;
+  //height: 100%;
 }
 
 .abtP-swiper__sec-bg {
@@ -46,7 +46,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
+  //height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
@@ -58,4 +58,111 @@
 
 .abtP-swSec-articleSwiper-wrap {
   margin-top: 50px;
+}
+
+///// our team section styles
+
+.our-teamSec__body {
+  display: grid;
+  gap: $gutter;
+  padding: 50px $gutter;
+
+}
+
+.our-teamSec__team-info__block {
+  gap: 10px;
+  display: grid;
+}
+
+.our-teamSec__sideImg-block {
+  grid-row: 2;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.our-teamSec__team-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-teamSec-title {
+  display: none;
+  margin-bottom: 40px;
+}
+
+.our-teamSec__team-list {
+  display: none;
+}
+
+.our-teamSec-tagline__askQ-btn {
+  margin-top: 40px;
+  @include fontz('Montserrat', 600, 15px, normal);
+
+  img {
+    margin-left: 10px;
+  }
+}
+
+.our-teamSec-clone__title {
+  display: block;
+}
+
+.our-teamSec__clone-team-tagline__block {
+  display: none;
+}
+
+.our-teamSec__tagline {
+  @include fontz('Montserrat', 400, 18px, normal);
+}
+
+.our-teamSec-teamHead {
+  @include fontz('Montserrat', 600, 20px, normal);
+  text-underline-offset: 10px;
+  text-decoration: underline 1px $mGreen;
+}
+
+.our-teamSec-teamHead__subTitle {
+  display: block;
+  margin-top: 11px;
+  @include fontz('Montserrat', 300, 15px, normal);
+}
+
+.our-teamSec__team-list {
+  margin-top: 20px;
+}
+
+.our-teamSec__team-list__item {
+  margin-bottom: 30px;
+  @include fontz('Montserrat', 300, 20px, normal);
+
+  &[data-last='true'] {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-members__list-item__img {
+  width: 100%;
+  height: 330px;
+  margin-bottom: 40px;
+}
+
+.mobile-members__list-item {
+  margin-bottom: 50px;
+
+  .mobile-members__list-item__name {
+    @include fontz('Montserrat', 600, 20px, normal);
+    margin-bottom: 10px;
+  }
+
+  .mobile-members__list-item__position {
+    margin-bottom: 25px;
+    @include fontz('Montserrat', 300, 15px, normal);
+  }
+
+  .mobile-members__list-item__tagline {
+    @include fontz('Montserrat', 300, 18px, normal);
+  }
 }
