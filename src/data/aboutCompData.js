@@ -116,3 +116,13 @@ export const teamMembersList = [
         tagline: '«Считаю, что неразрешимых ситуаций не бывает. Кто хочет двигаться вперед - ищет пути по решению проблем, кто не хочет - причины неудач»'
     },
 ]
+
+export const contactsData = {
+    mainOfficeAddress: 'г. Санкт-Петерург, ул. Уральская, д.13',
+    phonesList: [
+        '+7(812) 715-02-75',
+        '+7(905) 204-77-74'
+    ],
+    mail: 'cmade.spb@mail.ru',
+    workingHours: 'пн - пт, с 10:00 до 19:00'
+}

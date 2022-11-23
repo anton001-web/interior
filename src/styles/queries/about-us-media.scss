@@ -1,4 +1,8 @@
 @media screen and (max-width: 996px) {
+  .aboutP-contacts__table-row {
+    grid-template-columns: .8fr 1fr;
+  }
+
   .our-teamSec__sideImg-block {
     img {
       height: 100%;
@@ -27,6 +31,39 @@
     img {
       margin-left: 3px;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutP-contacts__body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutP-contacts__table-row {
+    gap: 20px;
+    //grid-template-columns: .8fr 1fr;
+
+    .aboutP-contacts__table-title {
+      padding-right: 0;
+    }
+  }
+
+  .aboutP-contacts__body {
+    grid-template-columns: 1fr;
+
+    .aboutP-contacts__sideImg-block {
+      img, source {
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .aboutP-contacts__table-row {
+    grid-template-columns: 100px 1fr;
   }
 }
 
@@ -123,4 +160,5 @@
       height: 1000px;
     }
   }
+
 }
