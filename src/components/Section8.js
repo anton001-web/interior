@@ -3,7 +3,7 @@ import {instsWorks} from "../data/instsWorks";
 import {motion} from "framer-motion";
 import InnerFormModal from "./customComponents/InnerFormModal";
 
-const Section8 = () => {
+const Section8 = ({className, black = false}) => {
 
     const hoverVariants = {
         rest: {
@@ -19,10 +19,10 @@ const Section8 = () => {
     }
 
     return (
-        <section className='instsWorks-section'>
+        <section className={`instsWorks-section ${className}`}>
             <div className="container">
                 <div className="instsWorks-section__body">
-                    <h1 className="instsWorks-title title-black">Наши проекты в Instagram</h1>
+                    <h1 className={`instsWorks-title ${black ? 'title-white' : 'title-black'}`}>Наши проекты в Instagram</h1>
                     <div className='inst-link__hidden'><img src="./assets/images/inst.png" alt=""/>peterson.designer</div>
                     <div className='instsWorks-block'>
                         <div className='instsWorks-list'>
@@ -50,7 +50,7 @@ const Section8 = () => {
                     </div>
                     <div className="instsWorks-btns__list">
                         <button className='instsWorks-btn btn-blk'>Смотреть все проекты</button>
-                        <div className='inst-link__block'><img src="./assets/images/inst.png" alt=""/>peterson.designer</div>
+                        <div className='inst-link__block'><img src={`./assets/images/${black ? 'instIcoWht.png' : 'inst.png'}`} alt=""/>peterson.designer</div>
                         <button className='instsWorks-follow-btn btn-whtB'>Подписаться</button>
                     </div>
                 </div>

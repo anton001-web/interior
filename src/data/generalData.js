@@ -9,7 +9,7 @@ export const hfLinks = [
     },
     {
         title: 'Портфолио',
-        to: '/portfolio'
+        to: '/works-portfolio'
     },
     {
         title: 'Цены',

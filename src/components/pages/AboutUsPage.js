@@ -7,6 +7,8 @@ import OurTeamSec from "../pagesComponents/OurTeamSec";
 import Section7 from "../Section7";
 import Section2 from "../Section2";
 import ContactsSec from "../pagesComponents/ContactsSec";
+import Section8 from "../Section8";
+import Section9 from "../Section9";
 
 const AboutUsPage = () => {
     return (
@@ -27,6 +29,8 @@ const AboutUsPage = () => {
             <Section7 />
             <Section2 />
             <ContactsSec />
+            <Section8 className='abtP-instWorks' black={true}/>
+            <Section9 />
         </>
     )
 }

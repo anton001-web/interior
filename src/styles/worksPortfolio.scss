@@ -1,0 +1,87 @@
+.works-portfolio__section {
+  margin-top: 20px;
+  position: relative;
+}
+
+.works-portfolio__sec-bg {
+  @extend %section-bg
+}
+
+.works-portfolio__sec-overlay {
+  @extend %section-overlay
+}
+
+.works-portfolio__works-types__block {
+  padding: 50px $gutter;
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: $gutter;
+}
+
+.works-portfolio__types-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.works-portfolio__types-list__item {
+  transition: all .1s;
+  color: #fff;
+  @include fontz('Montserrat', 400, 20px, normal);
+
+  &[data-margin='true'] {
+    margin-right: 20px;
+  }
+
+  &[data-active='true'] {
+    font-weight: 700;
+    border-bottom: 1px solid $mGreen;
+    padding-bottom: 5px;
+  }
+}
+
+.worksPrtf-works__list-block {
+  margin: 40px 0;
+}
+
+.worksPrtf-works__list {
+  display: grid;
+  gap: $gutter;
+  grid-template-columns: 1fr 1fr;
+}
+
+.worksPrtf-works__list-item__img {
+  width: 100%;
+}
+
+.worksPrtf-works__pagination-block {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 $gutter 40px $gutter;
+}
+
+.worksPrtf-works__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.worksPrtf-works__pagination-fraction {
+  color: #fff;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fontz('Montserrat', 400, 15px, normal);
+}
+
+
+.worksPrtf-works__pagination-control {
+  color: #fff;
+  font-size: 30px;
+}
+
+.worksPrtf-works__pagination-control.disable {
+  color: #636e72;
+}

@@ -3,7 +3,7 @@ import {ModalWindow} from "./customComponents/ModalWindow";
 import {
     headerPrjOrderModalW, intDesServModalW,
     mainPsuccessModalW,
-    mainWWPrjOrderModalW,
+    mainWWPrjOrderModalW, ourTeamAskqstModalW,
     peterBioAskQstModalW, servicesModalW,
 } from "../data/modalsData";
 
@@ -15,6 +15,7 @@ const Modals = () => {
     const mainPageForm = React.createRef()
     const servicesModal = React.createRef()
     const intDesignServModal = React.createRef()
+    const abtPourTeamModal = React.createRef()
 
     return (
         <>
@@ -41,6 +42,10 @@ const Modals = () => {
             <ModalWindow
                 modalOptions={intDesServModalW}
                 ref={intDesignServModal}
+            />
+            <ModalWindow
+                modalOptions={ourTeamAskqstModalW}
+                ref={abtPourTeamModal}
             />
         </>
     )

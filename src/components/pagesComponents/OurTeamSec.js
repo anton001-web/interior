@@ -1,9 +1,17 @@
 import React from 'react'
 import {teamMembersList, teamSecData} from "../../data/aboutCompData";
 import useMatchMedia from "use-match-media";
+import {modalToggle} from "../../store/actions";
+import {ourTeamAskqstModalW} from "../../data/modalsData";
+import {useDispatch} from "react-redux";
 
 const OurTeamSec = () => {
     const [mob] = [useMatchMedia('(max-width: 480px)') || false]
+    const dispatch = useDispatch()
+
+    const modalOpen = () => {
+        dispatch(modalToggle(ourTeamAskqstModalW.modalType))
+    }
 
     return (
         <section className='our-team__section'>
@@ -30,7 +38,7 @@ const OurTeamSec = () => {
                                 <p className='our-teamSec__tagline'>
                                     «Считаю, что неразрешимых ситуаций не бывает. Кто хочет двигаться вперед - ищет пути по решению проблем, кто не хочет - причины неудач»
                                 </p>
-                                <button className='our-teamSec-tagline__askQ-btn'>Задать вопрос <img src="./assets/images/askQArrowBtn.png" alt="arrow "/></button>
+                                <button className='our-teamSec-tagline__askQ-btn' onClick={modalOpen}>Задать вопрос <img src="./assets/images/askQArrowBtn.png" alt="arrow "/></button>
                             </div>
                         </div>
                     </div>

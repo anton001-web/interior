@@ -16,6 +16,7 @@ import {Routes, Route} from "react-router-dom";
 import ServicesPage from "./components/pages/ServicesPage";
 import ServicePage from "./components/pages/ServicePage";
 import AboutUsPage from "./components/pages/AboutUsPage";
+import WorksPortfolio from "./components/WorksPortfolio";
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
             <Main>
                 <Routes>
                     <Route path='/' exact element={<SummaryProject />}/>
+                    <Route path='/works-portfolio' exact element={<WorksPortfolio />}/>
                     <Route path='/services' exact element={<ServicesPage />}/>
                     <Route path='/about-us' exact element={<AboutUsPage />}/>
                     <Route path='/services/:serviceCategory' exact element={<ServicePage />}/>

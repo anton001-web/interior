@@ -241,3 +241,19 @@
   grid-template-columns: 200px 1fr;
   margin-bottom: 20px;
 }
+
+/// insts works styles
+
+.abtP-instWorks {
+  background-color: $mBlack;
+
+  .instsWorks-btn {
+    border: 1px solid #fff;
+    background: inherit;
+  }
+
+  .inst-link__block {
+    background-color: inherit;
+    color: #fff;
+  }
+}

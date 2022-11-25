@@ -129,6 +129,33 @@ export const intDesServModalW = {
     btnType: 'sendData'
 }
 
+export const ourTeamAskqstModalW = {
+    texts: [
+        'Если Вам нужна консультация по проекту, напишите сообщение. Мы свяжемся с Вами и ответим на интересующие вопросы.'
+    ],
+    dataType: 'orderProject',
+    containsForm: true,
+    modalInputs: [
+        {
+            inputId: 'ask-quest__bio-input__name',
+            placeholder: 'Как к вам обращаться?'
+        },
+        {
+            inputId: 'ask-quest__bio-input__phone',
+            placeholder: 'Номер телефона'
+        },
+        {
+            inputId: 'ask-quest__bio-input__message',
+            placeholder: 'Номер телефона',
+            messageField: true
+        }
+    ],
+    modalType: 'abtP-ourTeam__modal',
+    title: 'Задайте вопрос  ',
+    btnText: 'Отправить сообщение',
+    btnType: 'sendData'
+}
+
 export const textsDefault = [
     'Спасибо за оставленную заявку.',
     'Мы свяжемся с Вами в ближайшее время, чтобы проконсультировать по интересующим вопросам.',
