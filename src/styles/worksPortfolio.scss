@@ -85,3 +85,20 @@
 .worksPrtf-works__pagination-control.disable {
   color: #636e72;
 }
+
+.worksPrtf-works__list__hover-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fontz('Montserrat', 600, 20px, normal);
+  color: #fff;
+}
+
+.worksPrtf-works__list-item {
+  position: relative;
+}
