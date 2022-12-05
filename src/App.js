@@ -17,6 +17,7 @@ import ServicesPage from "./components/pages/ServicesPage";
 import ServicePage from "./components/pages/ServicePage";
 import AboutUsPage from "./components/pages/AboutUsPage";
 import WorksPortfolio from "./components/WorksPortfolio";
+import PortfolioWorkPage from "./components/pages/PortfolioWorkPage";
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' exact element={<SummaryProject />}/>
                     <Route path='/works-portfolio' exact element={<WorksPortfolio />}/>
+                    <Route path='/works-portfolio/:portfolioWork' exact element={<PortfolioWorkPage />}/>
                     <Route path='/services' exact element={<ServicesPage />}/>
                     <Route path='/about-us' exact element={<AboutUsPage />}/>
                     <Route path='/services/:serviceCategory' exact element={<ServicePage />}/>

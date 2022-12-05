@@ -38,10 +38,12 @@ export const FilteredPortfolioWorks = ({works}) => {
                                 initial={'hidden'}
                                 whileHover={'animate'}
                             >
-                                <img src={work.img} alt="" className='worksPrtf-works__list-item__img'/>
-                                <motion.div variants={cardAnim} className='worksPrtf-works__list__hover-block'>
-                                    {work.title}
-                                </motion.div>
+                                <a href={`/works-portfolio${work.to}`}>
+                                    <img src={work.img} alt="" className='worksPrtf-works__list-item__img'/>
+                                    <motion.div variants={cardAnim} className='worksPrtf-works__list__hover-block'>
+                                        {work.title}
+                                    </motion.div>
+                                </a>
                             </motion.div>
                         </motion.div>
                     ))

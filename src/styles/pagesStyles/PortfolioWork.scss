@@ -1,0 +1,67 @@
+.portfolio-work__section {
+  position: relative;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.portfolio-work__details-block {
+  height: 100%;
+  padding: 50px 0;
+}
+
+.portfolio-work__details-titles__group {
+  padding: 0 $gutter;
+}
+
+.portfolio-work__head-bg {
+  @extend %section-bg;
+  display: none;
+}
+
+.portfolio-work__details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-work__head-overlay {
+  @extend %section-overlay;
+  display: none;
+}
+
+.portfolio-work__details-subTitle {
+  @include fontz('Montserrat', 600, 20px, normal);
+  color: $mGreen;
+  margin-top: 30px;
+  display: block;
+}
+
+.portfolio-work__details-main__img-block {
+  margin-top: 60px;
+
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.portfolio-work__details-info {
+  padding: 0 $gutter;
+  margin-top: 60px;
+}
+
+.portfolio-work__details-info__text {
+  color: #fff;
+
+  .portfolio-work__details-info__title {
+    margin-bottom: 20px;
+    @include fontz('Montserrat', 600, 20px, normal);
+  }
+
+  .portfolio-work__details-info__text {
+    @include fontz('Montserrat', 400, 16px, normal);
+  }
+}
