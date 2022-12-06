@@ -4,14 +4,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .portfolio-work__details-block {
-    background: $mBlack;
-  }
-}
-
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .portfolio-work__section {
+  .portfolio-work__head-section {
     height: 100%;
   }
 
@@ -40,7 +34,7 @@
 }
 
 @media screen and (min-width: 767px) {
-  .portfolio-work__section {
+  .portfolio-work__head-section {
     margin-top: 20px;
     min-height: 754px;
     height: 0;
@@ -78,9 +72,84 @@
   }
 }
 
+@media screen and (min-width: 767px) {
+  .portfolio-work__form-section {
+    display: flex;
+    align-items: center;
+
+    .container {
+      width: 100%;
+    }
+  }
+}
 
 @media screen and (max-width: 996px) {
-  .portfolio-work__section {
+  .portfolio-work__head-section {
     min-height: 600px;
+  }
+
+  .portfolio-work__mainGallery-list__item {
+    height: 400px;
+  }
+
+  .portfolio-work__secondGallery-list__item {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-work__form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .portfolio-work__form-block {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio-work__form-text__group {
+      margin-bottom: 40px;
+    }
+  }
+
+
+  .portfolio-work__mainGallery-list__block {
+    padding: $gutter;
+    grid-template-columns: 1fr;
+
+    .portfolio-work__mainGallery-list__item {
+      height: 500px;
+    }
+  }
+
+  .portfolio-work__secondGallery-list__block {
+    padding: $gutter;
+    grid-template-columns: 1fr;
+
+    .portfolio-work__secondGallery-list__item {
+      height: 800px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-work__details-block {
+    background: $mBlack;
+  }
+
+  .portfolio-work__mainGallery-list__block {
+    padding: $gutter 0;
+
+    .portfolio-work__mainGallery-list__item {
+      height: 400px;
+    }
+  }
+
+  .portfolio-work__secondGallery-list__block {
+    padding: $gutter 0;
+
+    .portfolio-work__secondGallery-list__item {
+      height: 400px;
+    }
   }
 }

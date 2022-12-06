@@ -233,6 +233,7 @@ export const portfolioWorksList = [
         aboutProject: 'Это очень интересный для нас проект. Заказчики обратились к нам за дизайн-проектом их квартиры, которая оказалась не в новом ЖК, а во вполне обычном пятиэтажном доме. Они решили полностью обновить интерьер квартиры и вдохнуть в нее вторую жизнь! Мы откликнулись и приложили все усилия, чтобы эта небольшая трешка заиграла новыми красками!',
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork1',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -276,6 +277,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork2',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -319,6 +321,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork3',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -362,6 +365,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork4',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -405,6 +409,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork5',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -448,6 +453,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork6',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -491,6 +497,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork7',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -534,6 +541,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork8',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -577,6 +585,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork9',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -620,6 +629,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork10',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -663,6 +673,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork11',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -706,6 +717,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork12',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -749,6 +761,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork13',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -792,6 +805,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork14',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -835,6 +849,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork15',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -878,6 +893,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork16',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -921,6 +937,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork17',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -964,6 +981,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork18',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1007,6 +1025,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork19',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1050,6 +1069,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork20',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1093,6 +1113,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork21',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1136,6 +1157,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork22',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1179,6 +1201,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork23',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1222,6 +1245,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork24',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1265,6 +1289,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork25',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1308,6 +1333,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork26',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1351,6 +1377,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork27',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1394,6 +1421,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork28',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1437,6 +1465,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork29',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1480,6 +1509,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork30',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1523,6 +1553,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork31',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1566,6 +1597,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork32',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1609,6 +1641,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork33',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1652,6 +1685,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork34',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1695,6 +1729,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork35',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1738,6 +1773,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork36',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1781,6 +1817,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork37',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [
@@ -1824,6 +1861,7 @@ export const portfolioWorksList = [
         exercises: 'Создать стильный и эргономичный интерьер квартиры для семьи из четырех человек и собаки.',
         type: 'portfolioWork38',
         title: 'ЖК Триумф Парк',
+        mainImgMobile: './assets/images/portfWorkMainMobImg.png',
         heroImg: './assets/images/portfWorkHeroImg.png',
         mainImg: './assets/images/portfWorkMainImg.png',
         firstImgList: [

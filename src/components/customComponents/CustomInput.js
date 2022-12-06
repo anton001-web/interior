@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CustomInput = ({inputId, placeholder, isMessageField = false}) => {
+const CustomInput = ({inputId, clName = false, placeholder, isMessageField = false}) => {
     return (
-        <div className='custom-input__group'>
+        <div className={`custom-input__group ${clName && clName}`}>
             {
                 isMessageField
                     ?

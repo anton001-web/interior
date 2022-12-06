@@ -1,4 +1,4 @@
-.portfolio-work__section {
+.portfolio-work__head-section {
   position: relative;
 
   .container {
@@ -64,4 +64,95 @@
   .portfolio-work__details-info__text {
     @include fontz('Montserrat', 400, 16px, normal);
   }
+}
+
+.portfolio-work__mainImg-block {
+  img {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.portfolio-work__mainGallery-list__block {
+  padding-top: $gutter;
+  background: $mBlack;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gutter;
+}
+
+
+.portfolio-work__mainGallery-list__item {
+  height: 500px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.portfolio-work__secondGallery-list__block {
+  padding-top: $gutter;
+  background: $mBlack;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gutter;
+}
+
+.portfolio-work__secondGallery-list__item {
+  height: 800px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.portfolio-work__form-section {
+  position: relative;
+  min-height: 400px;
+  height: 100%;
+
+}
+
+.portfolio-work__form-bg {
+  @extend %section-bg;
+}
+
+.portfolio-work__form-overlay {
+  @extend %section-overlay;
+}
+
+.portfolio-work__form-block {
+  padding: 50px $gutter;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gutter;
+}
+
+.portfolio-work__form-text {
+  margin-top: 25px;
+  @include fontz('Montserrat', 400, 18px, normal);
+  color: #fff;
+}
+
+.portfolio-work__form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.portfolio-work-form-input-wrap {
+  color: #fff;
+
+  .custom-input {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+
+.portfolio-work__form-btn {
+  width: 250px;
 }
