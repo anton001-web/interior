@@ -1,10 +1,13 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination} from "swiper";
+import {hoverVariants} from "../../otherFuncs/variants";
+import {motion} from "framer-motion";
 
 const CustomSwiper = (props) => {
     const {
         slidesList,
+        imgWbg = false
     } = props
 
     return (
@@ -53,13 +56,24 @@ const CustomSwiper = (props) => {
                         key={ind}
                         className='custom-swiper__slide'
                     >
-                        <div className='custom-swiper__text-group'>
-                            {slide.title && <h2 className='custom-swiper__title'>{slide.title}</h2>}
-                            {slide.subTitle && <p className='custom-swiper__subTitle'>{slide.subTitle}</p>}
-                        </div>
-                        <div className='custom-swiperSlide-img__wrap'>
+                        {
+                            !imgWbg && (
+                                <div className='custom-swiper__text-group'>
+                                    {slide.title && <h2 className='custom-swiper__title'>{slide.title}</h2>}
+                                    {slide.subTitle && <p className='custom-swiper__subTitle'>{slide.subTitle}</p>}
+                                </div>
+                            )
+                        }
+                        <motion.div initial="rest" whileHover="hover" animate="rest" className='custom-swiperSlide-img__wrap'>
+                            {
+                                imgWbg && (
+                                    <motion.div variants={hoverVariants} className='custom-swiper-overlay'>
+                                        <span className='custom-swiper-overlay-text'>{slide.title}</span>
+                                    </motion.div>
+                                )
+                            }
                             <img src={slide.img} alt="bottom image" className='custom-swiperSlide__img'/>
-                        </div>
+                        </motion.div>
                     </SwiperSlide>
                 ))
             }

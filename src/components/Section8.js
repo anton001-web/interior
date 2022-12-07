@@ -2,21 +2,9 @@ import React, {useState} from 'react'
 import {instsWorks} from "../data/instsWorks";
 import {motion} from "framer-motion";
 import InnerFormModal from "./customComponents/InnerFormModal";
+import {hoverVariants} from "../otherFuncs/variants";
 
 const Section8 = ({className, black = false}) => {
-
-    const hoverVariants = {
-        rest: {
-            opacity: 0,
-            duration: .3
-        },
-        hover: {
-            opacity: 1,
-            transition: {
-                duration: .3,
-            }
-        }
-    }
 
     return (
         <section className={`instsWorks-section ${className}`}>

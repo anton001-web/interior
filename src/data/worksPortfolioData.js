@@ -268,7 +268,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -312,7 +328,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -356,7 +388,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -400,7 +448,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -444,7 +508,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -488,7 +568,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -532,7 +628,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -576,7 +688,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -620,7 +748,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -664,7 +808,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -708,7 +868,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -752,7 +928,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -796,7 +988,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -840,7 +1048,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -884,7 +1108,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -928,7 +1168,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -972,7 +1228,24 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
+
         ],
     },
     {
@@ -1016,7 +1289,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1060,7 +1349,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1104,7 +1409,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1148,7 +1469,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1192,7 +1529,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1236,7 +1589,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1280,7 +1649,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1324,7 +1709,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1368,7 +1769,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1412,7 +1829,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1456,7 +1889,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1500,7 +1949,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1544,7 +2009,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1588,7 +2069,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1632,7 +2129,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1676,7 +2189,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1720,7 +2249,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1764,7 +2309,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1808,7 +2369,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1852,7 +2429,23 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
+            {
+                img: './assets/images/similarProject1.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject2.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject3.png',
+                title: 'ЖК Триумф Парк'
+            },
+            {
+                img: './assets/images/similarProject4.png',
+                title: 'ЖК Триумф Парк'
+            },
         ],
     },
     {
@@ -1896,7 +2489,7 @@ export const portfolioWorksList = [
             {
                 img: './assets/images/similarProject4.png',
                 title: 'ЖК Триумф Парк'
-            }
+            },
         ],
     }
 ]

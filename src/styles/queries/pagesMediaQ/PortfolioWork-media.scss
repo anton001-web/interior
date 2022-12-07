@@ -98,6 +98,18 @@
 }
 
 @media screen and (max-width: 767px) {
+  .portfolio-work-toTh__sec, .portfolio-work__smProjects-sec {
+    background: $mBlack;
+  }
+
+  .portfolio-work-toTh__list {
+    grid-template-columns: 1fr;
+
+    .portfolio-work-toTh__list-item {
+      margin-bottom: 30px;
+    }
+  }
+
   .portfolio-work__form-section {
     display: flex;
     align-items: center;
@@ -133,6 +145,13 @@
 }
 
 @media screen and (max-width: 480px) {
+  .portfolio-work-toTh__list-item {
+    img {
+      height: 280px;
+    }
+  }
+
+
   .portfolio-work__details-block {
     background: $mBlack;
   }

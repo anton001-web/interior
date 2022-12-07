@@ -3,6 +3,9 @@ import {useParams} from "react-router-dom";
 import {portfolioWorksList} from "../../data/worksPortfolioData";
 import useMatchMedia from "use-match-media";
 import CustomInput from "../customComponents/CustomInput";
+import CustomSwiper from "../customComponents/CustomSwiper";
+import {hoverVariants} from "../../otherFuncs/variants";
+import {motion} from "framer-motion";
 
 
 const PortfolioWorkPage = ({title}) => {
@@ -82,6 +85,35 @@ const PortfolioWorkPage = ({title}) => {
                                 <CustomInput clName='portfolio-work-form-input-wrap' inputId='portfolio-work__phone' placeholder='Номер телефона' />
                                 <button className='portfolio-work__form-btn btn-wht'>Оставить заявку</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="portfolio-work__smProjects-sec">
+                <div className='container'>
+                    <div className="portfolio-work__smProjects-body">
+                        <h1 className='portfolio-work__smProjects-title title-white'>Похожие проекты</h1>
+                        <CustomSwiper slidesList={portfolioItem.similarProjectsList} imgWbg={true} />
+                    </div>
+                </div>
+            </div>
+            <div className='portfolio-work-toTh__sec'>
+                <div className="container">
+                    <div className="portfolio-work-toTh__body">
+                        <h1 className='portfolio-work-toTh__title title-white'>К размышлению</h1>
+                        <div className='portfolio-work-toTh__list'>
+                            <motion.div initial="rest" whileHover="hover" animate="rest" className='portfolio-work-toTh__list-item'>
+                                <motion.div variants={hoverVariants} className='portfolio-work-toTh__list-item-overlay'>
+                                    <span className='portfolio-work-toTh__list-item-text'>Коммерческая недвижимость</span>
+                                </motion.div>
+                                <img src="./assets/images/portfWtoTHimg1.png" alt=""/>
+                            </motion.div>
+                            <motion.div initial="rest" whileHover="hover" animate="rest" className='portfolio-work-toTh__list-item'>
+                                <motion.div variants={hoverVariants} className='portfolio-work-toTh__list-item-overlay'>
+                                    <span className='portfolio-work-toTh__list-item-text'>Коттеджи</span>
+                                </motion.div>
+                                <img src="./assets/images/portfWtoTHimg2.png" alt=""/>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

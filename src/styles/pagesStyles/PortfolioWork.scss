@@ -156,3 +156,58 @@
 .portfolio-work__form-btn {
   width: 250px;
 }
+
+.portfolio-work__smProjects-sec {
+  background: #000;
+
+  .portfolio-work__smProjects-title {
+    margin: 40px 0;
+  }
+
+  .portfolio-work__smProjects-body {
+    padding: 50px $gutter;
+  }
+
+  .custom-swiper {
+    margin-top: 0;
+  }
+}
+
+.portfolio-work-toTh__sec {
+  background: #000;
+
+  .portfolio-work-toTh__body {
+    padding: 50px $gutter;
+  }
+}
+
+.portfolio-work-toTh__list {
+  grid-template-columns: 1fr 1fr;
+  gap: $gutter;
+  display: grid;
+}
+
+.portfolio-work-toTh__title {
+  margin-bottom: 40px;
+}
+
+.portfolio-work-toTh__list-item {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.portfolio-work-toTh__list-item-overlay {
+  @extend %section-overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(113.14deg, #000000 0%, rgba(0, 0, 0, 0.01) 64.97%);
+}
+
+.portfolio-work-toTh__list-item-text {
+  @include fontz('Montserrat', 600, 20px, normal);
+  color: #fff;
+}
