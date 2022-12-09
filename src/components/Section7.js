@@ -26,7 +26,7 @@ const Section7 = () => {
                             }
                         </div>
                         <Swiper
-                            className='review-swiper'
+                            className='review-genSec-swiper'
                             slidesPerView={1}
                             loop={true}
                             centeredSlides={true}

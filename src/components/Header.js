@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DropDownList from "./customComponents/DropDownList";
 import {motion} from "framer-motion";
 import {useDispatch, useSelector} from "react-redux";
-import {dropdownToggle, modalToggle, toggleBurger} from "../store/actions";
+import {burgerClose, dropdownToggle, modalToggle, toggleBurger} from "../store/actions";
 import {DROPDOWN_CLOSE} from "../store/types";
 import {hfLinks} from "../data/generalData";
 import {headerDDList} from "../data/generalData";
@@ -28,6 +28,10 @@ const Header = () => {
         const {burger} = store
         return burger
     })
+
+    const closeBurgerMenu = () => {
+        dispatch(burgerClose())
+    }
 
     if(visible && tablet) {
         document.documentElement.classList.add('scroll-active')
@@ -100,6 +104,7 @@ const Header = () => {
                                         <li className='header-menu__list-item' data-b>Стоимость</li>
                                         <li className='header-menu__list-item' data-b>Портфолио</li>
                                         <li className='header-menu__list-item' data-b>Блог</li>
+                                        <li data-b><Link onClick={closeBurgerMenu} className='header-menu__list-item' to='/reviews'>Отзывы</Link></li>
                                         <li className='header-menu__list-item' data-b>Контакты</li>
                                     </div>
                                 </ul>

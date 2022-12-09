@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+  .reviews-section {
+    background: $mBlack;
+  }
+
+  .tablet-review-list__item {
+    grid-template-columns: 1fr;
+  }
+
+  .tablet-review-list__item-imgBlock {
+    height: 500px;
+  }
+
+  .reviews-add-btn {
+    display: block;
+  }
+
+  .reviews-section {
+    margin-top: 0;
+  }
+
+  .mobile-reviews-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtered-reviews__laptop-contorls {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (max-width: 480px) {
+  .tablet-review-list__item {
+    margin-bottom: 0;
+  }
+
+  .tablet-review-list__item-imgBlock {
+    img {
+
+    }
+  }
+
+  .reviews-section__body {
+    padding: 50px 0;
+
+    .reviews-section__title {
+      padding-left: 20px;
+    }
+  }
+
+  .tablet-review-list__item-header {
+    padding: $gutter;
+  }
+}

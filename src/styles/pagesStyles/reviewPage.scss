@@ -1,0 +1,138 @@
+.reviews-section {
+  position: relative;
+  margin-top: 20px;
+}
+
+.review-section__bg-img {
+  @extend %section-bg;
+}
+
+.reviews-section__overlay {
+  @extend %section-overlay;
+}
+
+.reviews-section__body {
+  padding: 50px $gutter;
+}
+
+.review-swiper__item-content__header {
+  margin-bottom: 30px;
+}
+
+.tablet-review-list__item-hBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.tablet-review-list__item-header {
+  display: flex;
+  justify-content: center;
+}
+
+.review-swiper__item-content {
+  background: #fff;
+}
+
+.review-swiper__item-headerText {
+  @include fontz('Montserrat', 600, 20px, normal);
+  margin-right: 10px;
+}
+
+.review-swiper__item-auth-img {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.review-swiper__item-text__item {
+  max-width: 405px;
+  @include fontz('Montserrat', 400, 18px, normal);
+}
+
+.review-swiper__item-projectImg-block {
+  position: relative;
+}
+
+.review-swiper__item-projectImg {
+  @extend %section-bg;
+}
+
+.review-swiper__item-projectImg__overlay {
+  @extend %section-overlay;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mobile-reviews-sec {
+  margin-top: 40px;
+
+}
+
+.tablet-review-list__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tablet-review-list__item-header {
+  background: #fff;
+  padding: 40px;
+}
+
+.tablet-review-list__item {
+  margin-bottom: 50px;
+  width: 100%;
+
+  .tablet-review-list__item-imgBlock {
+    position: relative;
+    //height: 600px;
+
+    img {
+      @extend %section-bg;
+      z-index: 1;
+
+    }
+    .tablet-review-list__item-img-overlay {
+      z-index: 1;
+      @extend %section-overlay;
+      background: linear-gradient(119.1deg, #000000 0%, rgba(0, 0, 0, 0.01) 60.29%);
+    }
+  }
+}
+
+.reviews-add-btn {
+  display: none;
+  margin-top: 30px;
+}
+
+.filtered-reviews__laptop-contorls {
+  display: flex;
+  justify-content: end;
+}
+
+.filtered-reviews__laptop-contorls__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtered-reviews-control {
+  font-size: 30px;
+  color: #fff;
+}
+
+.filtered-reviews-fraction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  color: #fff;
+  @include fontz('Montserrat', 400, 15px, normal);
+}

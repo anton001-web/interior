@@ -145,6 +145,7 @@
   @include fontz('Montserrat', 300, 18px, normal);
   transition: border-bottom-color .3s;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
 
   &:hover {
     border-bottom-color: $mGreen;

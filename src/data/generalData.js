@@ -65,7 +65,11 @@ export const footerNewLinks = [
     },
     {
         title: 'Мебель',
-    }
+    },
+    {
+        title: 'Отзывы',
+        to: '/reviews'
+    },
 ]
 
 export const servicesMainList = [
