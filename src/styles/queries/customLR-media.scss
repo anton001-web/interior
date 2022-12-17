@@ -4,6 +4,10 @@
     grid-column: 1 !important;
   }
 
+  .custom-lr__sec-info__block {
+    min-height: 0 !important;
+  }
+
   .custom-content__lr-section__wrap {
     grid-template-columns: 100% !important;
 

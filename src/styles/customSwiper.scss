@@ -87,6 +87,10 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(113.14deg, #000000 0%, rgba(0, 0, 0, 0.01) 64.97%);
+
+  &.custom {
+    background: rgba(0, 0, 0, .6);
+  }
 }
 
 .custom-swiper-overlay-text {

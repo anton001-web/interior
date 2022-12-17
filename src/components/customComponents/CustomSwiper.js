@@ -7,7 +7,8 @@ import {motion} from "framer-motion";
 const CustomSwiper = (props) => {
     const {
         slidesList,
-        imgWbg = false
+        imgWbg = false,
+        overlayCustom = false
     } = props
 
     return (
@@ -67,7 +68,7 @@ const CustomSwiper = (props) => {
                         <motion.div initial="rest" whileHover="hover" animate="rest" className='custom-swiperSlide-img__wrap'>
                             {
                                 imgWbg && (
-                                    <motion.div variants={hoverVariants} className='custom-swiper-overlay'>
+                                    <motion.div variants={hoverVariants} className={`custom-swiper-overlay custom`}>
                                         <span className='custom-swiper-overlay-text'>{slide.title}</span>
                                     </motion.div>
                                 )

@@ -19,7 +19,13 @@ const CustomWorkway = ({stages, className}) => {
                                 </div>
                                 <div className='custom-workway-stage-text__group'>
                                     <h3 className='custom-workway-stage__title'>{item.title}</h3>
-                                    <p className='custom-workway-stage__text'>{item.text}</p>
+                                    {
+                                        item.texts ? item.texts.map((text, ind) => (
+                                            <p key={ind} className='custom-workway-stage__text'>{text}</p>
+                                        )) : (
+                                            <p className='custom-workway-stage__text'>{item.text}</p>
+                                        )
+                                    }
                                 </div>
                             </div>
                         )

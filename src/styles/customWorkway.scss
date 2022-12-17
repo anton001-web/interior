@@ -14,7 +14,8 @@
 }
 
 .custom-workway-stage__text {
-  @include fontz('Montserrat', 300, 18px, normal);
+  margin-bottom: 15px;
+  @include fontz('Montserrat', 400, 18px, normal);
   color: #fff;
   max-width: 700px;
 }
@@ -45,8 +46,9 @@
 .custom-workway-stage-line {
   position: relative;
   left: 50%;
+  top: 10px;
   transform: translate(-50%);
-  height: 100%;
+  height: calc(100% - 40px);
   background-color: #fff;
   width: 1px;
 }

@@ -15,10 +15,6 @@ export const hfLinks = [
         title: 'Цены',
         to: '/prices'
     },
-    {
-        title: 'Блог',
-        hidden: true
-    }
 ]
 
 export const headerDDList = [
@@ -48,7 +44,7 @@ export const headerDDList = [
     },
     {
         title: 'Архитектурное проектирование',
-        // to: '/services/architecture-designing'
+        to: '/services/architecture-designing'
     }
 ]
 

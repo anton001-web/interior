@@ -19,6 +19,9 @@ import AboutUsPage from "./components/pages/AboutUsPage";
 import WorksPortfolio from "./components/WorksPortfolio";
 import PortfolioWorkPage from "./components/pages/PortfolioWorkPage";
 import ReviewPage from "./components/pages/ReviewPage";
+import BlogPage from "./components/pages/BlogPage";
+import ArchDesignPage from "./components/pages/ArchDesignPage";
+import ContactsSec from "./components/pagesComponents/ContactsSec";
 
 const App = () => {
     return (
@@ -32,7 +35,10 @@ const App = () => {
                     <Route path='/services' exact element={<ServicesPage />}/>
                     <Route path='/about-us' exact element={<AboutUsPage />}/>
                     <Route path='/reviews' exact element={<ReviewPage />}/>
+                    <Route path='/blog-page' exact element={<BlogPage />}/>
                     <Route path='/services/:serviceCategory' exact element={<ServicePage />}/>
+                    <Route path='/contacts' exact element={<ContactsSec />}/>
+                    <Route path='/services/architecture-designing' exact element={<ArchDesignPage />}/>
                 </Routes>
             </Main>
             <Footer />

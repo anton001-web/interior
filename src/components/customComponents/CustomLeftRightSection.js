@@ -20,7 +20,8 @@ const CustomLeftRightSection = (props) => {
         btnHandler,
         isTitleClone = false,
         isHalf,
-        advList
+        advList,
+        minHeight = '500px'
     } = props
 
     const bgStyles = {
@@ -31,18 +32,18 @@ const CustomLeftRightSection = (props) => {
 
     return (
         <div className='custom-lr__section'>
-            <div className="container" style={{minHeight: '500px'}}>
+            <div className="container" style={{minHeight: minHeight}}>
                 <div className={classNames(`custom-lr__sec-wrap ${isTitleClone && 'custom-lr__sec-wrap__active-antSt'}`)} style={{minHeight: '500px', gridTemplateColumns: isImgLeft ? '1fr 1fr' : '1fr 1fr'}}>
                     <div className={classNames(`custom-lr__sec-bg ${tablet && !isImgLeft ? 'tabletTrue' : false} ${isHalf && 'isHalf'}`)} style={bgStyles}>
                         {
                             isTitleClone && (
-                                <div style={{display: tablet && isTitleClone ? 'block' : 'none'}} className="overlay-shadow"><h2 className='custom-lr__sec-title__clone'>{title}</h2></div>
+                                <div style={{display: tablet && isTitleClone ? 'block' : 'none'}} className="overlay-shadow"><h2 className='custom-lr__sec-title__clone title-white'>{title}</h2></div>
                             )
                         }
                     </div>
-                    <div className="custom-lr__sec-info__block" style={{gridColumn: isImgLeft ? '2' : '1'}}>
+                    <div className="custom-lr__sec-info__block" style={{minHeight: minHeight, gridColumn: isImgLeft ? '2' : '1'}}>
                         <div className='custom-lr__sec-info'>
-                            <h2 className='custom-lr__sec-title' style={{display: tablet && isTitleClone ? 'none' : 'block'}}>{title}</h2>
+                            <h2 className='custom-lr__sec-title title-black' style={{display: tablet && isTitleClone ? 'none' : 'block'}}>{title}</h2>
                             {
                                 texts.map((text, ind) => (
                                     <p key={ind} className='custom-lr__sec-text'>{text}</p>
@@ -58,7 +59,7 @@ const CustomLeftRightSection = (props) => {
                                         }
                                     </ul>
                                 ) : (
-                                    <button className={classNames(`custom-lr__sec-btn ${btnType}`)} onClick={btnHandler}>{btnText}</button>
+                                    <button className={classNames(`custom-lr__sec-btn btn-blk ${btnType}`)} onClick={btnHandler}>{btnText}</button>
                                 )
                             }
                         </div>

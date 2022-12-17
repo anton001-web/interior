@@ -1,0 +1,43 @@
+@media screen and (max-width: 1100px) {
+  .arch-pageWW__stages-list-item__block {
+    img {
+      width: 25px;
+      margin: 3px 10px 0px 10px;
+    }
+
+    .arch-pageWW__stages-list-item {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .archPage-form__block {
+    .custom-content__lr-section__bg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .arch-pageWW__stages-list {
+    flex-wrap: wrap;
+
+    .arch-pageWW__stages-list-item__block {
+      margin-top: 5px;
+
+      .arch-pageWW__stages-list-item {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-upl__list-item {
+    .projects-upl__img {
+      height: 300px !important;
+    }
+  }
+}

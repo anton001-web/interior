@@ -103,9 +103,9 @@ const Header = () => {
                                         <DropDownList listTitle='Услуги' listItems={headerDDList} className='desktopDD'/>
                                         <li className='header-menu__list-item' data-b>Стоимость</li>
                                         <li className='header-menu__list-item' data-b>Портфолио</li>
-                                        <li className='header-menu__list-item' data-b>Блог</li>
+                                        <li data-b><Link onClick={closeBurgerMenu} className='header-menu__list-item' to='/blog-page'>Блог</Link></li>
                                         <li data-b><Link onClick={closeBurgerMenu} className='header-menu__list-item' to='/reviews'>Отзывы</Link></li>
-                                        <li className='header-menu__list-item' data-b>Контакты</li>
+                                        <li data-b><Link onClick={closeBurgerMenu} className='header-menu__list-item' to='/contacts'>Контакты</Link></li>
                                     </div>
                                 </ul>
                             </motion.div>

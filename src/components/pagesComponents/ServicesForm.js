@@ -5,7 +5,7 @@ import CustomInput from "../customComponents/CustomInput";
 import CustomForm from "../customComponents/CustomForm";
 import InnerFormModal from "../customComponents/InnerFormModal";
 
-const ServicesForm = ({formBg, inputsList}) => {
+const ServicesForm = ({formBg, inputsList, bg, className = undefined}) => {
     const [innerFormVisible, setInnerFormVisible] = useState(false)
 
     const toggleVisibility = (e) => {
@@ -33,7 +33,7 @@ const ServicesForm = ({formBg, inputsList}) => {
                             isFullWidth={true}
                         />
                     ) : (
-                        <CustomForm inputsList={inputsList} btnHandler={toggleVisibility}/>
+                        <CustomForm className={className} inputsList={inputsList} btnHandler={toggleVisibility}/>
                     )
                 }
             </LeftRightSectionCustomStyles>
