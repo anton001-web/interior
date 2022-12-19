@@ -1,7 +1,13 @@
 import React from 'react'
 import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
+import {useDispatch} from "react-redux";
+import {modalToggle} from "../../store/actions";
 
 const DecorPPriceBlock = ({decorS}) => {
+    const dispatch = useDispatch()
+
+    const openModal = () => dispatch(modalToggle('decor-ord__modal'))
+
     return (
         <section className='decorationPage-pBlock__section'>
             <LeftRightSectionCustomStyles
@@ -20,7 +26,7 @@ const DecorPPriceBlock = ({decorS}) => {
                                 <span className='decorationPage-pBlock__dec-S__text'>для интерьеров квартир Санкт-Петербурга</span>
                             </div>
                             <span className='decorationPage-pBlock__subTitle'>Журнальная фотосессия декорированной квартиры в подарок!</span>
-                            <button className="decorationPage-pBlock__btn btn-dGr">Заказать декорирование </button>
+                            <button onClick={openModal} className="decorationPage-pBlock__btn btn-dGr">Заказать декорирование </button>
                         </div>
                     </div>
                 </div>

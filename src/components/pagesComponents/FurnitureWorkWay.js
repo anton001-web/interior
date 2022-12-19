@@ -1,13 +1,18 @@
 import React from 'react'
 import CustomWorkway from "../customComponents/CustomWorkway";
+import {useDispatch} from "react-redux";
+import {modalToggle} from "../../store/actions";
 
 const FurnitureWorkWay = ({secData}) => {
+    const dispatch = useDispatch()
 
     const {
         title,
         bgImg,
         workwayList
     } = secData
+
+    const openModal = () => dispatch(modalToggle('furniture-ww__modal'))
 
     return (
         <section className='furniture-page__workway-section'>
@@ -21,7 +26,7 @@ const FurnitureWorkWay = ({secData}) => {
                             <h1 className='furniture-page__workway-title title-black'>{title}</h1>
                             <div className='furniture-page__workway-list__block'>
                                 <CustomWorkway stages={workwayList} className='furniture-workway'/>
-                                <button className='furniture-page__workway-btn btn-blk'>Заказать</button>
+                                <button onClick={openModal} className='furniture-page__workway-btn btn-blk'>Заказать</button>
                             </div>
                         </div>
                     </div>

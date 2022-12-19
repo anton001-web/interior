@@ -5,6 +5,8 @@ import {
     mainPsuccessModalW,
     mainWWPrjOrderModalW, ourTeamAskqstModalW,
     peterBioAskQstModalW, servicesModalW,
+    interiorDesignModalW, furnitureWWmodalW,
+    authSvisionWW, decorOrdWW
 } from "../data/modalsData";
 
 const Modals = () => {
@@ -16,6 +18,10 @@ const Modals = () => {
     const servicesModal = React.createRef()
     const intDesignServModal = React.createRef()
     const abtPourTeamModal = React.createRef()
+    const intDesModal = React.createRef()
+    const furnitureWWmodal = React.createRef()
+    const authSvisionModal = React.createRef()
+    const decorWWmodal = React.createRef()
 
     return (
         <>
@@ -46,6 +52,22 @@ const Modals = () => {
             <ModalWindow
                 modalOptions={ourTeamAskqstModalW}
                 ref={abtPourTeamModal}
+            />
+            <ModalWindow
+                modalOptions={interiorDesignModalW}
+                ref={intDesModal}
+            />
+            <ModalWindow
+                modalOptions={furnitureWWmodalW}
+                ref={furnitureWWmodalW}
+            />
+            <ModalWindow
+                modalOptions={authSvisionWW}
+                ref={authSvisionModal}
+            />
+            <ModalWindow
+                modalOptions={decorOrdWW}
+                ref={decorWWmodal}
             />
         </>
     )

@@ -14,6 +14,7 @@ const Section9 = () => {
             setInnerFormModalVisible(!innerFormModalVisible)
         }, 1300)
     }
+
     return (
         <section className='form-section'>
             <div className="container">

@@ -146,7 +146,7 @@ export const ourTeamAskqstModalW = {
         },
         {
             inputId: 'ask-quest__bio-input__message',
-            placeholder: 'Номер телефона',
+            placeholder: 'Ваше сообщение',
             messageField: true
         }
     ],
@@ -160,3 +160,111 @@ export const textsDefault = [
     'Спасибо за оставленную заявку.',
     'Мы свяжемся с Вами в ближайшее время, чтобы проконсультировать по интересующим вопросам.',
 ]
+
+export const interiorDesignModalW = {
+    texts: [
+        'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+    ],
+    dataType: 'orderProject',
+    containsForm: true,
+    modalInputs: [
+        {
+            inputId: 'ask-quest__bio-input__name',
+            placeholder: 'Как к вам обращаться?'
+        },
+        {
+            inputId: 'ask-quest__bio-input__phone',
+            placeholder: 'Номер телефона'
+        },
+        {
+            inputId: 'ask-quest__bio-input__message',
+            placeholder: 'Ваше сообщение',
+            messageField: true
+        }
+    ],
+    modalType: 'int-des__modal',
+    title: 'Заказать дизайн',
+    btnText: 'Отправить сообщение',
+    btnType: 'sendData'
+}
+
+export const furnitureWWmodalW = {
+    texts: [
+        'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+    ],
+    dataType: 'orderProject',
+    containsForm: true,
+    modalInputs: [
+        {
+            inputId: 'ask-quest__bio-input__name',
+            placeholder: 'Как к вам обращаться?'
+        },
+        {
+            inputId: 'ask-quest__bio-input__phone',
+            placeholder: 'Номер телефона'
+        },
+        {
+            inputId: 'ask-quest__bio-input__message',
+            placeholder: 'Ваше сообщение',
+            messageField: true
+        }
+    ],
+    modalType: 'furniture-ww__modal',
+    title: 'Заказать дизайн',
+    btnText: 'Отправить сообщение',
+    btnType: 'sendData'
+}
+
+export const authSvisionWW = {
+    texts: [
+        'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+    ],
+    dataType: 'orderProject',
+    containsForm: true,
+    modalInputs: [
+        {
+            inputId: 'ask-quest__bio-input__name',
+            placeholder: 'Как к вам обращаться?'
+        },
+        {
+            inputId: 'ask-quest__bio-input__phone',
+            placeholder: 'Номер телефона'
+        },
+        {
+            inputId: 'ask-quest__bio-input__message',
+            placeholder: 'Ваше сообщение',
+            messageField: true
+        }
+    ],
+    modalType: 'authSvision-modal',
+    title: 'Заказать дизайн',
+    btnText: 'Отправить сообщение',
+    btnType: 'sendData'
+}
+
+export const decorOrdWW = {
+    texts: [
+        'Разрешите нам познакомиться с вами и узнать о вашем проекте. Мы подготовим для вас индивидуальное предложение.'
+    ],
+    dataType: 'orderProject',
+    containsForm: true,
+    modalInputs: [
+        {
+            inputId: 'ask-quest__bio-input__name',
+            placeholder: 'Как к вам обращаться?'
+        },
+        {
+            inputId: 'ask-quest__bio-input__phone',
+            placeholder: 'Номер телефона'
+        },
+        {
+            inputId: 'ask-quest__bio-input__message',
+            placeholder: 'Ваше сообщение',
+            messageField: true
+        }
+    ],
+    modalType: 'decor-ord__modal',
+    title: 'Заказать дизайн',
+    btnText: 'Отправить сообщение',
+    btnType: 'sendData'
+}

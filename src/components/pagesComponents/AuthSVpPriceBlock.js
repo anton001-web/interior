@@ -1,7 +1,13 @@
 import React from 'react'
 import LeftRightSectionCustomStyles from "../customComponents/LeftRightSectionCustomStyles";
+import {useDispatch} from "react-redux";
+import {modalToggle} from "../../store/actions";
 
 const AuthSVpPriceBlock = ({priceBlockList}) => {
+    const dispatch = useDispatch()
+
+    const openModal = () => dispatch(modalToggle('authSvision-modal'))
+
     return (
         <section className="authSVP-priceBlock-section">
             <LeftRightSectionCustomStyles
@@ -24,7 +30,7 @@ const AuthSVpPriceBlock = ({priceBlockList}) => {
                                 ))
                             }
                         </div>
-                        <button className="authSVP-priceBlock__btn btn-dGr">Заказать авторский надзор</button>
+                        <button onClick={openModal} className="authSVP-priceBlock__btn btn-dGr">Заказать авторский надзор</button>
                     </div>
                 </div>
             </LeftRightSectionCustomStyles>

@@ -1,10 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import CustomLeftRightSection from "../customComponents/CustomLeftRightSection";
 import {servicesData, servicesLRtexts} from "../../data/servicesData";
 import {servicesMainList} from "../../data/generalData";
 import CustomInput from "../customComponents/CustomInput";
+import InnerFormModal from "../customComponents/InnerFormModal";
 
 const ServicesPage = () => {
+    const [innerFormModalVisible, setInnerFormModalVisible] = useState(false)
+
+    async function openInnerModal (e) {
+        e.preventDefault()
+        await console.log('data gathering')
+        setTimeout(() => {
+            setInnerFormModalVisible(!innerFormModalVisible)
+        }, 1300)
+    }
+
+
+
     return (
         <section className='services-page'>
             <div className='services-page__services-list__block'>
@@ -48,20 +61,30 @@ const ServicesPage = () => {
                         <img src="./assets/images/sectionPageFormBg.png" alt="side image"/>
                     </div>
                     <div className='services-page__form-content'>
-                        <h1 className='services-page__form-title'>Расскажите нам о своем проекте</h1>
-                        <p className='services-page__form-text'>Разрешите нам познакомиться с вами и узнать о вашем
-                            проекте. Мы подготовим для вас индивидуальное предложение.</p>
-                        <form className='services-page__form'>
-                            {
-                                servicesData.inputsList.map((input, ind) => (
-                                    <CustomInput inputId={input.inputId} placeholder={input.placeholder}
-                                                 isMessageField={input.messageField}/>
-                                ))
-                            }
-                            <button className="services-p__form-btn btn-blk">
-                                Отправить сообщение
-                            </button>
-                        </form>
+                        {
+                            innerFormModalVisible === true ? (
+                                <InnerFormModal
+                                    toggleState={setInnerFormModalVisible}
+                                />
+                            ) : (
+                                <>
+                                    <h1 className='services-page__form-title'>Расскажите нам о своем проекте</h1>
+                                    <p className='services-page__form-text'>Разрешите нам познакомиться с вами и узнать о вашем
+                                        проекте. Мы подготовим для вас индивидуальное предложение.</p>
+                                    <form className='services-page__form'>
+                                        {
+                                            servicesData.inputsList.map((input, ind) => (
+                                                <CustomInput inputId={input.inputId} placeholder={input.placeholder}
+                                                             isMessageField={input.messageField}/>
+                                            ))
+                                        }
+                                        <button onClick={openInnerModal} className="services-p__form-btn btn-blk">
+                                            Отправить сообщение
+                                        </button>
+                                    </form>
+                                </>
+                            )
+                        }
                     </div>
                 </div>
             </div>

@@ -21,7 +21,6 @@ const Header = () => {
 
     const menuOpen = () => {
         dispatch(toggleBurger())
-        headerMenuOpen.current.classList.toggle('menu-open__active')
     }
 
     const {visible} = useSelector(store => {
@@ -91,7 +90,7 @@ const Header = () => {
                         <button className="header-btn btn-gr" onClick={modalOpen}>
                             <p> Заказать звонок </p>
                         </button>
-                        <div className="header-menu__block" ref={headerMenuOpen}>
+                        <div className={`header-menu__block ${visible && 'menu-open__active'}`} ref={headerMenuOpen}>
                             <div className='header-menu__open' onClick={menuOpen}>
                                 <span className='header-menu__open-line'> </span>
                             </div>
@@ -99,7 +98,7 @@ const Header = () => {
                                 <DropDownList listTitle='Услуги' listItems={headerDDList} className='tabletDD'/>
                                 <ul className='header-menu__list'>
                                     <div className='header-menu__list-items__block'>
-                                        <li className='header-menu__list-item' data-b>О нас</li>
+                                        <li data-b><Link onClick={closeBurgerMenu} className='header-menu__list-item' to='/about-us'>О нас</Link></li>
                                         <DropDownList listTitle='Услуги' listItems={headerDDList} className='desktopDD'/>
                                         <li className='header-menu__list-item' data-b>Стоимость</li>
                                         <li className='header-menu__list-item' data-b>Портфолио</li>
